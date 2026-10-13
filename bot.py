@@ -168,6 +168,9 @@ def enviar_dia(fecha, etiqueta, forzar=False):
             registrar_sugerencias(res)
             enviados[str(p["id"])] = datetime.now(TZ).strftime("%Y-%m-%d")
             guardar_json(config.ARCHIVO_ENVIADOS, enviados)
+            seg = leer_json(config.ARCHIVO_SEGUIMIENTO, {})
+            seg.setdefault(str(p["id"]), {"inicio": p["inicio"].isoformat(), "reportado": False})
+            guardar_json(config.ARCHIVO_SEGUIMIENTO, seg)
         except Exception as e:  # noqa: BLE001
             print(f"  ! Error con {p['local']} vs {p['visita']}: {e}")
 
@@ -194,7 +197,7 @@ def calificar_pendientes():
             inicio = datetime.fromisoformat(r["fecha_partido"])
         except ValueError:
             continue
-        if ahora < inicio + timedelta(hours=2, minutes=30):
+        if ahora < inicio + timedelta(hours=config.HORAS_PARA_RESULTADO):
             continue
         g = s365.detalle(r["game_id"], terminado=False)
         if g and g.get("statusGroup") == 4:
@@ -210,6 +213,112 @@ def calificar_pendientes():
             cambio = True
     if cambio:
         guardar_csv(filas)
+
+
+def _linea_stats(st, local_id, visita_id):
+    """'xG 0.9–2.4 · córners 4–7 · tarjetas 3–2' con lo que haya."""
+    if not st or local_id not in st or visita_id not in st:
+        return ""
+    L, V = st[local_id], st[visita_id]
+    partes = []
+    if L.get("xg") is not None and V.get("xg") is not None:
+        partes.append(f"xG {L['xg']:.1f}–{V['xg']:.1f}")
+    if L.get("corners") is not None and V.get("corners") is not None:
+        partes.append(f"córners {L['corners']:.0f}–{V['corners']:.0f}")
+    if L.get("amarillas") is not None and V.get("amarillas") is not None:
+        tl = L["amarillas"] + (L.get("rojas") or 0)
+        tv = V["amarillas"] + (V.get("rojas") or 0)
+        partes.append(f"tarjetas {tl:.0f}–{tv:.0f}")
+    return " · ".join(partes)
+
+
+def reportar_terminados():
+    """Manda el resultado de los partidos que el bot envió y ya terminaron."""
+    seg = leer_json(config.ARCHIVO_SEGUIMIENTO, {})
+    enviados = leer_json(config.ARCHIVO_ENVIADOS, {})
+    ahora = datetime.now(TZ)
+    S = config.STAKE_SIMULADO
+
+    # Partidos enviados antes de esta versión: se agregan al seguimiento (solo los recientes)
+    limite = (ahora - timedelta(days=2)).strftime("%Y-%m-%d")
+    for gid, fecha in enviados.items():
+        if gid not in seg and fecha >= limite:
+            g = s365.detalle(gid)
+            p = s365.normalizar(g) if g else None
+            if p and p["inicio"]:
+                seg[gid] = {"inicio": p["inicio"].isoformat(), "reportado": False}
+
+    por_juego = {}
+    for r in leer_csv():
+        por_juego.setdefault(r["game_id"], []).append(r)
+
+    bloques, n_ac, n_tot, ganancia = [], 0, 0, 0.0
+    for gid, info in sorted(seg.items(), key=lambda kv: kv[1]["inicio"]):
+        if info.get("reportado"):
+            continue
+        inicio = datetime.fromisoformat(info["inicio"])
+        if ahora < inicio + timedelta(hours=config.HORAS_PARA_RESULTADO):
+            continue
+        sugs = por_juego.get(gid, [])
+        if any(r["estado"] == "pendiente" for r in sugs):
+            continue                      # espera a que se califique la sugerencia
+        g = s365.detalle(gid)
+        if not g:
+            continue
+        if g.get("statusGroup") != 4:
+            if ahora > inicio + timedelta(days=2):
+                info["reportado"] = True  # suspendido o sin resultado
+            continue
+        p = s365.normalizar(g)
+        m90 = s365.marcador_90(g)
+        marcador = f"{p['gl']}-{p['gv']}" if p["gl"] is not None else "?"
+        extra = ""
+        if m90 and (m90[0], m90[1]) != (p["gl"], p["gv"]):
+            extra = f" (90': {m90[0]}-{m90[1]})"
+        if g.get("winDescription"):
+            extra += f" · {g['winDescription']}"
+        lineas = [f"⚽ <b>{datazos._e(p['local'])} {marcador} {datazos._e(p['visita'])}</b>{datazos._e(extra)}"
+                  f" · {datazos._e(nombre_liga(p))}"]
+        try:
+            st = _linea_stats(s365.estadisticas(gid), p["local_id"], p["visita_id"])
+        except Exception:  # noqa: BLE001
+            st = ""
+        if st:
+            lineas.append(f"   📊 {st}")
+        if not sugs:
+            lineas.append("   🎯 No hubo sugerencia")
+        for r in sugs:
+            if r["estado"] == "acierto":
+                gan = (float(r["cuota"]) - 1) * S
+                txt = f"✅ acierto · +S/ {gan:.2f}"
+                n_ac += 1
+            elif r["estado"] == "fallo":
+                gan = -S
+                txt = f"❌ fallo · -S/ {S:.2f}"
+            else:
+                gan = 0
+                txt = "➖ nula (sin resultado)"
+            if r["estado"] in ("acierto", "fallo"):
+                n_tot += 1
+                ganancia += gan
+            tipo = "🎯" if r["tipo"] == "principal" else "🛟"
+            lineas.append(f"   {tipo} {datazos._e(r['descripcion'])} ({r['cuota']}) → {txt}")
+        bloques.append("\n".join(lineas))
+        info["reportado"] = True
+
+    # limpiar seguimiento viejo
+    corte = ahora - timedelta(days=30)
+    seg = {k: v for k, v in seg.items()
+           if not (v.get("reportado") and datetime.fromisoformat(v["inicio"]) < corte)}
+    guardar_json(config.ARCHIVO_SEGUIMIENTO, seg)
+
+    if bloques:
+        pie = ""
+        if n_tot:
+            pie = (f"\n\n📈 En este lote: {n_ac}/{n_tot} sugerencias acertadas · "
+                   f"S/ {ganancia:+.2f} (S/ {S} c/u). Escribe /resumen para el acumulado.")
+        enviar("🏁 <b>Resultados</b>\n\n" + "\n\n".join(bloques) + pie)
+    return len(bloques)
 
 
 def texto_resumen():
@@ -245,6 +354,7 @@ def texto_resumen():
 # Comandos de Telegram (se leen con getUpdates en cada corrida)
 # =====================================================================
 AYUDA = ("🤖 <b>Comandos</b>\n/datazos hoy — datazos de hoy\n/datazos mañana — datazos de mañana\n"
+         "/resultados — resultados de partidos recién terminados\n"
          "/resumen — aciertos vs probabilidad esperada\n"
          "<i>El bot revisa los comandos cada ~15 min (GitHub Actions), no al instante.</i>")
 
@@ -267,6 +377,11 @@ def procesar_comandos(estado):
             else:
                 enviar("⏳ Calculando datazos de mañana...")
                 enviar_dia(hoy + timedelta(days=1), "mañana", forzar=True)
+        elif texto.startswith("/resultados"):
+            calificar_pendientes()
+            if not reportar_terminados():
+                enviar("🏁 No hay partidos terminados nuevos. Los que ya terminaron te llegaron antes; "
+                       "escribe /resumen para el acumulado.")
         elif texto.startswith("/resumen"):
             calificar_pendientes()
             enviar(texto_resumen())
@@ -328,6 +443,7 @@ def main():
     else:
         procesar_comandos(estado)
         calificar_pendientes()
+        reportar_terminados()
         if ahora.hour >= config.HORA_ENVIO_DIARIO and estado.get("ultimo_diario") != hoy.isoformat():
             enviar_dia(hoy + timedelta(days=1), "mañana")
             estado["ultimo_diario"] = hoy.isoformat()

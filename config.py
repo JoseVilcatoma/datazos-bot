@@ -94,3 +94,5 @@ BACKTEST_TEMPORADAS = ["2324", "2425", "2526"]
 ARCHIVO_ENVIADOS = "data/enviados.json"
 ARCHIVO_ESTADO = "data/estado.json"
 ARCHIVO_SUGERENCIAS = "data/sugerencias.csv"
+ARCHIVO_SEGUIMIENTO = "data/seguimiento.json"   # partidos enviados que esperan su resultado
+HORAS_PARA_RESULTADO = 2                         # revisar el resultado 2 h después del inicio
