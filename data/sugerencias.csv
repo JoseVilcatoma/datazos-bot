@@ -12,9 +12,9 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-12 20:54,4828481,2026-10-13T14:00:00-05:00,Galatasaray vs Barcelona,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6894,1.40,1.45,no,acierto,1,4
 2026-10-12 20:54,4828482,2026-10-13T14:00:00-05:00,Arsenal vs Lille,Champions,principal,O2.5,Más de 2.5 goles,0.5759,1.57,1.74,no,acierto,3,0
 2026-10-12 20:55,4856897,2026-10-13T19:30:00-05:00,Boca Jrs. vs Vasco Da Gama,Sudamericana,principal,O1.5,Más de 1.5 goles,0.6341,1.53,1.58,no,fallo,0,1
-2026-10-14 00:09,4828474,2026-10-14T11:45:00-05:00,LASK vs Liverpool,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6290,1.67,1.59,si,pendiente,,
-2026-10-14 00:09,4828475,2026-10-14T11:45:00-05:00,Feyenoord vs Como,Champions,principal,1X,Feyenoord o empate (doble oportunidad),0.5525,1.80,1.81,no,pendiente,,
-2026-10-14 00:09,4828475,2026-10-14T11:45:00-05:00,Feyenoord vs Como,Champions,alternativa,O2.5,Más de 2.5 goles,0.6484,1.44,1.54,no,pendiente,,
+2026-10-14 00:09,4828474,2026-10-14T11:45:00-05:00,LASK vs Liverpool,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6290,1.67,1.59,si,acierto,3,6
+2026-10-14 00:09,4828475,2026-10-14T11:45:00-05:00,Feyenoord vs Como,Champions,principal,1X,Feyenoord o empate (doble oportunidad),0.5525,1.80,1.81,no,acierto,3,2
+2026-10-14 00:09,4828475,2026-10-14T11:45:00-05:00,Feyenoord vs Como,Champions,alternativa,O2.5,Más de 2.5 goles,0.6484,1.44,1.54,no,acierto,3,2
 2026-10-14 00:10,4828467,2026-10-14T14:00:00-05:00,Slovan Bratislava vs Stuttgart,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6436,1.62,1.55,si,pendiente,,
 2026-10-14 00:10,4828468,2026-10-14T14:00:00-05:00,Bodo Glimt vs Dortmund,Champions,principal,1X,Bodo Glimt o empate (doble oportunidad),0.5814,1.70,1.72,no,pendiente,,
 2026-10-14 00:10,4828468,2026-10-14T14:00:00-05:00,Bodo Glimt vs Dortmund,Champions,alternativa,O2.5,Más de 2.5 goles,0.7071,1.36,1.41,no,pendiente,,
