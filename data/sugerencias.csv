@@ -15,16 +15,16 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-14 00:09,4828474,2026-10-14T11:45:00-05:00,LASK vs Liverpool,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6290,1.67,1.59,si,acierto,3,6
 2026-10-14 00:09,4828475,2026-10-14T11:45:00-05:00,Feyenoord vs Como,Champions,principal,1X,Feyenoord o empate (doble oportunidad),0.5525,1.80,1.81,no,acierto,3,2
 2026-10-14 00:09,4828475,2026-10-14T11:45:00-05:00,Feyenoord vs Como,Champions,alternativa,O2.5,Más de 2.5 goles,0.6484,1.44,1.54,no,acierto,3,2
-2026-10-14 00:10,4828467,2026-10-14T14:00:00-05:00,Slovan Bratislava vs Stuttgart,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6436,1.62,1.55,si,pendiente,,
-2026-10-14 00:10,4828468,2026-10-14T14:00:00-05:00,Bodo Glimt vs Dortmund,Champions,principal,1X,Bodo Glimt o empate (doble oportunidad),0.5814,1.70,1.72,no,pendiente,,
-2026-10-14 00:10,4828468,2026-10-14T14:00:00-05:00,Bodo Glimt vs Dortmund,Champions,alternativa,O2.5,Más de 2.5 goles,0.7071,1.36,1.41,no,pendiente,,
-2026-10-14 00:10,4828469,2026-10-14T14:00:00-05:00,Shakhtar vs AEK Atenas,Champions,principal,O1.5,Más de 1.5 goles,0.7616,1.25,1.31,no,pendiente,,
-2026-10-14 00:11,4828470,2026-10-14T14:00:00-05:00,Man City vs PSG,Champions,principal,O2.5,Más de 2.5 goles,0.6482,1.44,1.54,no,pendiente,,
-2026-10-14 00:11,4828471,2026-10-14T14:00:00-05:00,AS Roma vs Real Madrid,Champions,principal,1X,AS Roma o empate (doble oportunidad),0.5313,1.83,1.88,no,pendiente,,
-2026-10-14 00:11,4828471,2026-10-14T14:00:00-05:00,AS Roma vs Real Madrid,Champions,alternativa,O2.5,Más de 2.5 goles,0.6530,1.44,1.53,no,pendiente,,
-2026-10-14 00:11,4828472,2026-10-14T14:00:00-05:00,Betis vs Porto,Champions,principal,O2.5,Más de 2.5 goles,0.5579,1.73,1.79,no,pendiente,,
-2026-10-14 00:11,4828472,2026-10-14T14:00:00-05:00,Betis vs Porto,Champions,alternativa,1X,Betis o empate (doble oportunidad),0.6661,1.33,1.50,no,pendiente,,
-2026-10-14 00:12,4828473,2026-10-14T14:00:00-05:00,Aston Villa vs Fenerbahce,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.5990,1.62,1.67,no,pendiente,,
+2026-10-14 00:10,4828467,2026-10-14T14:00:00-05:00,Slovan Bratislava vs Stuttgart,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6436,1.62,1.55,si,fallo,0,3
+2026-10-14 00:10,4828468,2026-10-14T14:00:00-05:00,Bodo Glimt vs Dortmund,Champions,principal,1X,Bodo Glimt o empate (doble oportunidad),0.5814,1.70,1.72,no,acierto,1,0
+2026-10-14 00:10,4828468,2026-10-14T14:00:00-05:00,Bodo Glimt vs Dortmund,Champions,alternativa,O2.5,Más de 2.5 goles,0.7071,1.36,1.41,no,fallo,1,0
+2026-10-14 00:10,4828469,2026-10-14T14:00:00-05:00,Shakhtar vs AEK Atenas,Champions,principal,O1.5,Más de 1.5 goles,0.7616,1.25,1.31,no,acierto,3,1
+2026-10-14 00:11,4828470,2026-10-14T14:00:00-05:00,Man City vs PSG,Champions,principal,O2.5,Más de 2.5 goles,0.6482,1.44,1.54,no,acierto,2,4
+2026-10-14 00:11,4828471,2026-10-14T14:00:00-05:00,AS Roma vs Real Madrid,Champions,principal,1X,AS Roma o empate (doble oportunidad),0.5313,1.83,1.88,no,fallo,3,4
+2026-10-14 00:11,4828471,2026-10-14T14:00:00-05:00,AS Roma vs Real Madrid,Champions,alternativa,O2.5,Más de 2.5 goles,0.6530,1.44,1.53,no,acierto,3,4
+2026-10-14 00:11,4828472,2026-10-14T14:00:00-05:00,Betis vs Porto,Champions,principal,O2.5,Más de 2.5 goles,0.5579,1.73,1.79,no,acierto,3,2
+2026-10-14 00:11,4828472,2026-10-14T14:00:00-05:00,Betis vs Porto,Champions,alternativa,1X,Betis o empate (doble oportunidad),0.6661,1.33,1.50,no,acierto,3,2
+2026-10-14 00:12,4828473,2026-10-14T14:00:00-05:00,Aston Villa vs Fenerbahce,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.5990,1.62,1.67,no,fallo,6,0
 2026-10-14 00:12,4858860,2026-10-14T17:00:00-05:00,Atlético Mineiro vs City Torque,Sudamericana,principal,O1.5,Más de 1.5 goles,0.7369,1.30,1.36,no,pendiente,,
 2026-10-14 00:12,4857349,2026-10-14T19:30:00-05:00,Fluminense vs Palmeiras,Libertadores,principal,O1.5,Más de 1.5 goles,0.6351,1.57,1.57,no,pendiente,,
 2026-10-14 00:55,4828737,2026-10-15T11:45:00-05:00,AZ Alkmaar vs Hapoel Beer Sheva,Europa League,principal,BTTS_SI,Ambos marcan: Sí,0.5548,1.80,1.80,no,pendiente,,
