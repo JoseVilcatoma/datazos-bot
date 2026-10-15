@@ -28,7 +28,7 @@ LIGAS_ACTIVAS = [572, 573, 7685, 7, 11, 17, 25, 35, 102, 389, 583]
 
 # Máximo de partidos por envío (para no llenar el chat). Se priorizan por liga
 # en el orden de LIGAS_ACTIVAS y luego por hora.
-MAX_PARTIDOS = 20
+MAX_PARTIDOS = 40
 
 # ---------------------------------------------------------------
 # 2) HORARIO
