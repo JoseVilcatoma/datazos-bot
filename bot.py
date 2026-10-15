@@ -113,9 +113,10 @@ def enviar(texto):
 # =====================================================================
 # Partidos del día
 # =====================================================================
-def partidos_del_dia(fecha):
+def partidos_del_dia(fecha, excluir=()):
     lista = s365.partidos_por_fecha(fecha, config.LIGAS_ACTIVAS)
     lista = [p for p in lista if p["estado"] in (1, 2)]      # aún no empiezan
+    lista = [p for p in lista if str(p["id"]) not in excluir]  # quitar ya enviados ANTES del límite
     prioridad = {c: i for i, c in enumerate(config.LIGAS_ACTIVAS)}
     lista.sort(key=lambda p: (prioridad.get(p["comp_id"], 99), p["inicio"]))
     lista = lista[:config.MAX_PARTIDOS]
@@ -152,12 +153,18 @@ def registrar_sugerencias(res):
 
 def enviar_dia(fecha, etiqueta, forzar=False):
     enviados = leer_json(config.ARCHIVO_ENVIADOS, {})
-    partidos = partidos_del_dia(fecha)
-    if not forzar:
-        partidos = [p for p in partidos if str(p["id"]) not in enviados]
+    partidos = partidos_del_dia(fecha, excluir=() if forzar else set(enviados))
     if not partidos:
-        enviar(f"📅 No hay partidos nuevos de las ligas elegidas para {etiqueta} "
-               f"({fecha.strftime('%d/%m')}).")
+        ya = [p for p in s365.partidos_por_fecha(fecha, config.LIGAS_ACTIVAS)
+              if str(p["id"]) in enviados]
+        if ya:
+            fechas = sorted({enviados[str(p["id"])] for p in ya})
+            cuando = ", ".join(datetime.strptime(f, "%Y-%m-%d").strftime("%d/%m") for f in fechas)
+            enviar(f"📅 Los {len(ya)} partidos de {etiqueta} ({fecha.strftime('%d/%m')}) ya te los mandé "
+                   f"antes (el {cuando}). Si los quieres de nuevo escribe /datazos "
+                   f"{'hoy' if etiqueta == 'hoy' else 'mañana'}.")
+        else:
+            enviar(f"📅 No hay partidos de las ligas elegidas para {etiqueta} ({fecha.strftime('%d/%m')}).")
         return
     enviar(f"📅 <b>Datazos de {etiqueta}</b> ({fecha.strftime('%d/%m')}) · "
            f"{len(partidos)} {datazos.pl(len(partidos), 'partido', 'partidos')}")
@@ -374,6 +381,18 @@ def procesar_comandos(estado):
             if "hoy" in texto:
                 enviar("⏳ Calculando datazos de hoy...")
                 enviar_dia(hoy, "hoy", forzar=True)
+            elif datetime.now(TZ).hour < 5:
+                # pasada la medianoche, "mañana" casi siempre significa el día que empieza
+                if "pasado" in texto:
+                    enviar("⏳ Calculando datazos del día siguiente...")
+                    enviar_dia(hoy + timedelta(days=1), "mañana", forzar=True)
+                else:
+                    enviar("⏳ Ya pasó la medianoche: te mando los partidos de HOY "
+                           f"({hoy.strftime('%d/%m')}). Para el día siguiente escribe /datazos pasado")
+                    enviar_dia(hoy, "hoy", forzar=True)
+            elif "pasado" in texto:
+                enviar("⏳ Calculando datazos de pasado mañana...")
+                enviar_dia(hoy + timedelta(days=2), "pasado mañana", forzar=True)
             else:
                 enviar("⏳ Calculando datazos de mañana...")
                 enviar_dia(hoy + timedelta(days=1), "mañana", forzar=True)
