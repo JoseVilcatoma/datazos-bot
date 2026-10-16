@@ -72,3 +72,10 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-15 05:58,4828930,2026-10-15T14:00:00-05:00,Brighton vs Kauno Zalgiris,Conference,principal,O3.5,Más de 3.5 goles,0.6154,1.40,1.63,no,acierto,4,0
 2026-10-15 05:59,4858847,2026-10-15T19:30:00-05:00,Estudiantes vs Flamengo,Libertadores,principal,O1.5,Más de 1.5 goles,0.6379,1.53,1.57,no,pendiente,,
 2026-10-15 05:59,4858847,2026-10-15T19:30:00-05:00,Estudiantes vs Flamengo,Libertadores,alternativa,X2,Flamengo o empate (doble oportunidad),0.7260,1.29,1.38,no,pendiente,,
+2026-10-15 20:21,4760811,2026-10-16T13:00:00-05:00,Huancayo vs Cusco FC,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5670,1.67,1.76,no,pendiente,,
+2026-10-15 20:22,4755378,2026-10-16T13:30:00-05:00,Eintracht vs Köln,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6983,1.36,1.43,no,pendiente,,
+2026-10-15 20:22,4732678,2026-10-16T13:45:00-05:00,Frosinone vs Sassuolo,Serie A,principal,1X,Frosinone o empate (doble oportunidad),0.6330,1.50,1.58,no,pendiente,,
+2026-10-15 20:22,4735242,2026-10-16T13:45:00-05:00,Le Mans vs Toulouse,Ligue 1,principal,O2.5,Más de 2.5 goles,0.5832,1.67,1.71,no,pendiente,,
+2026-10-15 20:22,4750828,2026-10-16T14:00:00-05:00,Deportivo vs Levante UD,LaLiga,principal,O2.5,Más de 2.5 goles,0.5099,1.91,1.96,no,pendiente,,
+2026-10-15 20:22,4750828,2026-10-16T14:00:00-05:00,Deportivo vs Levante UD,LaLiga,alternativa,O1.5,Más de 1.5 goles,0.7540,1.29,1.33,no,pendiente,,
+2026-10-15 20:23,4760810,2026-10-16T15:30:00-05:00,Los Chankas vs ADT,Liga 1,principal,X2,ADT o empate (doble oportunidad),0.5411,1.80,1.85,no,pendiente,,
