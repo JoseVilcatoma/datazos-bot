@@ -24,7 +24,7 @@ LIGAS = {
 }
 
 # Ligas que el bot revisa. Borra o agrega ids de la lista de arriba.
-LIGAS_ACTIVAS = [572, 573, 7685, 7, 11, 17, 25, 35, 102, 389, 583]
+LIGAS_ACTIVAS = [572, 573, 7685, 7, 11, 17, 25, 35, 113, 102, 389, 583]
 
 # Máximo de partidos por envío (para no llenar el chat). Se priorizan por liga
 # en el orden de LIGAS_ACTIVAS y luego por hora.
