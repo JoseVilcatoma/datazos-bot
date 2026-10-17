@@ -78,6 +78,6 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-15 20:22,4735242,2026-10-16T13:45:00-05:00,Le Mans vs Toulouse,Ligue 1,principal,O2.5,Más de 2.5 goles,0.5832,1.67,1.71,no,acierto,0,3
 2026-10-15 20:22,4750828,2026-10-16T14:00:00-05:00,Deportivo vs Levante UD,LaLiga,principal,O2.5,Más de 2.5 goles,0.5099,1.91,1.96,no,fallo,1,1
 2026-10-15 20:22,4750828,2026-10-16T14:00:00-05:00,Deportivo vs Levante UD,LaLiga,alternativa,O1.5,Más de 1.5 goles,0.7540,1.29,1.33,no,acierto,1,1
-2026-10-15 20:23,4760810,2026-10-16T15:30:00-05:00,Los Chankas vs ADT,Liga 1,principal,X2,ADT o empate (doble oportunidad),0.5411,1.80,1.85,no,pendiente,,
+2026-10-15 20:23,4760810,2026-10-16T15:30:00-05:00,Los Chankas vs ADT,Liga 1,principal,X2,ADT o empate (doble oportunidad),0.5411,1.80,1.85,no,fallo,2,1
 2026-10-16 08:20,4632642,2026-10-16T18:00:00-05:00,Mirassol vs Internacional,Brasileirão,principal,X2,Internacional o empate (doble oportunidad),0.5456,1.80,1.83,no,pendiente,,
 2026-10-16 08:20,4632642,2026-10-16T18:00:00-05:00,Mirassol vs Internacional,Brasileirão,alternativa,O1.5,Más de 1.5 goles,0.7579,1.25,1.32,no,pendiente,,
