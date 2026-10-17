@@ -94,12 +94,12 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-16 23:53,4742043,2026-10-17T09:00:00-05:00,Man City vs Ipswich,Premier,principal,BTTS_SI,Ambos marcan: Sí,0.5855,1.80,1.71,si,acierto,3,2
 2026-10-16 23:53,4742043,2026-10-17T09:00:00-05:00,Man City vs Ipswich,Premier,alternativa,O2.5,Más de 2.5 goles,0.6915,1.36,1.45,no,acierto,3,2
 2026-10-16 23:54,4750821,2026-10-17T09:15:00-05:00,Villarreal vs Elche CF,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.5960,1.62,1.68,no,fallo,0,0
-2026-10-16 23:54,4735237,2026-10-17T10:15:00-05:00,Estrasburgo vs PSG,Ligue 1,principal,O3.5,Más de 3.5 goles,0.5090,1.91,1.96,no,pendiente,,
-2026-10-16 23:54,4735237,2026-10-17T10:15:00-05:00,Estrasburgo vs PSG,Ligue 1,alternativa,BTTS_SI,Ambos marcan: Sí,0.6473,1.50,1.54,no,pendiente,,
-2026-10-16 23:54,4732680,2026-10-17T11:00:00-05:00,Bologna vs Inter,Serie A,principal,O2.5,Más de 2.5 goles,0.5863,1.67,1.71,no,pendiente,,
-2026-10-16 23:54,4742050,2026-10-17T11:30:00-05:00,Newcastle Utd vs Aston Villa,Premier,principal,O2.5,Más de 2.5 goles,0.5908,1.62,1.69,no,pendiente,,
-2026-10-16 23:54,4750830,2026-10-17T11:30:00-05:00,Betis vs Barcelona,LaLiga,principal,O2.5,Más de 2.5 goles,0.7644,1.25,1.31,no,pendiente,,
-2026-10-16 23:54,4755380,2026-10-17T11:30:00-05:00,Bayern vs RB Leipzig,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.7185,1.40,1.39,si,pendiente,,
+2026-10-16 23:54,4735237,2026-10-17T10:15:00-05:00,Estrasburgo vs PSG,Ligue 1,principal,O3.5,Más de 3.5 goles,0.5090,1.91,1.96,no,acierto,1,3
+2026-10-16 23:54,4735237,2026-10-17T10:15:00-05:00,Estrasburgo vs PSG,Ligue 1,alternativa,BTTS_SI,Ambos marcan: Sí,0.6473,1.50,1.54,no,acierto,1,3
+2026-10-16 23:54,4732680,2026-10-17T11:00:00-05:00,Bologna vs Inter,Serie A,principal,O2.5,Más de 2.5 goles,0.5863,1.67,1.71,no,acierto,1,3
+2026-10-16 23:54,4742050,2026-10-17T11:30:00-05:00,Newcastle Utd vs Aston Villa,Premier,principal,O2.5,Más de 2.5 goles,0.5908,1.62,1.69,no,fallo,0,1
+2026-10-16 23:54,4750830,2026-10-17T11:30:00-05:00,Betis vs Barcelona,LaLiga,principal,O2.5,Más de 2.5 goles,0.7644,1.25,1.31,no,acierto,2,5
+2026-10-16 23:54,4755380,2026-10-17T11:30:00-05:00,Bayern vs RB Leipzig,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.7185,1.40,1.39,si,acierto,6,1
 2026-10-16 23:55,4732673,2026-10-17T13:45:00-05:00,AS Roma vs Genoa,Serie A,principal,BTTS_SI,Ambos marcan: Sí,0.5013,1.91,1.99,no,pendiente,,
 2026-10-16 23:55,4732673,2026-10-17T13:45:00-05:00,AS Roma vs Genoa,Serie A,alternativa,O1.5,Más de 1.5 goles,0.7573,1.25,1.32,no,pendiente,,
 2026-10-16 23:55,4735236,2026-10-17T13:45:00-05:00,Troyes vs Lens,Ligue 1,principal,O2.5,Más de 2.5 goles,0.6062,1.62,1.65,no,pendiente,,
