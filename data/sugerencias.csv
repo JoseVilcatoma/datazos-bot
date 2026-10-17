@@ -81,19 +81,19 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-15 20:23,4760810,2026-10-16T15:30:00-05:00,Los Chankas vs ADT,Liga 1,principal,X2,ADT o empate (doble oportunidad),0.5411,1.80,1.85,no,fallo,2,1
 2026-10-16 08:20,4632642,2026-10-16T18:00:00-05:00,Mirassol vs Internacional,Brasileirão,principal,X2,Internacional o empate (doble oportunidad),0.5456,1.80,1.83,no,fallo,2,0
 2026-10-16 08:20,4632642,2026-10-16T18:00:00-05:00,Mirassol vs Internacional,Brasileirão,alternativa,O1.5,Más de 1.5 goles,0.7579,1.25,1.32,no,acierto,2,0
-2026-10-16 23:51,4742036,2026-10-17T06:30:00-05:00,Everton vs Chelsea,Premier,principal,1X,Everton o empate (doble oportunidad),0.5875,1.67,1.70,no,pendiente,,
-2026-10-16 23:52,4750827,2026-10-17T07:00:00-05:00,Espanyol vs Atlético,LaLiga,principal,O1.5,Más de 1.5 goles,0.7659,1.25,1.31,no,pendiente,,
-2026-10-16 23:52,4732671,2026-10-17T08:00:00-05:00,Venezia vs Nápoles,Serie A,principal,U3.5,Menos de 3.5 goles,0.6832,1.44,1.46,no,pendiente,,
-2026-10-16 23:52,4755372,2026-10-17T08:30:00-05:00,Elversberg vs Augsburg,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6608,1.44,1.51,no,pendiente,,
-2026-10-16 23:52,4755373,2026-10-17T08:30:00-05:00,Schalke 04 vs Mainz,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6033,1.62,1.66,no,pendiente,,
-2026-10-16 23:53,4755374,2026-10-17T08:30:00-05:00,Werder Bremen vs SC Paderborn,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6222,1.53,1.61,no,pendiente,,
-2026-10-16 23:53,4755375,2026-10-17T08:30:00-05:00,Hamburgo SV vs Stuttgart,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6809,1.40,1.47,no,pendiente,,
-2026-10-16 23:53,4755377,2026-10-17T08:30:00-05:00,Union Berlin vs Dortmund,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6370,1.50,1.57,no,pendiente,,
-2026-10-16 23:53,4742035,2026-10-17T09:00:00-05:00,Fulham vs Hull City,Premier,principal,1,Fulham gana,0.5343,1.67,1.87,no,pendiente,,
-2026-10-16 23:53,4742038,2026-10-17T09:00:00-05:00,Brentford vs Liverpool,Premier,principal,O2.5,Más de 2.5 goles,0.6030,1.57,1.66,no,pendiente,,
-2026-10-16 23:53,4742043,2026-10-17T09:00:00-05:00,Man City vs Ipswich,Premier,principal,BTTS_SI,Ambos marcan: Sí,0.5855,1.80,1.71,si,pendiente,,
-2026-10-16 23:53,4742043,2026-10-17T09:00:00-05:00,Man City vs Ipswich,Premier,alternativa,O2.5,Más de 2.5 goles,0.6915,1.36,1.45,no,pendiente,,
-2026-10-16 23:54,4750821,2026-10-17T09:15:00-05:00,Villarreal vs Elche CF,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.5960,1.62,1.68,no,pendiente,,
+2026-10-16 23:51,4742036,2026-10-17T06:30:00-05:00,Everton vs Chelsea,Premier,principal,1X,Everton o empate (doble oportunidad),0.5875,1.67,1.70,no,fallo,0,2
+2026-10-16 23:52,4750827,2026-10-17T07:00:00-05:00,Espanyol vs Atlético,LaLiga,principal,O1.5,Más de 1.5 goles,0.7659,1.25,1.31,no,fallo,0,1
+2026-10-16 23:52,4732671,2026-10-17T08:00:00-05:00,Venezia vs Nápoles,Serie A,principal,U3.5,Menos de 3.5 goles,0.6832,1.44,1.46,no,acierto,1,0
+2026-10-16 23:52,4755372,2026-10-17T08:30:00-05:00,Elversberg vs Augsburg,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6608,1.44,1.51,no,acierto,4,3
+2026-10-16 23:52,4755373,2026-10-17T08:30:00-05:00,Schalke 04 vs Mainz,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6033,1.62,1.66,no,fallo,0,1
+2026-10-16 23:53,4755374,2026-10-17T08:30:00-05:00,Werder Bremen vs SC Paderborn,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6222,1.53,1.61,no,acierto,2,2
+2026-10-16 23:53,4755375,2026-10-17T08:30:00-05:00,Hamburgo SV vs Stuttgart,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6809,1.40,1.47,no,fallo,1,0
+2026-10-16 23:53,4755377,2026-10-17T08:30:00-05:00,Union Berlin vs Dortmund,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6370,1.50,1.57,no,fallo,0,0
+2026-10-16 23:53,4742035,2026-10-17T09:00:00-05:00,Fulham vs Hull City,Premier,principal,1,Fulham gana,0.5343,1.67,1.87,no,acierto,1,0
+2026-10-16 23:53,4742038,2026-10-17T09:00:00-05:00,Brentford vs Liverpool,Premier,principal,O2.5,Más de 2.5 goles,0.6030,1.57,1.66,no,acierto,1,2
+2026-10-16 23:53,4742043,2026-10-17T09:00:00-05:00,Man City vs Ipswich,Premier,principal,BTTS_SI,Ambos marcan: Sí,0.5855,1.80,1.71,si,acierto,3,2
+2026-10-16 23:53,4742043,2026-10-17T09:00:00-05:00,Man City vs Ipswich,Premier,alternativa,O2.5,Más de 2.5 goles,0.6915,1.36,1.45,no,acierto,3,2
+2026-10-16 23:54,4750821,2026-10-17T09:15:00-05:00,Villarreal vs Elche CF,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.5960,1.62,1.68,no,fallo,0,0
 2026-10-16 23:54,4735237,2026-10-17T10:15:00-05:00,Estrasburgo vs PSG,Ligue 1,principal,O3.5,Más de 3.5 goles,0.5090,1.91,1.96,no,pendiente,,
 2026-10-16 23:54,4735237,2026-10-17T10:15:00-05:00,Estrasburgo vs PSG,Ligue 1,alternativa,BTTS_SI,Ambos marcan: Sí,0.6473,1.50,1.54,no,pendiente,,
 2026-10-16 23:54,4732680,2026-10-17T11:00:00-05:00,Bologna vs Inter,Serie A,principal,O2.5,Más de 2.5 goles,0.5863,1.67,1.71,no,pendiente,,
