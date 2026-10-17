@@ -107,9 +107,9 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-16 23:55,4735241,2026-10-17T13:45:00-05:00,Lille vs Brest,Ligue 1,principal,O2.5,Más de 2.5 goles,0.5369,1.73,1.86,no,fallo,1,1
 2026-10-16 23:55,4735241,2026-10-17T13:45:00-05:00,Lille vs Brest,Ligue 1,alternativa,1X,Lille o empate (doble oportunidad),0.6975,1.29,1.43,no,acierto,1,1
 2026-10-16 23:55,4750822,2026-10-17T14:00:00-05:00,Valencia vs Athletic,LaLiga,principal,X2,Athletic o empate (doble oportunidad),0.6852,1.36,1.46,no,acierto,0,0
-2026-10-16 23:56,4760805,2026-10-17T15:00:00-05:00,Juan Pablo II vs Sport Boys,Liga 1,principal,O1.5,Más de 1.5 goles,0.7511,1.29,1.33,no,pendiente,,
-2026-10-16 23:56,4632645,2026-10-17T16:00:00-05:00,Botafogo vs Chapecoense,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5349,1.80,1.87,no,pendiente,,
-2026-10-16 23:56,4632645,2026-10-17T16:00:00-05:00,Botafogo vs Chapecoense,Brasileirão,alternativa,1,Botafogo gana,0.6657,1.30,1.50,no,pendiente,,
+2026-10-16 23:56,4760805,2026-10-17T15:00:00-05:00,Juan Pablo II vs Sport Boys,Liga 1,principal,O1.5,Más de 1.5 goles,0.7511,1.29,1.33,no,acierto,2,0
+2026-10-16 23:56,4632645,2026-10-17T16:00:00-05:00,Botafogo vs Chapecoense,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5349,1.80,1.87,no,fallo,1,0
+2026-10-16 23:56,4632645,2026-10-17T16:00:00-05:00,Botafogo vs Chapecoense,Brasileirão,alternativa,1,Botafogo gana,0.6657,1.30,1.50,no,acierto,1,0
 2026-10-16 23:56,4632641,2026-10-17T16:30:00-05:00,Atlético Mineiro vs Coritiba,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7692,1.25,1.30,no,pendiente,,
 2026-10-16 23:56,4632639,2026-10-17T17:30:00-05:00,Paranaense vs Palmeiras,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7450,1.29,1.34,no,pendiente,,
 2026-10-16 23:56,4760808,2026-10-17T18:00:00-05:00,Melgar vs Garcilaso,Liga 1,principal,U3.5,Menos de 3.5 goles,0.6987,1.44,1.43,si,pendiente,,
