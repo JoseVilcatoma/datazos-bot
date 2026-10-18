@@ -133,12 +133,12 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-17 20:05,4735240,2026-10-18T10:15:00-05:00,Lorient vs Monaco,Ligue 1,alternativa,O1.5,Más de 1.5 goles,0.7586,1.29,1.32,no,fallo,1,0
 2026-10-17 20:05,4735243,2026-10-18T10:15:00-05:00,Le Havre vs Auxerre,Ligue 1,principal,O2.5,Más de 2.5 goles,0.5150,1.91,1.94,no,acierto,1,3
 2026-10-17 20:05,4735243,2026-10-18T10:15:00-05:00,Le Havre vs Auxerre,Ligue 1,alternativa,O1.5,Más de 1.5 goles,0.7577,1.29,1.32,no,acierto,1,3
-2026-10-17 20:05,4742033,2026-10-18T10:30:00-05:00,Forest vs Arsenal,Premier,principal,BTTS_NO,Ambos marcan: No,0.5207,1.91,1.92,no,pendiente,,
-2026-10-17 20:05,4742033,2026-10-18T10:30:00-05:00,Forest vs Arsenal,Premier,alternativa,U3.5,Menos de 3.5 goles,0.7347,1.33,1.36,no,pendiente,,
-2026-10-17 20:06,4755376,2026-10-18T10:30:00-05:00,Gladbach vs Hoffenheim,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6984,1.40,1.43,no,pendiente,,
-2026-10-17 20:06,4760803,2026-10-18T11:00:00-05:00,Sporting Cristal vs Comerciantes,Liga 1,principal,O2.5,Más de 2.5 goles,0.6101,1.50,1.64,no,pendiente,,
-2026-10-17 20:06,4760803,2026-10-18T11:00:00-05:00,Sporting Cristal vs Comerciantes,Liga 1,alternativa,1,Sporting Cristal gana,0.7253,1.25,1.38,no,pendiente,,
-2026-10-17 20:06,4750825,2026-10-18T11:30:00-05:00,Málaga CF vs Real Sociedad,LaLiga,principal,O1.5,Más de 1.5 goles,0.7547,1.25,1.33,no,pendiente,,
+2026-10-17 20:05,4742033,2026-10-18T10:30:00-05:00,Forest vs Arsenal,Premier,principal,BTTS_NO,Ambos marcan: No,0.5207,1.91,1.92,no,acierto,0,1
+2026-10-17 20:05,4742033,2026-10-18T10:30:00-05:00,Forest vs Arsenal,Premier,alternativa,U3.5,Menos de 3.5 goles,0.7347,1.33,1.36,no,acierto,0,1
+2026-10-17 20:06,4755376,2026-10-18T10:30:00-05:00,Gladbach vs Hoffenheim,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6984,1.40,1.43,no,acierto,1,2
+2026-10-17 20:06,4760803,2026-10-18T11:00:00-05:00,Sporting Cristal vs Comerciantes,Liga 1,principal,O2.5,Más de 2.5 goles,0.6101,1.50,1.64,no,acierto,4,2
+2026-10-17 20:06,4760803,2026-10-18T11:00:00-05:00,Sporting Cristal vs Comerciantes,Liga 1,alternativa,1,Sporting Cristal gana,0.7253,1.25,1.38,no,acierto,4,2
+2026-10-17 20:06,4750825,2026-10-18T11:30:00-05:00,Málaga CF vs Real Sociedad,LaLiga,principal,O1.5,Más de 1.5 goles,0.7547,1.25,1.33,no,acierto,2,5
 2026-10-17 20:06,4760804,2026-10-18T13:15:00-05:00,FC Cajamarca vs CD Moquegua,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5515,1.73,1.81,no,pendiente,,
 2026-10-17 20:06,4732677,2026-10-18T13:45:00-05:00,Juventus vs Lazio,Serie A,principal,O1.5,Más de 1.5 goles,0.7396,1.30,1.35,no,pendiente,,
 2026-10-17 20:07,4735239,2026-10-18T13:45:00-05:00,Lyon vs Niza,Ligue 1,principal,O2.5,Más de 2.5 goles,0.5616,1.67,1.78,no,pendiente,,
