@@ -139,13 +139,13 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-17 20:06,4760803,2026-10-18T11:00:00-05:00,Sporting Cristal vs Comerciantes,Liga 1,principal,O2.5,Más de 2.5 goles,0.6101,1.50,1.64,no,acierto,4,2
 2026-10-17 20:06,4760803,2026-10-18T11:00:00-05:00,Sporting Cristal vs Comerciantes,Liga 1,alternativa,1,Sporting Cristal gana,0.7253,1.25,1.38,no,acierto,4,2
 2026-10-17 20:06,4750825,2026-10-18T11:30:00-05:00,Málaga CF vs Real Sociedad,LaLiga,principal,O1.5,Más de 1.5 goles,0.7547,1.25,1.33,no,acierto,2,5
-2026-10-17 20:06,4760804,2026-10-18T13:15:00-05:00,FC Cajamarca vs CD Moquegua,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5515,1.73,1.81,no,pendiente,,
-2026-10-17 20:06,4732677,2026-10-18T13:45:00-05:00,Juventus vs Lazio,Serie A,principal,O1.5,Más de 1.5 goles,0.7396,1.30,1.35,no,pendiente,,
-2026-10-17 20:07,4735239,2026-10-18T13:45:00-05:00,Lyon vs Niza,Ligue 1,principal,O2.5,Más de 2.5 goles,0.5616,1.67,1.78,no,pendiente,,
-2026-10-17 20:07,4750823,2026-10-18T14:00:00-05:00,Real Madrid vs Sevilla,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.5438,1.91,1.84,si,pendiente,,
-2026-10-17 20:07,4750823,2026-10-18T14:00:00-05:00,Real Madrid vs Sevilla,LaLiga,alternativa,O2.5,Más de 2.5 goles,0.6633,1.40,1.51,no,pendiente,,
-2026-10-17 20:07,4632640,2026-10-18T14:00:00-05:00,Grêmio vs Cruzeiro,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7628,1.25,1.31,no,pendiente,,
-2026-10-17 20:07,4632646,2026-10-18T14:00:00-05:00,Fluminense vs Santos,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7347,1.30,1.36,no,pendiente,,
+2026-10-17 20:06,4760804,2026-10-18T13:15:00-05:00,FC Cajamarca vs CD Moquegua,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5515,1.73,1.81,no,fallo,0,1
+2026-10-17 20:06,4732677,2026-10-18T13:45:00-05:00,Juventus vs Lazio,Serie A,principal,O1.5,Más de 1.5 goles,0.7396,1.30,1.35,no,acierto,0,3
+2026-10-17 20:07,4735239,2026-10-18T13:45:00-05:00,Lyon vs Niza,Ligue 1,principal,O2.5,Más de 2.5 goles,0.5616,1.67,1.78,no,acierto,2,1
+2026-10-17 20:07,4750823,2026-10-18T14:00:00-05:00,Real Madrid vs Sevilla,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.5438,1.91,1.84,si,acierto,4,1
+2026-10-17 20:07,4750823,2026-10-18T14:00:00-05:00,Real Madrid vs Sevilla,LaLiga,alternativa,O2.5,Más de 2.5 goles,0.6633,1.40,1.51,no,acierto,4,1
+2026-10-17 20:07,4632640,2026-10-18T14:00:00-05:00,Grêmio vs Cruzeiro,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7628,1.25,1.31,no,acierto,2,4
+2026-10-17 20:07,4632646,2026-10-18T14:00:00-05:00,Fluminense vs Santos,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7347,1.30,1.36,no,acierto,1,2
 2026-10-17 20:07,4760806,2026-10-18T15:30:00-05:00,Alianza Atletico vs Universitario,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5431,1.83,1.84,no,pendiente,,
 2026-10-17 20:07,4760806,2026-10-18T15:30:00-05:00,Alianza Atletico vs Universitario,Liga 1,alternativa,O1.5,Más de 1.5 goles,0.7460,1.33,1.34,no,pendiente,,
 2026-10-17 20:08,4632638,2026-10-18T16:30:00-05:00,Bahia vs Flamengo,Brasileirão,principal,X2,Flamengo o empate (doble oportunidad),0.6915,1.33,1.45,no,pendiente,,
