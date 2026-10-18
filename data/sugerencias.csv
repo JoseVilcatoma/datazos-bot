@@ -116,9 +116,9 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-16 23:57,4632644,2026-10-17T19:00:00-05:00,São Paulo vs Vasco Da Gama,Brasileirão,principal,X2,Vasco Da Gama o empate (doble oportunidad),0.5751,1.70,1.74,no,fallo,1,0
 2026-10-16 23:57,4632644,2026-10-17T19:00:00-05:00,São Paulo vs Vasco Da Gama,Brasileirão,alternativa,O1.5,Más de 1.5 goles,0.7106,1.33,1.41,no,fallo,1,0
 2026-10-16 23:57,4760807,2026-10-17T20:30:00-05:00,Alianza Lima vs Grau,Liga 1,principal,O1.5,Más de 1.5 goles,0.7537,1.25,1.33,no,acierto,3,1
-2026-10-17 20:03,4732672,2026-10-18T05:30:00-05:00,Udinese vs Lecce,Serie A,principal,O1.5,Más de 1.5 goles,0.7233,1.33,1.38,no,pendiente,,
-2026-10-17 20:04,4750824,2026-10-18T07:00:00-05:00,Osasuna vs Racing de Santander,LaLiga,principal,O2.5,Más de 2.5 goles,0.5966,1.62,1.68,no,pendiente,,
-2026-10-17 20:04,4750824,2026-10-18T07:00:00-05:00,Osasuna vs Racing de Santander,LaLiga,alternativa,1X,Osasuna o empate (doble oportunidad),0.7137,1.29,1.40,no,pendiente,,
+2026-10-17 20:03,4732672,2026-10-18T05:30:00-05:00,Udinese vs Lecce,Serie A,principal,O1.5,Más de 1.5 goles,0.7233,1.33,1.38,no,acierto,0,3
+2026-10-17 20:04,4750824,2026-10-18T07:00:00-05:00,Osasuna vs Racing de Santander,LaLiga,principal,O2.5,Más de 2.5 goles,0.5966,1.62,1.68,no,fallo,2,0
+2026-10-17 20:04,4750824,2026-10-18T07:00:00-05:00,Osasuna vs Racing de Santander,LaLiga,alternativa,1X,Osasuna o empate (doble oportunidad),0.7137,1.29,1.40,no,acierto,2,0
 2026-10-17 20:04,4742034,2026-10-18T08:00:00-05:00,Leeds vs Man Utd,Premier,principal,O2.5,Más de 2.5 goles,0.5716,1.67,1.75,no,pendiente,,
 2026-10-17 20:04,4742037,2026-10-18T08:00:00-05:00,Brighton vs Palace,Premier,principal,BTTS_SI,Ambos marcan: Sí,0.5778,1.67,1.73,no,pendiente,,
 2026-10-17 20:04,4742039,2026-10-18T08:00:00-05:00,Bournemouth vs Sunderland,Premier,principal,O2.5,Más de 2.5 goles,0.5114,1.91,1.96,no,pendiente,,
