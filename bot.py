@@ -477,9 +477,21 @@ def tareas_periodicas(estado):
     hoy = ahora.date()
     calificar_pendientes()
     reportar_terminados()
+    # Red de seguridad: si anoche no se mandó lo de HOY (el bot no corrió a las 20:00),
+    # se manda ahora lo que todavía no empieza.
+    if estado.get("dia_cubierto") != hoy.isoformat() and estado.get("ultimo_diario") != (hoy - timedelta(days=1)).isoformat():
+        faltan = partidos_del_dia(hoy, excluir=set(leer_json(config.ARCHIVO_ENVIADOS, {})))
+        if faltan:
+            print("Recuperando datazos de hoy que no se enviaron anoche")
+            enviar("⚠️ Anoche no se pudieron mandar los datazos de hoy. "
+                   "Te mando los partidos que aún no empiezan.")
+            enviar_dia(hoy, "hoy")
+        estado["dia_cubierto"] = hoy.isoformat()
+        guardar_json(config.ARCHIVO_ESTADO, estado)
     if ahora.hour >= config.HORA_ENVIO_DIARIO and estado.get("ultimo_diario") != hoy.isoformat():
         enviar_dia(hoy + timedelta(days=1), "mañana")
         estado["ultimo_diario"] = hoy.isoformat()
+        estado["dia_cubierto"] = (hoy + timedelta(days=1)).isoformat()
     limpiar_enviados()
     guardar_json(config.ARCHIVO_ESTADO, estado)
 
