@@ -158,4 +158,4 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-18 23:21,4732674,2026-10-19T13:45:00-05:00,Parma vs Torino,Serie A,alternativa,X2,Torino o empate (doble oportunidad),0.6935,1.36,1.44,no,acierto,0,3
 2026-10-18 23:21,4742032,2026-10-19T14:00:00-05:00,Tottenham vs Coventry,Premier,principal,BTTS_SI,Ambos marcan: Sí,0.5783,1.70,1.73,no,acierto,3,1
 2026-10-18 23:21,4750826,2026-10-19T14:00:00-05:00,Getafe vs Rayo,LaLiga,principal,O1.5,Más de 1.5 goles,0.6284,1.53,1.59,no,acierto,1,1
-2026-10-18 23:21,4632643,2026-10-19T18:00:00-05:00,Corinthians vs Vitória,Brasileirão,principal,O1.5,Más de 1.5 goles,0.6996,1.36,1.43,no,pendiente,,
+2026-10-18 23:21,4632643,2026-10-19T18:00:00-05:00,Corinthians vs Vitória,Brasileirão,principal,O1.5,Más de 1.5 goles,0.6996,1.36,1.43,no,acierto,1,1
