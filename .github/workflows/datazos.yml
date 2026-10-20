@@ -2,17 +2,18 @@ name: Datazos
 
 on:
   schedule:
-    - cron: "*/15 * * * *"     # cada 15 min: lee comandos, califica sugerencias y a las 20:00 Lima manda los de mañana
+    - cron: "7 * * * *"        # respaldo: si la cadena se corta, GitHub la vuelve a prender
   workflow_dispatch:
     inputs:
       modo:
         description: "Qué hacer"
         type: choice
-        default: auto
-        options: [auto, manana, hoy, resumen, backtest]
+        default: bucle
+        options: [bucle, auto, manana, hoy, resumen, backtest]
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: datazos
@@ -21,7 +22,7 @@ concurrency:
 jobs:
   correr:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
 
@@ -44,7 +45,9 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          MODO="${{ github.event.inputs.modo || 'auto' }}"
+          git config user.name "datazos-bot"
+          git config user.email "datazos-bot@users.noreply.github.com"
+          MODO="${{ github.event.inputs.modo || 'bucle' }}"
           if [ "$MODO" = "backtest" ]; then
             python backtest.py --telegram
           else
@@ -52,14 +55,19 @@ jobs:
           fi
 
       - name: Guardar estado (commit y push)
+        if: always()
         run: |
-          git config user.name "datazos-bot"
-          git config user.email "datazos-bot@users.noreply.github.com"
           git add data/
           if git diff --cached --quiet; then
             echo "Sin cambios en data/"
           else
             git commit -m "Actualizar estado de datazos"
-            git pull --rebase origin ${{ github.ref_name }} || true
-            git push
+            git pull --rebase -X theirs origin ${{ github.ref_name }} || true
+            git push || true
           fi
+
+      - name: Relanzar (queda escuchando 24/7)
+        if: ${{ !cancelled() && (github.event.inputs.modo || 'bucle') == 'bucle' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run datazos.yml --ref ${{ github.ref_name }} -f modo=bucle
