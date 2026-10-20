@@ -76,7 +76,7 @@ def tg(metodo, **kw):
     url = f"https://api.telegram.org/bot{TOKEN}/{metodo}"
     for intento in range(3):
         try:
-            r = requests.post(url, json=kw, timeout=30)
+            r = requests.post(url, json=kw, timeout=30 + int(kw.get("timeout", 0) or 0))
             data = r.json()
             if data.get("ok"):
                 return data.get("result")
@@ -363,12 +363,14 @@ def texto_resumen():
 AYUDA = ("🤖 <b>Comandos</b>\n/datazos hoy — datazos de hoy\n/datazos mañana — datazos de mañana\n"
          "/resultados — resultados de partidos recién terminados\n"
          "/resumen — aciertos vs probabilidad esperada\n"
-         "<i>El bot revisa los comandos cada ~15 min (GitHub Actions), no al instante.</i>")
+         "<i>El bot responde en segundos mientras está escuchando; entre una corrida y la siguiente "
+         "puede haber ~1 min de pausa.</i>")
 
 
-def procesar_comandos(estado):
+def procesar_comandos(estado, espera=0):
+    """Lee comandos de Telegram. Con espera>0 se queda escuchando hasta 'espera' segundos."""
     offset = estado.get("offset", 0)
-    updates = tg("getUpdates", offset=offset, timeout=0) or []
+    updates = tg("getUpdates", offset=offset, timeout=espera) or []
     for u in updates:
         estado["offset"] = u["update_id"] + 1
         msg = u.get("message") or u.get("channel_post") or {}
@@ -438,7 +440,8 @@ def probar(game_id):
 # =====================================================================
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--modo", default="auto", choices=["auto", "hoy", "manana", "resumen"])
+    ap.add_argument("--modo", default="auto", choices=["auto", "hoy", "manana", "resumen", "bucle"])
+    ap.add_argument("--minutos", type=int, default=340, help="duración del modo bucle")
     ap.add_argument("--probar", type=int, help="id de partido de 365Scores")
     args = ap.parse_args()
 
@@ -459,16 +462,71 @@ def main():
     elif args.modo == "resumen":
         calificar_pendientes()
         enviar(texto_resumen())
+    elif args.modo == "bucle":
+        bucle(estado, args.minutos)
     else:
         procesar_comandos(estado)
-        calificar_pendientes()
-        reportar_terminados()
-        if ahora.hour >= config.HORA_ENVIO_DIARIO and estado.get("ultimo_diario") != hoy.isoformat():
-            enviar_dia(hoy + timedelta(days=1), "mañana")
-            estado["ultimo_diario"] = hoy.isoformat()
-        limpiar_enviados()
+        tareas_periodicas(estado)
 
     guardar_json(config.ARCHIVO_ESTADO, estado)
+
+
+def tareas_periodicas(estado):
+    """Califica sugerencias, manda resultados y, desde las 20:00, los datazos de mañana."""
+    ahora = datetime.now(TZ)
+    hoy = ahora.date()
+    calificar_pendientes()
+    reportar_terminados()
+    if ahora.hour >= config.HORA_ENVIO_DIARIO and estado.get("ultimo_diario") != hoy.isoformat():
+        enviar_dia(hoy + timedelta(days=1), "mañana")
+        estado["ultimo_diario"] = hoy.isoformat()
+    limpiar_enviados()
+    guardar_json(config.ARCHIVO_ESTADO, estado)
+
+
+def guardar_en_github():
+    """Hace commit y push de data/ (solo dentro de GitHub Actions)."""
+    if not os.environ.get("GITHUB_ACTIONS"):
+        return
+    import subprocess
+
+    def git(*a):
+        return subprocess.run(["git", *a], capture_output=True, text=True)
+
+    git("add", "data/")
+    if git("diff", "--cached", "--quiet").returncode == 0:
+        return
+    git("commit", "-m", "Actualizar estado de datazos")
+    rama = os.environ.get("GITHUB_REF_NAME", "main")
+    for _ in range(3):
+        git("pull", "--rebase", "-X", "theirs", "origin", rama)
+        if git("push", "origin", f"HEAD:{rama}").returncode == 0:
+            return
+        time.sleep(5)
+    print("  ! no se pudo hacer push del estado")
+
+
+def bucle(estado, minutos):
+    """Se queda escuchando Telegram (responde en segundos) y cada 15 min hace las tareas."""
+    fin = time.time() + minutos * 60
+    proxima_tarea = 0
+    print(f"Modo bucle por {minutos} min")
+    while time.time() < fin:
+        if time.time() >= proxima_tarea:
+            try:
+                tareas_periodicas(estado)
+                guardar_en_github()
+            except Exception as e:  # noqa: BLE001
+                print("  ! tareas:", e)
+            proxima_tarea = time.time() + 15 * 60
+        try:
+            espera = int(max(1, min(25, fin - time.time())))
+            procesar_comandos(estado, espera=espera)
+        except Exception as e:  # noqa: BLE001
+            print("  ! comandos:", e)
+            time.sleep(10)
+    tareas_periodicas(estado)
+    guardar_en_github()
 
 
 if __name__ == "__main__":
