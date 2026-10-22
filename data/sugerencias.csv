@@ -203,25 +203,25 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-21 20:12,4828921,2026-10-22T11:45:00-05:00,FC Nordsjaelland vs CSKA Sofia,Conference,principal,BTTS_SI,Ambos marcan: Sí,0.5605,1.73,1.78,no,acierto,2,2
 2026-10-21 20:12,4828922,2026-10-22T11:45:00-05:00,FC Iberia 1999 vs Mjällby AIF,Conference,principal,1X,FC Iberia 1999 o empate (doble oportunidad),0.6308,1.62,1.59,si,acierto,1,1
 2026-10-21 20:12,4828922,2026-10-22T11:45:00-05:00,FC Iberia 1999 vs Mjällby AIF,Conference,alternativa,O1.5,Más de 1.5 goles,0.7365,1.29,1.36,no,acierto,1,1
-2026-10-21 20:12,4828711,2026-10-22T14:00:00-05:00,Viktoria Plzen vs Levski Sofia,Europa League,principal,O2.5,Más de 2.5 goles,0.5529,1.73,1.81,no,pendiente,,
-2026-10-21 20:12,4828712,2026-10-22T14:00:00-05:00,Lillestrom vs Real Sociedad,Europa League,principal,BTTS_SI,Ambos marcan: Sí,0.5788,1.80,1.73,si,pendiente,,
-2026-10-21 20:12,4828713,2026-10-22T14:00:00-05:00,Bournemouth vs AC Milan,Europa League,principal,U3.5,Menos de 3.5 goles,0.6815,1.44,1.47,no,pendiente,,
-2026-10-21 20:13,4828714,2026-10-22T14:00:00-05:00,Celje vs Red Bull Salzburgo,Europa League,principal,U3.5,Menos de 3.5 goles,0.6677,1.57,1.50,si,pendiente,,
-2026-10-21 20:13,4828715,2026-10-22T14:00:00-05:00,Jagiellonia vs Anderlecht,Europa League,principal,O2.5,Más de 2.5 goles,0.5365,1.73,1.86,no,pendiente,,
-2026-10-21 20:13,4828716,2026-10-22T14:00:00-05:00,Besiktas vs Palace,Europa League,principal,O2.5,Más de 2.5 goles,0.6393,1.50,1.56,no,pendiente,,
-2026-10-21 20:13,4828717,2026-10-22T14:00:00-05:00,Hoffenheim vs Lyon,Europa League,principal,O2.5,Más de 2.5 goles,0.6255,1.50,1.60,no,pendiente,,
-2026-10-21 20:13,4828718,2026-10-22T14:00:00-05:00,Omonia vs Benfica,Europa League,principal,AH_L+1.5,Omonia hándicap +1.5 (no pierde por 2 o más),0.6124,1.82,1.63,si,pendiente,,
-2026-10-21 20:13,4828719,2026-10-22T14:00:00-05:00,Olympiacos vs Sparta Praga,Europa League,principal,U3.5,Menos de 3.5 goles,0.7025,1.40,1.42,no,pendiente,,
-2026-10-21 20:13,4828720,2026-10-22T14:00:00-05:00,Celtic vs Celta,Europa League,principal,1X,Celtic o empate (doble oportunidad),0.6531,1.50,1.53,no,pendiente,,
-2026-10-21 20:14,4828906,2026-10-22T14:00:00-05:00,Braga vs Gent,Conference,principal,O1.5,Más de 1.5 goles,0.7068,1.36,1.41,no,pendiente,,
-2026-10-21 20:14,4828907,2026-10-22T14:00:00-05:00,Lincoln Red Imps vs Twente,Conference,principal,O2.5,Más de 2.5 goles,0.6252,1.44,1.60,no,pendiente,,
-2026-10-21 20:14,4828908,2026-10-22T14:00:00-05:00,Borac Banjaluka vs KuPS,Conference,principal,1,Borac Banjaluka gana,0.5313,1.75,1.88,no,pendiente,,
-2026-10-21 20:14,4828908,2026-10-22T14:00:00-05:00,Borac Banjaluka vs KuPS,Conference,alternativa,O1.5,Más de 1.5 goles,0.7183,1.29,1.39,no,pendiente,,
-2026-10-21 20:14,4828909,2026-10-22T14:00:00-05:00,FC Thun vs Hajduk Split,Conference,principal,O2.5,Más de 2.5 goles,0.6088,1.60,1.64,no,pendiente,,
-2026-10-21 20:14,4828909,2026-10-22T14:00:00-05:00,FC Thun vs Hajduk Split,Conference,alternativa,X2,Hajduk Split o empate (doble oportunidad),0.6815,1.40,1.47,no,pendiente,,
-2026-10-21 20:14,4828910,2026-10-22T14:00:00-05:00,FC Midtjylland vs STVV,Conference,principal,O2.5,Más de 2.5 goles,0.6232,1.57,1.60,no,pendiente,,
-2026-10-21 20:14,4828911,2026-10-22T14:00:00-05:00,Monaco vs Friburgo,Conference,principal,X2,Friburgo o empate (doble oportunidad),0.5978,1.67,1.67,no,pendiente,,
-2026-10-21 20:15,4828912,2026-10-22T14:00:00-05:00,Aarhus vs KF Egnatia,Conference,principal,BTTS_SI,Ambos marcan: Sí,0.5635,1.83,1.77,si,pendiente,,
-2026-10-21 20:15,4828913,2026-10-22T14:00:00-05:00,Ajax vs Atalanta,Conference,principal,O2.5,Más de 2.5 goles,0.6308,1.53,1.59,no,pendiente,,
-2026-10-21 20:15,4828913,2026-10-22T14:00:00-05:00,Ajax vs Atalanta,Conference,alternativa,1X,Ajax o empate (doble oportunidad),0.7043,1.36,1.42,no,pendiente,,
+2026-10-21 20:12,4828711,2026-10-22T14:00:00-05:00,Viktoria Plzen vs Levski Sofia,Europa League,principal,O2.5,Más de 2.5 goles,0.5529,1.73,1.81,no,acierto,1,2
+2026-10-21 20:12,4828712,2026-10-22T14:00:00-05:00,Lillestrom vs Real Sociedad,Europa League,principal,BTTS_SI,Ambos marcan: Sí,0.5788,1.80,1.73,si,fallo,0,6
+2026-10-21 20:12,4828713,2026-10-22T14:00:00-05:00,Bournemouth vs AC Milan,Europa League,principal,U3.5,Menos de 3.5 goles,0.6815,1.44,1.47,no,acierto,3,0
+2026-10-21 20:13,4828714,2026-10-22T14:00:00-05:00,Celje vs Red Bull Salzburgo,Europa League,principal,U3.5,Menos de 3.5 goles,0.6677,1.57,1.50,si,fallo,2,2
+2026-10-21 20:13,4828715,2026-10-22T14:00:00-05:00,Jagiellonia vs Anderlecht,Europa League,principal,O2.5,Más de 2.5 goles,0.5365,1.73,1.86,no,acierto,0,3
+2026-10-21 20:13,4828716,2026-10-22T14:00:00-05:00,Besiktas vs Palace,Europa League,principal,O2.5,Más de 2.5 goles,0.6393,1.50,1.56,no,acierto,2,2
+2026-10-21 20:13,4828717,2026-10-22T14:00:00-05:00,Hoffenheim vs Lyon,Europa League,principal,O2.5,Más de 2.5 goles,0.6255,1.50,1.60,no,acierto,3,0
+2026-10-21 20:13,4828718,2026-10-22T14:00:00-05:00,Omonia vs Benfica,Europa League,principal,AH_L+1.5,Omonia hándicap +1.5 (no pierde por 2 o más),0.6124,1.82,1.63,si,fallo,1,4
+2026-10-21 20:13,4828719,2026-10-22T14:00:00-05:00,Olympiacos vs Sparta Praga,Europa League,principal,U3.5,Menos de 3.5 goles,0.7025,1.40,1.42,no,acierto,1,0
+2026-10-21 20:13,4828720,2026-10-22T14:00:00-05:00,Celtic vs Celta,Europa League,principal,1X,Celtic o empate (doble oportunidad),0.6531,1.50,1.53,no,fallo,1,2
+2026-10-21 20:14,4828906,2026-10-22T14:00:00-05:00,Braga vs Gent,Conference,principal,O1.5,Más de 1.5 goles,0.7068,1.36,1.41,no,acierto,2,0
+2026-10-21 20:14,4828907,2026-10-22T14:00:00-05:00,Lincoln Red Imps vs Twente,Conference,principal,O2.5,Más de 2.5 goles,0.6252,1.44,1.60,no,acierto,1,4
+2026-10-21 20:14,4828908,2026-10-22T14:00:00-05:00,Borac Banjaluka vs KuPS,Conference,principal,1,Borac Banjaluka gana,0.5313,1.75,1.88,no,acierto,2,0
+2026-10-21 20:14,4828908,2026-10-22T14:00:00-05:00,Borac Banjaluka vs KuPS,Conference,alternativa,O1.5,Más de 1.5 goles,0.7183,1.29,1.39,no,acierto,2,0
+2026-10-21 20:14,4828909,2026-10-22T14:00:00-05:00,FC Thun vs Hajduk Split,Conference,principal,O2.5,Más de 2.5 goles,0.6088,1.60,1.64,no,fallo,0,1
+2026-10-21 20:14,4828909,2026-10-22T14:00:00-05:00,FC Thun vs Hajduk Split,Conference,alternativa,X2,Hajduk Split o empate (doble oportunidad),0.6815,1.40,1.47,no,acierto,0,1
+2026-10-21 20:14,4828910,2026-10-22T14:00:00-05:00,FC Midtjylland vs STVV,Conference,principal,O2.5,Más de 2.5 goles,0.6232,1.57,1.60,no,fallo,0,1
+2026-10-21 20:14,4828911,2026-10-22T14:00:00-05:00,Monaco vs Friburgo,Conference,principal,X2,Friburgo o empate (doble oportunidad),0.5978,1.67,1.67,no,fallo,3,0
+2026-10-21 20:15,4828912,2026-10-22T14:00:00-05:00,Aarhus vs KF Egnatia,Conference,principal,BTTS_SI,Ambos marcan: Sí,0.5635,1.83,1.77,si,acierto,1,1
+2026-10-21 20:15,4828913,2026-10-22T14:00:00-05:00,Ajax vs Atalanta,Conference,principal,O2.5,Más de 2.5 goles,0.6308,1.53,1.59,no,fallo,2,0
+2026-10-21 20:15,4828913,2026-10-22T14:00:00-05:00,Ajax vs Atalanta,Conference,alternativa,1X,Ajax o empate (doble oportunidad),0.7043,1.36,1.42,no,acierto,2,0
 2026-10-21 20:15,4858848,2026-10-22T19:30:00-05:00,Flamengo vs Estudiantes,Libertadores,principal,O1.5,Más de 1.5 goles,0.6974,1.33,1.43,no,pendiente,,
