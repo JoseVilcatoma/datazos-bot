@@ -226,7 +226,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-21 20:15,4828913,2026-10-22T14:00:00-05:00,Ajax vs Atalanta,Conference,alternativa,1X,Ajax o empate (doble oportunidad),0.7043,1.36,1.42,no,acierto,2,0
 2026-10-21 20:15,4858848,2026-10-22T19:30:00-05:00,Flamengo vs Estudiantes,Libertadores,principal,O1.5,Más de 1.5 goles,0.6974,1.33,1.43,no,fallo,0,0
 2026-10-22 20:06,4760799,2026-10-23T13:00:00-05:00,UTC Cajamarca vs Melgar,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5296,1.80,1.89,no,acierto,1,2
-2026-10-22 20:06,4755369,2026-10-23T13:30:00-05:00,Stuttgart vs Gladbach,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6466,1.44,1.55,no,pendiente,,
+2026-10-22 20:06,4755369,2026-10-23T13:30:00-05:00,Stuttgart vs Gladbach,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6466,1.44,1.55,no,acierto,2,3
 2026-10-22 20:06,4732662,2026-10-23T13:45:00-05:00,Torino vs Monza,Serie A,principal,O1.5,Más de 1.5 goles,0.7457,1.29,1.34,no,pendiente,,
 2026-10-22 20:06,4735233,2026-10-23T13:45:00-05:00,Brest vs Niza,Ligue 1,principal,O2.5,Más de 2.5 goles,0.5457,1.73,1.83,no,pendiente,,
 2026-10-22 20:06,4735233,2026-10-23T13:45:00-05:00,Brest vs Niza,Ligue 1,alternativa,1X,Brest o empate (doble oportunidad),0.6842,1.36,1.46,no,pendiente,,
