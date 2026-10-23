@@ -233,7 +233,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-22 20:06,4742024,2026-10-23T14:00:00-05:00,Ipswich vs Forest,Premier,principal,O2.5,Más de 2.5 goles,0.5597,1.73,1.79,no,fallo,1,1
 2026-10-22 20:06,4742024,2026-10-23T14:00:00-05:00,Ipswich vs Forest,Premier,alternativa,X2,Forest o empate (doble oportunidad),0.6766,1.36,1.48,no,acierto,1,1
 2026-10-22 20:06,4750819,2026-10-23T14:00:00-05:00,Alavés vs Málaga CF,LaLiga,principal,1,Alavés gana,0.5478,1.65,1.83,no,fallo,1,1
-2026-10-22 20:07,4760800,2026-10-23T15:15:00-05:00,Grau vs ADT,Liga 1,principal,O2.5,Más de 2.5 goles,0.5094,1.85,1.96,no,pendiente,,
-2026-10-22 20:07,4760800,2026-10-23T15:15:00-05:00,Grau vs ADT,Liga 1,alternativa,O1.5,Más de 1.5 goles,0.7536,1.25,1.33,no,pendiente,,
+2026-10-22 20:07,4760800,2026-10-23T15:15:00-05:00,Grau vs ADT,Liga 1,principal,O2.5,Más de 2.5 goles,0.5094,1.85,1.96,no,fallo,1,1
+2026-10-22 20:07,4760800,2026-10-23T15:15:00-05:00,Grau vs ADT,Liga 1,alternativa,O1.5,Más de 1.5 goles,0.7536,1.25,1.33,no,acierto,1,1
 2026-10-22 20:07,4632631,2026-10-23T18:00:00-05:00,Cruzeiro vs Remo,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5460,1.75,1.83,no,pendiente,,
 2026-10-22 20:07,4632631,2026-10-23T18:00:00-05:00,Cruzeiro vs Remo,Brasileirão,alternativa,1,Cruzeiro gana,0.6363,1.35,1.57,no,pendiente,,
