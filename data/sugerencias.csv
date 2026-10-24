@@ -253,11 +253,11 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-23 20:04,4750816,2026-10-24T09:15:00-05:00,Racing de Santander vs Espanyol,LaLiga,principal,O2.5,Más de 2.5 goles,0.5841,1.67,1.71,no,acierto,2,1
 2026-10-23 20:04,4732663,2026-10-24T11:00:00-05:00,Nápoles vs AS Roma,Serie A,principal,O2.5,Más de 2.5 goles,0.5035,1.91,1.99,no,acierto,3,3
 2026-10-23 20:04,4732663,2026-10-24T11:00:00-05:00,Nápoles vs AS Roma,Serie A,alternativa,O1.5,Más de 1.5 goles,0.7492,1.25,1.33,no,acierto,3,3
-2026-10-23 20:05,4742028,2026-10-24T11:30:00-05:00,Chelsea vs Tottenham,Premier,principal,1,Chelsea gana,0.5197,1.80,1.92,no,pendiente,,
-2026-10-23 20:05,4750812,2026-10-24T11:30:00-05:00,Valencia vs Villarreal,LaLiga,principal,O2.5,Más de 2.5 goles,0.5478,1.73,1.83,no,pendiente,,
-2026-10-23 20:05,4750812,2026-10-24T11:30:00-05:00,Valencia vs Villarreal,LaLiga,alternativa,X2,Villarreal o empate (doble oportunidad),0.6872,1.36,1.46,no,pendiente,,
-2026-10-23 20:05,4755371,2026-10-24T11:30:00-05:00,Dortmund vs Eintracht,Bundesliga,principal,AH_V+1.5,Eintracht hándicap +1.5 (no pierde por 2 o más),0.6185,1.65,1.62,si,pendiente,,
-2026-10-23 20:05,4755371,2026-10-24T11:30:00-05:00,Dortmund vs Eintracht,Bundesliga,alternativa,O2.5,Más de 2.5 goles,0.7102,1.36,1.41,no,pendiente,,
+2026-10-23 20:05,4742028,2026-10-24T11:30:00-05:00,Chelsea vs Tottenham,Premier,principal,1,Chelsea gana,0.5197,1.80,1.92,no,fallo,0,2
+2026-10-23 20:05,4750812,2026-10-24T11:30:00-05:00,Valencia vs Villarreal,LaLiga,principal,O2.5,Más de 2.5 goles,0.5478,1.73,1.83,no,acierto,1,2
+2026-10-23 20:05,4750812,2026-10-24T11:30:00-05:00,Valencia vs Villarreal,LaLiga,alternativa,X2,Villarreal o empate (doble oportunidad),0.6872,1.36,1.46,no,acierto,1,2
+2026-10-23 20:05,4755371,2026-10-24T11:30:00-05:00,Dortmund vs Eintracht,Bundesliga,principal,AH_V+1.5,Eintracht hándicap +1.5 (no pierde por 2 o más),0.6185,1.65,1.62,si,acierto,1,0
+2026-10-23 20:05,4755371,2026-10-24T11:30:00-05:00,Dortmund vs Eintracht,Bundesliga,alternativa,O2.5,Más de 2.5 goles,0.7102,1.36,1.41,no,fallo,1,0
 2026-10-23 20:05,4760801,2026-10-24T12:45:00-05:00,Huancayo vs Alianza Atletico,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5932,1.67,1.69,no,pendiente,,
 2026-10-23 20:05,4732665,2026-10-24T13:45:00-05:00,Lazio vs Parma,Serie A,principal,1,Lazio gana,0.6369,1.40,1.57,no,pendiente,,
 2026-10-23 20:05,4735232,2026-10-24T13:45:00-05:00,Lens vs Paris FC,Ligue 1,principal,O2.5,Más de 2.5 goles,0.5620,1.67,1.78,no,pendiente,,
