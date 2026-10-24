@@ -259,8 +259,8 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-23 20:05,4755371,2026-10-24T11:30:00-05:00,Dortmund vs Eintracht,Bundesliga,principal,AH_V+1.5,Eintracht hándicap +1.5 (no pierde por 2 o más),0.6185,1.65,1.62,si,acierto,1,0
 2026-10-23 20:05,4755371,2026-10-24T11:30:00-05:00,Dortmund vs Eintracht,Bundesliga,alternativa,O2.5,Más de 2.5 goles,0.7102,1.36,1.41,no,fallo,1,0
 2026-10-23 20:05,4760801,2026-10-24T12:45:00-05:00,Huancayo vs Alianza Atletico,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5932,1.67,1.69,no,acierto,4,1
-2026-10-23 20:05,4732665,2026-10-24T13:45:00-05:00,Lazio vs Parma,Serie A,principal,1,Lazio gana,0.6369,1.40,1.57,no,pendiente,,
-2026-10-23 20:05,4735232,2026-10-24T13:45:00-05:00,Lens vs Paris FC,Ligue 1,principal,O2.5,Más de 2.5 goles,0.5620,1.67,1.78,no,pendiente,,
+2026-10-23 20:05,4732665,2026-10-24T13:45:00-05:00,Lazio vs Parma,Serie A,principal,1,Lazio gana,0.6369,1.40,1.57,no,acierto,2,1
+2026-10-23 20:05,4735232,2026-10-24T13:45:00-05:00,Lens vs Paris FC,Ligue 1,principal,O2.5,Más de 2.5 goles,0.5620,1.67,1.78,no,acierto,2,1
 2026-10-23 20:05,4750818,2026-10-24T14:00:00-05:00,Atlético vs Deportivo,LaLiga,principal,O2.5,Más de 2.5 goles,0.5894,1.53,1.70,no,pendiente,,
 2026-10-23 20:05,4750818,2026-10-24T14:00:00-05:00,Atlético vs Deportivo,LaLiga,alternativa,1,Atlético gana,0.6900,1.27,1.45,no,pendiente,,
 2026-10-23 20:05,4632628,2026-10-24T14:30:00-05:00,Vitória vs Paranaense,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7407,1.29,1.35,no,pendiente,,
