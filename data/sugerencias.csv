@@ -274,8 +274,8 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-23 20:06,4632634,2026-10-24T19:00:00-05:00,Santos vs Bahia,Brasileirão,principal,O2.5,Más de 2.5 goles,0.5438,1.75,1.84,no,fallo,1,1
 2026-10-23 20:06,4632634,2026-10-24T19:00:00-05:00,Santos vs Bahia,Brasileirão,alternativa,1X,Santos o empate (doble oportunidad),0.7178,1.25,1.39,no,acierto,1,1
 2026-10-23 20:07,4760802,2026-10-24T19:30:00-05:00,Universitario vs Juan Pablo II,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5602,1.83,1.79,si,fallo,3,0
-2026-10-24 20:05,4732666,2026-10-25T06:30:00-05:00,Inter vs Fiorentina,Serie A,principal,BTTS_SI,Ambos marcan: Sí,0.6063,1.67,1.65,si,pendiente,,
-2026-10-24 20:05,4732666,2026-10-25T06:30:00-05:00,Inter vs Fiorentina,Serie A,alternativa,O2.5,Más de 2.5 goles,0.6838,1.40,1.46,no,pendiente,,
+2026-10-24 20:05,4732666,2026-10-25T06:30:00-05:00,Inter vs Fiorentina,Serie A,principal,BTTS_SI,Ambos marcan: Sí,0.6063,1.67,1.65,si,acierto,2,1
+2026-10-24 20:05,4732666,2026-10-25T06:30:00-05:00,Inter vs Fiorentina,Serie A,alternativa,O2.5,Más de 2.5 goles,0.6838,1.40,1.46,no,acierto,2,1
 2026-10-24 20:05,4750820,2026-10-25T08:00:00-05:00,Athletic vs Getafe,LaLiga,principal,O1.5,Más de 1.5 goles,0.6754,1.40,1.48,no,pendiente,,
 2026-10-24 20:05,4742022,2026-10-25T09:00:00-05:00,Man Utd vs Bournemouth,Premier,principal,O2.5,Más de 2.5 goles,0.5765,1.67,1.73,no,pendiente,,
 2026-10-24 20:05,4742023,2026-10-25T09:00:00-05:00,Liverpool vs Brighton,Premier,principal,X2,Brighton o empate (doble oportunidad),0.5749,1.70,1.74,no,pendiente,,
