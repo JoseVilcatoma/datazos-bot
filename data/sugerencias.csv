@@ -277,13 +277,13 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-24 20:05,4732666,2026-10-25T06:30:00-05:00,Inter vs Fiorentina,Serie A,principal,BTTS_SI,Ambos marcan: Sí,0.6063,1.67,1.65,si,acierto,2,1
 2026-10-24 20:05,4732666,2026-10-25T06:30:00-05:00,Inter vs Fiorentina,Serie A,alternativa,O2.5,Más de 2.5 goles,0.6838,1.40,1.46,no,acierto,2,1
 2026-10-24 20:05,4750820,2026-10-25T08:00:00-05:00,Athletic vs Getafe,LaLiga,principal,O1.5,Más de 1.5 goles,0.6754,1.40,1.48,no,acierto,4,0
-2026-10-24 20:05,4742022,2026-10-25T09:00:00-05:00,Man Utd vs Bournemouth,Premier,principal,O2.5,Más de 2.5 goles,0.5765,1.67,1.73,no,pendiente,,
-2026-10-24 20:05,4742023,2026-10-25T09:00:00-05:00,Liverpool vs Brighton,Premier,principal,X2,Brighton o empate (doble oportunidad),0.5749,1.70,1.74,no,pendiente,,
-2026-10-24 20:05,4742025,2026-10-25T09:00:00-05:00,Hull City vs Brentford,Premier,principal,BTTS_SI,Ambos marcan: Sí,0.5531,1.67,1.81,no,pendiente,,
-2026-10-24 20:06,4742026,2026-10-25T09:00:00-05:00,Palace vs Newcastle Utd,Premier,principal,O2.5,Más de 2.5 goles,0.5864,1.57,1.71,no,pendiente,,
-2026-10-24 20:06,4732667,2026-10-25T09:00:00-05:00,Genoa vs Venezia,Serie A,principal,O1.5,Más de 1.5 goles,0.7253,1.30,1.38,no,pendiente,,
-2026-10-24 20:06,4732670,2026-10-25T09:00:00-05:00,Atalanta vs Frosinone,Serie A,principal,O2.5,Más de 2.5 goles,0.6602,1.40,1.51,no,pendiente,,
-2026-10-24 20:06,4735230,2026-10-25T09:00:00-05:00,Monaco vs Lille,Ligue 1,principal,X2,Lille o empate (doble oportunidad),0.5281,1.80,1.89,no,pendiente,,
+2026-10-24 20:05,4742022,2026-10-25T09:00:00-05:00,Man Utd vs Bournemouth,Premier,principal,O2.5,Más de 2.5 goles,0.5765,1.67,1.73,no,acierto,0,3
+2026-10-24 20:05,4742023,2026-10-25T09:00:00-05:00,Liverpool vs Brighton,Premier,principal,X2,Brighton o empate (doble oportunidad),0.5749,1.70,1.74,no,fallo,2,0
+2026-10-24 20:05,4742025,2026-10-25T09:00:00-05:00,Hull City vs Brentford,Premier,principal,BTTS_SI,Ambos marcan: Sí,0.5531,1.67,1.81,no,acierto,1,1
+2026-10-24 20:06,4742026,2026-10-25T09:00:00-05:00,Palace vs Newcastle Utd,Premier,principal,O2.5,Más de 2.5 goles,0.5864,1.57,1.71,no,fallo,0,2
+2026-10-24 20:06,4732667,2026-10-25T09:00:00-05:00,Genoa vs Venezia,Serie A,principal,O1.5,Más de 1.5 goles,0.7253,1.30,1.38,no,fallo,1,0
+2026-10-24 20:06,4732670,2026-10-25T09:00:00-05:00,Atalanta vs Frosinone,Serie A,principal,O2.5,Más de 2.5 goles,0.6602,1.40,1.51,no,acierto,4,4
+2026-10-24 20:06,4735230,2026-10-25T09:00:00-05:00,Monaco vs Lille,Ligue 1,principal,X2,Lille o empate (doble oportunidad),0.5281,1.80,1.89,no,acierto,1,1
 2026-10-24 20:06,4755368,2026-10-25T09:30:00-05:00,Hoffenheim vs Leverkusen,Bundesliga,principal,X2,Leverkusen o empate (doble oportunidad),0.6761,1.40,1.48,no,pendiente,,
 2026-10-24 20:06,4750817,2026-10-25T10:15:00-05:00,Celta vs Betis,LaLiga,principal,1X,Celta o empate (doble oportunidad),0.5791,1.67,1.73,no,pendiente,,
 2026-10-24 20:06,4760797,2026-10-25T11:00:00-05:00,Comerciantes vs Cienciano,Liga 1,principal,O2.5,Más de 2.5 goles,0.5365,1.73,1.86,no,pendiente,,
