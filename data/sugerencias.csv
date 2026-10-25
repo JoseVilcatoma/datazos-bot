@@ -284,7 +284,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-24 20:06,4732667,2026-10-25T09:00:00-05:00,Genoa vs Venezia,Serie A,principal,O1.5,Más de 1.5 goles,0.7253,1.30,1.38,no,fallo,1,0
 2026-10-24 20:06,4732670,2026-10-25T09:00:00-05:00,Atalanta vs Frosinone,Serie A,principal,O2.5,Más de 2.5 goles,0.6602,1.40,1.51,no,acierto,4,4
 2026-10-24 20:06,4735230,2026-10-25T09:00:00-05:00,Monaco vs Lille,Ligue 1,principal,X2,Lille o empate (doble oportunidad),0.5281,1.80,1.89,no,acierto,1,1
-2026-10-24 20:06,4755368,2026-10-25T09:30:00-05:00,Hoffenheim vs Leverkusen,Bundesliga,principal,X2,Leverkusen o empate (doble oportunidad),0.6761,1.40,1.48,no,pendiente,,
+2026-10-24 20:06,4755368,2026-10-25T09:30:00-05:00,Hoffenheim vs Leverkusen,Bundesliga,principal,X2,Leverkusen o empate (doble oportunidad),0.6761,1.40,1.48,no,fallo,3,0
 2026-10-24 20:06,4750817,2026-10-25T10:15:00-05:00,Celta vs Betis,LaLiga,principal,1X,Celta o empate (doble oportunidad),0.5791,1.67,1.73,no,pendiente,,
 2026-10-24 20:06,4760797,2026-10-25T11:00:00-05:00,Comerciantes vs Cienciano,Liga 1,principal,O2.5,Más de 2.5 goles,0.5365,1.73,1.86,no,pendiente,,
 2026-10-24 20:06,4760797,2026-10-25T11:00:00-05:00,Comerciantes vs Cienciano,Liga 1,alternativa,X2,Cienciano o empate (doble oportunidad),0.6810,1.33,1.47,no,pendiente,,
