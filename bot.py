@@ -167,7 +167,9 @@ def enviar_dia(fecha, etiqueta, forzar=False):
             enviar(f"📅 No hay partidos de las ligas elegidas para {etiqueta} ({fecha.strftime('%d/%m')}).")
         return
     enviar(f"📅 <b>Datazos de {etiqueta}</b> ({fecha.strftime('%d/%m')}) · "
-           f"{len(partidos)} {datazos.pl(len(partidos), 'partido', 'partidos')}")
+           f"{len(partidos)} {datazos.pl(len(partidos), 'partido', 'partidos')}\n"
+           "<i>Las 🎯 son informativas: en el backtest (3 temporadas, 4,090 apuestas) "
+           "no le ganaron al mercado (ROI −3%). Úsalas para entender el partido, no como apuesta segura.</i>")
     for p in partidos:
         try:
             res = datazos.analizar_partido(p)
@@ -350,7 +352,7 @@ def texto_resumen():
               bloque(hechas, "Todas"),
               bloque([r for r in hechas if r["tipo"] == "principal"], "Principales"),
               bloque([r for r in hechas if r["tipo"] == "alternativa"], "Alternativas"),
-              bloque([r for r in hechas if r["valor"] == "si"], "Con ✅ valor"),
+              bloque([r for r in hechas if r["valor"] == "si"], "Cuota sobre la justa del modelo"),
               f"Pendientes: {pend}"]
     if len(hechas) < 50:
         lineas.append("<i>Ojo: con menos de 50 apuestas el resultado es mayormente suerte.</i>")

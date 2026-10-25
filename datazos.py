@@ -828,10 +828,9 @@ def _e(t):
 
 
 def linea_sugerencia(c):
-    marca = ("✅ hay valor" if c["valor"]
-             else "ℹ️ sin valor a esta cuota (la casa paga menos de lo que vale)")
+    # Sin etiqueta de "valor": en el backtest (4,090 apuestas) esa etiqueta fue lo peor (ROI −13%).
     return (f"{_e(c['desc'])} · prob. {c['prob'] * 100:.0f}% · Bet365 {c['cuota']:.2f} · "
-            f"justa {c['justa']:.2f} {marca}")
+            f"justa {c['justa']:.2f}")
 
 
 def texto_bajas(bajas, p, max_por_equipo=4):
@@ -879,7 +878,8 @@ def formatear(res, nombre_liga):
     if res["analisis"]:
         lineas.append(f"📝 <b>Análisis:</b> {_e(res['analisis'])}")
     for c in res["sugerencias"]:
-        titulo = "Sugerencia principal" if c["tipo"] == "principal" else "Alternativa más segura"
+        titulo = ("Hacia dónde apuntan los datos" if c["tipo"] == "principal"
+                  else "Opción más probable")
         lineas.append(f"🎯 <b>{titulo}:</b> {linea_sugerencia(c)}")
     if res["sin_sugerencia"]:
         lineas.append(f"🎯 {_e(res['sin_sugerencia'])}")

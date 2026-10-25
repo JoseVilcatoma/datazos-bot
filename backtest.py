@@ -213,7 +213,7 @@ def resumen(filas, base):
            f", S/ {config.STAKE_SIMULADO} c/u)", bloque(filas, "Todas las sugerencias"),
            bloque([r for r in filas if r["tipo"] == "principal"], "Principales"),
            bloque([r for r in filas if r["tipo"] == "alternativa"], "Alternativas"),
-           bloque([r for r in filas if r["valor"] == "si"], "Con ✅ valor"), ""]
+           bloque([r for r in filas if r["valor"] == "si"], "Cuota sobre la justa del modelo"), ""]
     for cod in ("1", "2", "O2.5", "U2.5"):
         lin.append(bloque([r for r in filas if r["mercado"] == cod], f"Mercado {cod}"))
     for a, b in ((1.25, 1.60), (1.60, 2.00), (2.00, 2.61)):
