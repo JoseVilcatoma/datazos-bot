@@ -7,6 +7,7 @@ Si no hay datos suficientes, no se dice nada.
 """
 import html
 import math
+from collections import Counter
 from datetime import datetime
 
 import config
@@ -81,6 +82,155 @@ def _ext(p):
 # =====================================================================
 # Datazos de rachas y tendencias de un equipo
 # =====================================================================
+# =====================================================================
+# Rotaciones (partidos jugados con suplentes)
+# =====================================================================
+def rotacion(eq_id, vs):
+    """Mira los titulares de los últimos partidos, arma el once habitual y marca
+    los partidos jugados con muchos suplentes. Devuelve None si no hay alineaciones."""
+    partidos, nombres = [], {}
+    for v in vs[:config.PARTIDOS_ROTACION]:
+        g = s365.detalle(v["p"]["id"], terminado=True)
+        al, nm = s365.alineacion(g)
+        nombres.update(nm)
+        if eq_id in al:
+            partidos.append((v, set(al[eq_id]["titulares"])))
+    if len(partidos) < 5:
+        return None
+    cuenta, primero = Counter(), {}
+    for i, (_, tit) in enumerate(partidos):
+        for j in tit:
+            cuenta[j] += 1
+            primero.setdefault(j, i)
+    habituales = sorted(cuenta, key=lambda j: (-cuenta[j], primero[j]))[:11]
+    hs = set(habituales)
+    rotados = []
+    for v, tit in partidos:
+        v["habituales_jugaron"] = len(tit & hs)
+        if v["habituales_jugaron"] < config.MIN_TITULARES_HABITUALES:
+            rotados.append(v)
+    return {"habituales": habituales, "nombres": {str(j): nombres.get(j, "?") for j in habituales},
+            "rotados": rotados, "revisados": len(partidos)}
+
+
+def sin_rotados(vs, rot):
+    """Quita los partidos con suplentes. Cada partido que queda guarda cuántos se quitaron
+    justo antes de él (rot_antes), para que los textos de rachas lo digan."""
+    if not rot or not rot["rotados"]:
+        return vs
+    fuera = {v["p"]["id"] for v in rot["rotados"]}
+    out, pendientes = [], []
+    for v in vs:
+        if v["p"]["id"] in fuera:
+            pendientes.append(v)
+            continue
+        v["rot_antes"] = pendientes
+        pendientes = []
+        out.append(v)
+    return out
+
+
+def _sc_hasta(vs, ultimo, local=None):
+    """Igual que _sin_contar, para el tramo de vs que va hasta el partido 'ultimo' (incluido)."""
+    for i, v in enumerate(vs):
+        if v is ultimo:
+            return _sin_contar(vs[:i + 1], local)
+    return ""
+
+
+def _sin_contar(vs_racha, local=None):
+    """' (sin contar 2 con suplentes)' si en el tramo de la racha se quitaron partidos rotados.
+    local=True/False cuenta solo los quitados de local / de visita."""
+    n = sum(1 for v in vs_racha for r in v.get("rot_antes", [])
+            if local is None or r["local"] == local)
+    return f" (sin contar {n} con suplentes)" if n else ""
+
+
+# =====================================================================
+# Fuerza del rival y nivel de la liga
+# =====================================================================
+_tablas = {}
+
+
+def _tabla_por_id(comp_id):
+    if comp_id not in _tablas:
+        try:
+            filas = s365.tabla(comp_id)
+        except Exception:  # noqa: BLE001
+            filas = []
+        jug = sum(f["pj"] or 0 for f in filas)
+        gol = sum(f["gf"] or 0 for f in filas if f.get("gf") is not None)
+        prom = gol / jug if jug else None
+        _tablas[comp_id] = ({f["id"]: f for f in filas}, len(filas), prom)
+    return _tablas[comp_id]
+
+
+def ajustar_rivales(vs):
+    """Agrega a cada partido la fuerza del rival según la tabla de esa competición:
+    f_att (multiplica goles a favor) y f_def (multiplica goles en contra), y en qué
+    parte de la tabla está el rival (pct_rival: 0 = primero, 1 = último)."""
+    for v in vs:
+        v.setdefault("f_att", 1.0)
+        v.setdefault("f_def", 1.0)
+        if not config.AJUSTE_RIVAL or "pct_rival" in v:
+            continue
+        p = v["p"]
+        filas, n, prom = _tabla_por_id(p["comp_id"]) if isinstance(p["comp_id"], int) else ({}, 0, None)
+        rival = p["visita_id"] if v["local"] else p["local_id"]
+        f = filas.get(rival)
+        v["pct_rival"] = None
+        if not f or not n or not f.get("pj"):
+            continue
+        v["pct_rival"] = (f["pos"] - 1) / max(n - 1, 1) if f.get("pos") else None
+        if prom and f["pj"] >= 3 and f.get("gf") is not None and f.get("gc") is not None:
+            gf_pg = max(f["gf"] / f["pj"], 0.3)
+            gc_pg = max(f["gc"] / f["pj"], 0.3)
+            v["f_att"] = min(max(prom / gc_pg, 0.67), 1.5)
+            v["f_def"] = min(max(prom / gf_pg, 0.67), 1.5)
+    return vs
+
+
+def nivel_rivales(vs):
+    """'alta' / 'media' / 'baja' según dónde estaban en la tabla los rivales de una racha."""
+    pcts = [v.get("pct_rival") for v in vs if v.get("pct_rival") is not None]
+    if not vs or len(pcts) < 0.6 * len(vs):
+        return None
+    m = sum(pcts) / len(pcts)
+    return "alta" if m < 0.35 else ("baja" if m > 0.65 else "media")
+
+
+def _ctx_racha(vs_racha):
+    nivel = nivel_rivales(vs_racha)
+    if not nivel:
+        return "", 1.0
+    texto = {"alta": " (rivales mayormente de la parte alta de la tabla)",
+             "media": " (rivales de la mitad de la tabla)",
+             "baja": " (rivales mayormente de la parte baja de la tabla)"}[nivel]
+    return texto, {"alta": 1.15, "media": 1.0, "baja": 0.75}[nivel]
+
+
+def liga_origen(vs):
+    """La liga doméstica del equipo (la competición que más juega, sin copas internacionales)."""
+    c = Counter(v["p"]["comp_id"] for v in vs[:15] if v["p"]["comp_id"] not in config.COPAS_INTERNACIONALES)
+    return c.most_common(1)[0][0] if c else None
+
+
+def reduccion_por_bajas(lado_bajas, vs, inicio):
+    """Cuánto bajan los goles esperados si faltan goleadores (0 a BAJAS_MAX_REDUCCION)."""
+    if not lado_bajas:
+        return 0.0, None
+    goles_baja = sum(j["goles"] for j in lado_bajas)
+    if goles_baja <= 0:
+        return 0.0, None
+    goles_eq = sum(v["gf"] for v in vs if (inicio - v["p"]["inicio"]).days <= 120)
+    if goles_eq < 5:
+        return 0.0, None
+    share = min(goles_baja / goles_eq, 0.6)
+    red = min(config.BAJAS_MAX_REDUCCION, 0.5 * share)
+    quien = max(lado_bajas, key=lambda j: j["goles"])["nombre"]
+    return red, quien
+
+
 def datazos_equipo(nombre, vs, es_local):
     lado = "local" if es_local else "visita"
     contra = "visita" if es_local else "local"
@@ -98,33 +248,40 @@ def datazos_equipo(nombre, vs, es_local):
     recibe = racha(todos, lambda v: v["gc"] > 0)
 
     if gan >= 4:
-        out.append(_dz("racha_" + lado, "📈", f"{nombre} ganó sus últimos {gan} partidos",
-                       gan * 1.4, {lado: 1}))
+        ctx, f = _ctx_racha(todos[:gan])
+        out.append(_dz("racha_" + lado, "📈", f"{nombre} ganó sus últimos {gan} partidos{_sin_contar(todos[:gan])}{ctx}",
+                       gan * 1.4 * f, {lado: 1}, frase=f"{nombre} ganó sus últimos {gan} partidos"))
     if inv >= 6 and inv > gan + 1:
-        out.append(_dz("racha_" + lado, "📈", f"{nombre} lleva {inv} partidos sin perder",
-                       inv * 1.0, {lado: 1}))
+        ctx, f = _ctx_racha(todos[:inv])
+        out.append(_dz("racha_" + lado, "📈", f"{nombre} lleva {inv} partidos sin perder{_sin_contar(todos[:inv])}{ctx}",
+                       inv * 1.0 * f, {lado: 1}, frase=f"{nombre} lleva {inv} partidos sin perder"))
     if der >= 4:
-        out.append(_dz("racha_" + lado, "📉", f"{nombre} perdió sus últimos {der} partidos",
-                       der * 1.3, {contra: 1}))
+        ctx, f = _ctx_racha(todos[:der])
+        out.append(_dz("racha_" + lado, "📉", f"{nombre} perdió sus últimos {der} partidos{_sin_contar(todos[:der])}{ctx}",
+                       der * 1.3 * (2 - f), {contra: 1}, frase=f"{nombre} perdió sus últimos {der} partidos"))
     elif sg >= 5:
-        out.append(_dz("racha_" + lado, "📉", f"{nombre} lleva {sg} partidos sin ganar",
-                       sg * 1.1, {contra: 1}))
+        ctx, f = _ctx_racha(todos[:sg])
+        out.append(_dz("racha_" + lado, "📉", f"{nombre} lleva {sg} partidos sin ganar{_sin_contar(todos[:sg])}{ctx}",
+                       sg * 1.1 * (2 - f), {contra: 1}, frase=f"{nombre} lleva {sg} partidos sin ganar"))
     if marca >= 8:
-        out.append(_dz("ataque_" + lado, "⚽", f"{nombre} marcó en sus últimos {marca} partidos",
+        out.append(_dz("ataque_" + lado, "⚽", f"{nombre} marcó en sus últimos {marca} partidos{_sin_contar(todos[:marca])}",
                        marca * 0.7, {"goles": 1}))
     if sin_marcar >= 3:
-        out.append(_dz("ataque_" + lado, "🥶", f"{nombre} no marca hace {sin_marcar} partidos",
+        out.append(_dz("ataque_" + lado, "🥶", f"{nombre} no marca hace {sin_marcar} partidos{_sin_contar(todos[:sin_marcar])}",
                        sin_marcar * 1.5, {"pocos": 1, contra: 0.5}))
     if cero >= 4:
-        out.append(_dz("defensa_" + lado, "🧤", f"{nombre} no recibe gol hace {cero} partidos",
+        out.append(_dz("defensa_" + lado, "🧤", f"{nombre} no recibe gol hace {cero} partidos{_sin_contar(todos[:cero])}",
                        cero * 1.2, {"pocos": 1, lado: 0.5}))
     if recibe >= 8:
-        out.append(_dz("defensa_" + lado, "🥅", f"{nombre} recibió gol en sus últimos {recibe} partidos",
+        out.append(_dz("defensa_" + lado, "🥅", f"{nombre} recibió gol en sus últimos {recibe} partidos{_sin_contar(todos[:recibe])}",
                        recibe * 0.6, {"goles": 1}))
 
     # ---- Rachas como local / como visita ----
     sede = [v for v in todos if v["local"] == es_local]
     tag = "de local" if es_local else "de visita"
+
+    def sc(k):   # aclaración de partidos con suplentes en el tramo de los últimos k de sede
+        return _sc_hasta(todos, sede[k - 1], es_local) if 0 < k <= len(sede) else ""
     s_gan = racha(sede, lambda v: v["res"] == "G")
     s_inv = racha(sede, lambda v: v["res"] != "P")
     s_sg = racha(sede, lambda v: v["res"] != "G")
@@ -132,22 +289,22 @@ def datazos_equipo(nombre, vs, es_local):
     s_recibe = racha(sede, lambda v: v["gc"] > 0)
     s_cero = racha(sede, lambda v: v["gc"] == 0)
     if s_gan >= 4:
-        out.append(_dz("sede_" + lado, "🏟️", f"{nombre} ganó sus últimos {s_gan} partidos {tag}",
+        out.append(_dz("sede_" + lado, "🏟️", f"{nombre} ganó sus últimos {s_gan} partidos {tag}{sc(s_gan)}",
                        s_gan * 1.5, {lado: 1}))
     elif s_inv >= 6:
-        out.append(_dz("sede_" + lado, "🏟️", f"{nombre} no pierde {tag} hace {s_inv} partidos",
+        out.append(_dz("sede_" + lado, "🏟️", f"{nombre} no pierde {tag} hace {s_inv} partidos{sc(s_inv)}",
                        s_inv * 1.1, {lado: 1}))
     if s_sg >= 4:
-        out.append(_dz("sede_" + lado, "🏟️", f"{nombre} no gana {tag} hace {s_sg} partidos",
+        out.append(_dz("sede_" + lado, "🏟️", f"{nombre} no gana {tag} hace {s_sg} partidos{sc(s_sg)}",
                        s_sg * 1.2, {contra: 1}))
     if s_marca >= 7:
-        out.append(_dz("sede_gol_" + lado, "⚽", f"{nombre} marcó en sus últimos {s_marca} partidos {tag}",
+        out.append(_dz("sede_gol_" + lado, "⚽", f"{nombre} marcó en sus últimos {s_marca} partidos {tag}{sc(s_marca)}",
                        s_marca * 0.8, {"goles": 1}))
     if s_recibe >= 7:
-        out.append(_dz("sede_gol_" + lado, "🥅", f"{nombre} recibió gol en sus últimos {s_recibe} partidos {tag}",
+        out.append(_dz("sede_gol_" + lado, "🥅", f"{nombre} recibió gol en sus últimos {s_recibe} partidos {tag}{sc(s_recibe)}",
                        s_recibe * 0.7, {"goles": 1}))
     if s_cero >= 4:
-        out.append(_dz("sede_gol_" + lado, "🧤", f"{nombre} no recibe gol {tag} hace {s_cero} partidos",
+        out.append(_dz("sede_gol_" + lado, "🧤", f"{nombre} no recibe gol {tag} hace {s_cero} partidos{sc(s_cero)}",
                        s_cero * 1.2, {"pocos": 1, lado: 0.5}))
 
     # ---- Tendencias de goles "X de los últimos N" (se elige la mejor por tipo) ----
@@ -157,6 +314,7 @@ def datazos_equipo(nombre, vs, es_local):
         if n < config.MIN_PARTIDOS_TENDENCIA:
             continue
         factor = min(1.0, n / 8)
+        sufijo = sufijo + _sc_hasta(todos, muestra[-1], es_local if sufijo else None)
         x = sum(1 for v in muestra if v["gf"] + v["gc"] > 2.5)
         p = x / n
         if p >= 0.8:
@@ -193,7 +351,7 @@ def datazos_detalle(nombre, eq_id, vs, es_local):
             rival = next(k for k in st if k != eq_id)
             xf, xc = st[eq_id].get("xg"), st[rival].get("xg")
             if xf is not None and xc is not None:
-                xg.append((xf, xc, v["gf"], v["gc"]))
+                xg.append((xf, xc, v["gf"], v["gc"], v.get("f_att", 1.0), v.get("f_def", 1.0)))
         if st and len(st) == 2:
             c = [x.get("corners") for x in st.values()]
             if None not in c:
@@ -245,10 +403,12 @@ def datazos_detalle(nombre, eq_id, vs, es_local):
     n = len(xg)
     if config.USAR_XG and n >= config.MIN_PARTIDOS_TENDENCIA:
         contra = "visita" if es_local else "local"
-        xf = sum(a for a, _, _, _ in xg) / n
-        xc = sum(b for _, b, _, _ in xg) / n
-        gf = sum(c for _, _, c, _ in xg)
-        resumen_xg = {"xg_f": xf, "xg_c": xc, "n": n}
+        xf = sum(x[0] for x in xg) / n
+        xc = sum(x[1] for x in xg) / n
+        gf = sum(x[2] for x in xg)
+        resumen_xg = {"xg_f": xf, "xg_c": xc, "n": n,
+                      "xg_f_aj": sum(x[0] * x[4] for x in xg) / n,
+                      "xg_c_aj": sum(x[1] * x[5] for x in xg) / n}
         if xf >= 1.9:
             out.append(_dz("xg_ataque_" + lado, "🎯", f"{nombre} generó {xf:.2f} xG por partido en sus últimos {n}",
                            (xf - 1.3) * 8, {"goles": 1, lado: 0.5}))
@@ -268,6 +428,10 @@ def datazos_detalle(nombre, eq_id, vs, es_local):
             out.append(_dz("xg_suerte_" + lado, "🍀",
                            f"{nombre} marcó {gf} goles con {xf * n:.1f} xG en sus últimos {n}: rinde {como} de lo esperado",
                            min(abs(dif) * 0.8, 6.5)))
+    nota = _sin_contar(vs[:config.PARTIDOS_CON_DETALLE])
+    if nota:
+        for d in out:
+            d["texto"] += nota
     return out, resumen_xg
 
 
@@ -438,10 +602,21 @@ def _pois(k, lam):
     return math.exp(-lam) * lam ** k / math.factorial(k)
 
 
-def matriz(lh, la, maxg=10):
+def matriz(lh, la, maxg=10, rho=None):
+    """Probabilidad de cada marcador. Poisson con corrección Dixon-Coles: el Poisson simple
+    subestima los 0-0 y 1-1 (y sobreestima 1-0 y 0-1)."""
+    rho = config.DC_RHO if rho is None else rho
     ph = [_pois(i, lh) for i in range(maxg + 1)]
     pa = [_pois(j, la) for j in range(maxg + 1)]
-    return [[ph[i] * pa[j] for j in range(maxg + 1)] for i in range(maxg + 1)]
+    M = [[ph[i] * pa[j] for j in range(maxg + 1)] for i in range(maxg + 1)]
+    if rho:
+        M[0][0] *= max(1 - lh * la * rho, 0)
+        M[0][1] *= max(1 + lh * rho, 0)
+        M[1][0] *= max(1 + la * rho, 0)
+        M[1][1] *= max(1 - rho, 0)
+        tot = sum(map(sum, M))
+        M = [[x / tot for x in fila] for fila in M]
+    return M
 
 
 def probs_modelo(lh, la):
@@ -589,10 +764,24 @@ def lambdas_mercado(mercado, total_prior):
     return mejor[1], mejor[2]
 
 
-def lambdas_estadistica(vl, vv, H, partido, xg_l=None, xg_v=None):
-    """Goles esperados con forma reciente, local/visita, xG y H2H."""
+def lambdas_estadistica(vl, vv, H, partido, xg_l=None, xg_v=None, nivel_l=None, nivel_v=None,
+                        red_l=0.0, red_v=0.0):
+    """Goles esperados con forma reciente (más peso a lo último), local/visita,
+    fuerza del rival, xG, nivel de liga (copas), bajas y H2H."""
     def prom(xs, defecto):
         return sum(xs) / len(xs) if xs else defecto
+
+    def prom_w(vs, campo, defecto):
+        """Promedio con más peso a los partidos recientes, con goles ajustados por el rival."""
+        if not vs:
+            return defecto
+        num = den = 0.0
+        for i, v in enumerate(vs):
+            w = 0.5 ** (i / config.VIDA_MEDIA_PARTIDOS)
+            f = v.get("f_att", 1.0) if campo == "gf" else v.get("f_def", 1.0)
+            num += w * v[campo] * f
+            den += w
+        return num / den
 
     N = config.VENTANA_TENDENCIA
     l_all, v_all = vl[:N], vv[:N]
@@ -600,25 +789,32 @@ def lambdas_estadistica(vl, vv, H, partido, xg_l=None, xg_v=None):
     v_away = [v for v in vv if not v["local"]][:N]
 
     def mezcla(sede, todos, campo):
-        t = prom([v[campo] for v in todos], 1.3)
+        t = prom_w(todos, campo, 1.3)
         if len(sede) >= 4:
-            return 0.5 * prom([v[campo] for v in sede], t) + 0.5 * t
+            return 0.5 * prom_w(sede, campo, t) + 0.5 * t
         return t
 
     ataque_l = mezcla(l_home, l_all, "gf")
     defensa_l = mezcla(l_home, l_all, "gc")
     ataque_v = mezcla(v_away, v_all, "gf")
     defensa_v = mezcla(v_away, v_all, "gc")
-    # xG: quita la suerte de los goles reales
+    # xG (ajustado por rival): quita la suerte de los goles reales
     w = config.PESO_XG
     if xg_l:
-        ataque_l = (1 - w) * ataque_l + w * xg_l["xg_f"]
-        defensa_l = (1 - w) * defensa_l + w * xg_l["xg_c"]
+        ataque_l = (1 - w) * ataque_l + w * xg_l.get("xg_f_aj", xg_l["xg_f"])
+        defensa_l = (1 - w) * defensa_l + w * xg_l.get("xg_c_aj", xg_l["xg_c"])
     if xg_v:
-        ataque_v = (1 - w) * ataque_v + w * xg_v["xg_f"]
-        defensa_v = (1 - w) * defensa_v + w * xg_v["xg_c"]
+        ataque_v = (1 - w) * ataque_v + w * xg_v.get("xg_f_aj", xg_v["xg_f"])
+        defensa_v = (1 - w) * defensa_v + w * xg_v.get("xg_c_aj", xg_v["xg_c"])
     lh = (ataque_l + defensa_v) / 2
     la = (ataque_v + defensa_l) / 2
+    # Copas: equipos de ligas de distinto nivel
+    if nivel_l and nivel_v and nivel_l != nivel_v:
+        r = (nivel_l / nivel_v) ** config.AJUSTE_LIGA_EXPONENTE
+        lh, la = lh * r, la / r
+    # Bajas de goleadores
+    lh *= 1 - red_l
+    la *= 1 - red_v
 
     # H2H reciente (últimos 6 años) con 20% de peso
     recientes = [p for p in H if (partido["inicio"] - p["inicio"]).days < 6 * 365]
@@ -761,6 +957,21 @@ def analizar_partido(partido):
     vl = [vista(p, partido["local_id"]) for p in hist_l]
     vv = [vista(p, partido["visita_id"]) for p in hist_v]
 
+    # Rotaciones: quitar partidos jugados con muchos suplentes
+    rot_l = rot_v = None
+    try:
+        rot_l = rotacion(partido["local_id"], vl)
+        rot_v = rotacion(partido["visita_id"], vv)
+    except Exception as e:  # noqa: BLE001
+        print("  ! rotación:", e)
+    vl, vv = sin_rotados(vl, rot_l), sin_rotados(vv, rot_v)
+    # Fuerza de cada rival según la tabla
+    try:
+        ajustar_rivales(vl)
+        ajustar_rivales(vv)
+    except Exception as e:  # noqa: BLE001
+        print("  ! rivales:", e)
+
     todos = []
     todos += datazos_equipo(partido["local"], vl, True)
     todos += datazos_equipo(partido["visita"], vv, False)
@@ -791,6 +1002,7 @@ def analizar_partido(partido):
         bajas = None
     res = {"partido": partido, "datazos": elegidos, "todos": todos,
            "sugiere": que_sugiere(s, partido), "senales": s, "bajas": bajas,
+           "rotacion": {"local": rot_l, "visita": rot_v}, "ajustes": [],
            "analisis": None, "sugerencias": [], "sin_sugerencia": None, "lambdas": None}
 
     # ---- Análisis con cuotas ----
@@ -798,7 +1010,23 @@ def analizar_partido(partido):
     if len(vl) < config.MIN_PARTIDOS_TENDENCIA or len(vv) < config.MIN_PARTIDOS_TENDENCIA:
         res["sin_sugerencia"] = "Sin sugerencia: pocos partidos recientes para el modelo"
         return res
-    lh_s, la_s = lambdas_estadistica(vl, vv, H, partido, xg_l, xg_v)
+    # Nivel de liga (solo importa si vienen de ligas distintas, como en las copas)
+    lig_l, lig_v = liga_origen(vl), liga_origen(vv)
+    nivel_l = nivel_v = None
+    if lig_l and lig_v and lig_l != lig_v:
+        nivel_l = config.NIVEL_LIGA.get(lig_l, config.NIVEL_DEFECTO)
+        nivel_v = config.NIVEL_LIGA.get(lig_v, config.NIVEL_DEFECTO)
+        if nivel_l != nivel_v:
+            mejor, peor = ((partido["local"], partido["visita"]) if nivel_l > nivel_v
+                           else (partido["visita"], partido["local"]))
+            res["ajustes"].append(f"{mejor} viene de una liga más fuerte que {peor}")
+    # Bajas de goleadores
+    red_l, quien_l = reduccion_por_bajas((bajas or {}).get("local"), vl, partido["inicio"])
+    red_v, quien_v = reduccion_por_bajas((bajas or {}).get("visita"), vv, partido["inicio"])
+    for red, quien, nom in ((red_l, quien_l, partido["local"]), (red_v, quien_v, partido["visita"])):
+        if red >= 0.03:
+            res["ajustes"].append(f"sin {quien}, {nom} baja {red * 100:.0f}% sus goles esperados")
+    lh_s, la_s = lambdas_estadistica(vl, vv, H, partido, xg_l, xg_v, nivel_l, nivel_v, red_l, red_v)
     lm = lambdas_mercado(mercado, lh_s + la_s)
     if not lm:
         res["sin_sugerencia"] = "Sin sugerencia: 365Scores no trae cuotas 1X2 de Bet365 para este partido"
@@ -809,13 +1037,8 @@ def analizar_partido(partido):
     prob = probs_modelo(lh, la)
     res["lambdas"] = (lh, la)
     res["analisis"] = texto_analisis(partido, elegidos, lh, la, prob)
-    if bajas:
-        for lado, nombre in (("local", partido["local"]), ("visita", partido["visita"])):
-            clave = [j for j in bajas[lado] if j["goles"] >= 5]
-            if clave:
-                j = clave[0]
-                res["analisis"] += (f" Ojo: {nombre} no tendría a {j['nombre']} ({j['goles']} goles); "
-                                    f"las cuotas ya suelen reflejarlo.")
+    if res["ajustes"]:
+        res["analisis"] += " Ajustes del modelo: " + "; ".join(res["ajustes"]) + "."
     res["sugerencias"], res["sin_sugerencia"] = sugerir(partido, s, prob, cuota, mercado)
     return res
 
@@ -861,6 +1084,24 @@ def texto_bajas(bajas, p, max_por_equipo=4):
     return "🚑 <b>Bajas:</b> " + _e(" | ".join(partes)) + estado
 
 
+def texto_rotacion(res, max_por_equipo=3):
+    """'🔄 Sin contar partidos con suplentes: Barcelona — 08/10 vs Getafe (5 de 11 habituales)'."""
+    p = res["partido"]
+    partes = []
+    for lado, nombre in (("local", p["local"]), ("visita", p["visita"])):
+        rot = (res.get("rotacion") or {}).get(lado)
+        if not rot or not rot["rotados"]:
+            continue
+        items = [f"{v['p']['inicio'].strftime('%d/%m')} vs {v['rival']} ({v['habituales_jugaron']} de 11)"
+                 for v in rot["rotados"][:max_por_equipo]]
+        resto = len(rot["rotados"]) - max_por_equipo
+        partes.append(f"{nombre} — " + ", ".join(items) + (f" y {resto} más" if resto > 0 else ""))
+    if not partes:
+        return None
+    return ("🔄 <b>Sin contar partidos con suplentes:</b> " + _e(" | ".join(partes))
+            + " · <i>(titulares habituales que jugaron)</i>")
+
+
 def formatear(res, nombre_liga):
     p = res["partido"]
     hora = p["inicio"].strftime("%H:%M") if p["inicio"] else "?"
@@ -870,6 +1111,9 @@ def formatear(res, nombre_liga):
             lineas.append(f"{d['emoji']} {_e(d['texto'])}")
     else:
         lineas.append("— Sin datazos llamativos con muestra suficiente —")
+    linea_r = texto_rotacion(res)
+    if linea_r:
+        lineas.append(linea_r)
     linea_b = texto_bajas(res.get("bajas"), p)
     if linea_b:
         lineas.append(linea_b)

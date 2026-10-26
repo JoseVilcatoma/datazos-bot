@@ -152,6 +152,20 @@ Reglas: H2H mínimo 4 partidos; tendencias mínimo 6; los amistosos no cuentan; 
 
 ---
 
+## Cómo analiza (versión con rotaciones y ajustes)
+
+- **Rotaciones:** revisa los titulares de los últimos 12 partidos de cada equipo y arma su once habitual. Los partidos donde jugaron menos de 7 habituales se **quitan** de rachas, tendencias, xG y modelo. Los textos lo dicen: "ganó sus últimos 9 (sin contar 2 con suplentes)", y una línea 🔄 lista cuáles se quitaron.
+- **Aviso de alineaciones:** ~1 h antes del partido, cuando 365Scores las confirma, responde al mensaje del partido con cuántos habituales juegan y quién falta (⚠️ si rota 4 o más).
+- **Rival:** cada gol se ajusta según la fuerza del rival en su tabla (marcarle a un equipo que recibe poco vale más). Las rachas dicen si fueron contra rivales de la parte alta, media o baja.
+- **Nivel de liga (copas):** si los equipos vienen de ligas distintas, se ajusta con `NIVEL_LIGA` en `config.py` (valores aproximados, editables).
+- **Peso reciente:** un partido de hace 5 pesa la mitad que el último.
+- **Dixon-Coles:** corrige el Poisson simple, que daba pocos 0-0 y 1-1.
+- **Bajas:** si falta un goleador, baja hasta 15% los goles esperados de su equipo.
+
+Todo se ajusta en `config.py` (sección "Rotaciones" y "Modelo").
+
+---
+
 ## Datos extra que usa
 
 - **xG (goles esperados)**: sale de las stats de 365Scores de los últimos 8 partidos. Da datazos ("generó 2.36 xG por partido en sus últimos 8", "marcó 17 goles con 12.0 xG: rinde por encima de lo esperado") y entra al modelo (50% goles reales, 50% xG). En ligas sin xG (por ejemplo Liga 1) simplemente no se usa.

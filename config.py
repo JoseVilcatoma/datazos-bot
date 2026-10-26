@@ -50,6 +50,26 @@ PAGINAS_HISTORIAL_EXTRA = 3     # páginas extra de resultados antiguos (~6 part
 USAR_XG = True                  # usar goles esperados (xG) en datazos y modelo si 365Scores los trae
 PESO_XG = 0.5                   # en la parte estadística: 50% goles reales, 50% xG
 
+# ---- Rotaciones (suplentes) ----
+PARTIDOS_ROTACION = 12          # partidos recientes en los que se revisa quién fue titular
+MIN_TITULARES_HABITUALES = 7    # si jugaron menos de estos 11 habituales, el partido cuenta como "con suplentes"
+AVISO_ALINEACION_MIN = 100      # minutos antes del partido desde los que se busca la alineación confirmada
+
+# ---- Modelo ----
+DC_RHO = -0.10                  # corrección Dixon-Coles (más 0-0 y 1-1 que el Poisson simple)
+VIDA_MEDIA_PARTIDOS = 5         # un partido de hace 5 pesa la mitad que el último
+AJUSTE_RIVAL = True             # ajustar goles por la fuerza del rival (según la tabla)
+AJUSTE_LIGA_EXPONENTE = 0.75    # qué tanto pesa la diferencia de nivel entre ligas en las copas
+NIVEL_DEFECTO = 0.72
+# Nivel aproximado de cada liga (1.00 = Premier). Solo se usa cuando los equipos vienen de ligas distintas.
+NIVEL_LIGA = {
+    7: 1.00, 11: 0.95, 17: 0.93, 25: 0.92, 35: 0.88, 73: 0.84, 57: 0.82, 98: 0.80, 78: 0.78,
+    117: 0.74, 131: 0.70, 113: 0.85, 583: 0.60, 5618: 0.62,
+}
+# Copas internacionales (no sirven para saber la liga de origen de un equipo)
+COPAS_INTERNACIONALES = [572, 573, 7685, 102, 389, 321]
+BAJAS_MAX_REDUCCION = 0.15      # una baja importante puede bajar hasta 15% los goles esperados del equipo
+
 # Competencias que NO cuentan para rachas (amistosos). 321 = "Partido Amistoso" en 365Scores.
 COMPETICIONES_EXCLUIDAS = [321]
 PALABRAS_EXCLUIDAS = ["amistoso", "friendly", "gamper", "trofeo"]

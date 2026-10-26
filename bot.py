@@ -92,11 +92,13 @@ def tg(metodo, **kw):
     return None
 
 
-def enviar(texto):
-    """Envía un mensaje HTML (lo parte si es muy largo)."""
+def enviar(texto, responder_a=None):
+    """Envía un mensaje HTML (lo parte si es muy largo).
+    responder_a: id de un mensaje anterior para mandarlo como respuesta.
+    Devuelve el id del primer mensaje enviado (o None)."""
     if not CHAT_ID:
         print("  ! Falta TELEGRAM_CHAT_ID")
-        return
+        return None
     trozos = []
     while len(texto) > 4000:
         corte = texto.rfind("\n", 0, 4000)
@@ -104,10 +106,17 @@ def enviar(texto):
         trozos.append(texto[:corte])
         texto = texto[corte:]
     trozos.append(texto)
+    primero = None
     for t in trozos:
-        tg("sendMessage", chat_id=CHAT_ID, text=t, parse_mode="HTML",
-           disable_web_page_preview=True)
+        extra = {}
+        if responder_a and primero is None:
+            extra["reply_parameters"] = {"message_id": int(responder_a), "allow_sending_without_reply": True}
+        r = tg("sendMessage", chat_id=CHAT_ID, text=t, parse_mode="HTML",
+               disable_web_page_preview=True, **extra)
+        if primero is None and isinstance(r, dict):
+            primero = r.get("message_id")
         time.sleep(1.2)
+    return primero
 
 
 # =====================================================================
@@ -173,12 +182,22 @@ def enviar_dia(fecha, etiqueta, forzar=False):
     for p in partidos:
         try:
             res = datazos.analizar_partido(p)
-            enviar(datazos.formatear(res, nombre_liga(p)))
+            msg_id = enviar(datazos.formatear(res, nombre_liga(p)))
             registrar_sugerencias(res)
             enviados[str(p["id"])] = datetime.now(TZ).strftime("%Y-%m-%d")
             guardar_json(config.ARCHIVO_ENVIADOS, enviados)
             seg = leer_json(config.ARCHIVO_SEGUIMIENTO, {})
-            seg.setdefault(str(p["id"]), {"inicio": p["inicio"].isoformat(), "reportado": False})
+            info = seg.setdefault(str(p["id"]), {"inicio": p["inicio"].isoformat(), "reportado": False})
+            if msg_id:
+                info["msg_id"] = msg_id     # el resultado llegará como respuesta a este mensaje
+            # once habitual de cada equipo, para avisar si rotan cuando salgan las alineaciones
+            hab = {}
+            for lado, eq, nom in (("local", p["local_id"], p["local"]), ("visita", p["visita_id"], p["visita"])):
+                rot = (res.get("rotacion") or {}).get(lado)
+                if rot:
+                    hab[str(eq)] = {"equipo": nom, "ids": rot["habituales"], "nombres": rot["nombres"]}
+            if hab:
+                info["habituales"] = hab
             guardar_json(config.ARCHIVO_SEGUIMIENTO, seg)
         except Exception as e:  # noqa: BLE001
             print(f"  ! Error con {p['local']} vs {p['visita']}: {e}")
@@ -239,6 +258,51 @@ def _linea_stats(st, local_id, visita_id):
         tv = V["amarillas"] + (V.get("rojas") or 0)
         partes.append(f"tarjetas {tl:.0f}–{tv:.0f}")
     return " · ".join(partes)
+
+
+def avisar_alineaciones():
+    """Cuando 365Scores confirma las alineaciones (~1 h antes), responde al mensaje del partido
+    diciendo cuántos titulares habituales juegan y quién falta."""
+    seg = leer_json(config.ARCHIVO_SEGUIMIENTO, {})
+    ahora = datetime.now(TZ)
+    cambio = False
+    for gid, info in seg.items():
+        if info.get("alineacion_avisada") or not info.get("habituales"):
+            continue
+        inicio = datetime.fromisoformat(info["inicio"])
+        if ahora >= inicio:
+            info["alineacion_avisada"] = True       # ya empezó: no avisar tarde
+            cambio = True
+            continue
+        if ahora < inicio - timedelta(minutes=config.AVISO_ALINEACION_MIN):
+            continue
+        g = s365.detalle(gid)
+        al, _ = s365.alineacion(g)
+        if not al or not all(v["confirmada"] for v in al.values()):
+            continue
+        lineas = ["📋 <b>Alineaciones confirmadas</b>"]
+        for eq, hab in info["habituales"].items():
+            datos = al.get(int(eq))
+            if not datos:
+                continue
+            tit = set(datos["titulares"])
+            faltan = [hab["nombres"].get(str(j), "?") for j in hab["ids"] if j not in tit]
+            k = 11 - len(faltan)
+            if k >= 10:
+                txt = f"{k} de sus 11 habituales" + (f" (no está {', '.join(faltan)})" if faltan else "")
+                lineas.append(f"✅ {datazos._e(hab['equipo'])}: {datazos._e(txt)}")
+            else:
+                marca = "⚠️" if k < 8 else "🔸"
+                lineas.append(f"{marca} {datazos._e(hab['equipo'])}: {k} de sus 11 habituales · "
+                              f"rota {len(faltan)}: {datazos._e(', '.join(faltan))}")
+        if len(lineas) > 1:
+            if any(l.startswith("⚠️") for l in lineas):
+                lineas.append("<i>Con tantos cambios, las rachas y el análisis de ese equipo valen menos.</i>")
+            enviar("\n".join(lineas), responder_a=info.get("msg_id"))
+        info["alineacion_avisada"] = True
+        cambio = True
+    if cambio:
+        guardar_json(config.ARCHIVO_SEGUIMIENTO, seg)
 
 
 def reportar_terminados():
@@ -312,8 +376,11 @@ def reportar_terminados():
                 ganancia += gan
             tipo = "🎯" if r["tipo"] == "principal" else "🛟"
             lineas.append(f"   {tipo} {datazos._e(r['descripcion'])} ({r['cuota']}) → {txt}")
-        bloques.append("\n".join(lineas))
+        lineas[0] = "🏁" + lineas[0][1:]   # cambia ⚽ por 🏁
+        enviar("\n".join(lineas), responder_a=info.get("msg_id"))
+        bloques.append(gid)
         info["reportado"] = True
+        guardar_json(config.ARCHIVO_SEGUIMIENTO, seg)
 
     # limpiar seguimiento viejo
     corte = ahora - timedelta(days=30)
@@ -321,12 +388,9 @@ def reportar_terminados():
            if not (v.get("reportado") and datetime.fromisoformat(v["inicio"]) < corte)}
     guardar_json(config.ARCHIVO_SEGUIMIENTO, seg)
 
-    if bloques:
-        pie = ""
-        if n_tot:
-            pie = (f"\n\n📈 En este lote: {n_ac}/{n_tot} sugerencias acertadas · "
-                   f"S/ {ganancia:+.2f} (S/ {S} c/u). Escribe /resumen para el acumulado.")
-        enviar("🏁 <b>Resultados</b>\n\n" + "\n\n".join(bloques) + pie)
+    if len(bloques) >= 2 and n_tot:
+        enviar(f"📈 Terminaron {len(bloques)} partidos: {n_ac}/{n_tot} sugerencias acertadas · "
+               f"S/ {ganancia:+.2f} (S/ {S} c/u). Escribe /resumen para el acumulado.")
     return len(bloques)
 
 
@@ -365,6 +429,7 @@ def texto_resumen():
 AYUDA = ("🤖 <b>Comandos</b>\n/datazos hoy — datazos de hoy\n/datazos mañana — datazos de mañana\n"
          "/resultados — resultados de partidos recién terminados\n"
          "/resumen — aciertos vs probabilidad esperada\n"
+         "📋 ~1 h antes de cada partido llega el aviso de alineaciones (si rotan titulares)\n"
          "<i>El bot responde en segundos mientras está escuchando; entre una corrida y la siguiente "
          "puede haber ~1 min de pausa.</i>")
 
@@ -479,6 +544,10 @@ def tareas_periodicas(estado):
     hoy = ahora.date()
     calificar_pendientes()
     reportar_terminados()
+    try:
+        avisar_alineaciones()
+    except Exception as e:  # noqa: BLE001
+        print("  ! alineaciones:", e)
     # Red de seguridad: si anoche no se mandó lo de HOY (el bot no corrió a las 20:00),
     # se manda ahora lo que todavía no empieza.
     if estado.get("dia_cubierto") != hoy.isoformat() and estado.get("ultimo_diario") != (hoy - timedelta(days=1)).isoformat():

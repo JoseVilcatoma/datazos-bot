@@ -53,7 +53,8 @@ def limpiar_cache():
             pass
 
 
-def _get(path, params=None, ttl=10 * MIN):
+def _get(path, params=None, ttl=10 * MIN, recortar=None):
+    """recortar: función opcional que achica la respuesta antes de guardarla en caché."""
     params = dict(params or {})
     todos = dict(config.API_PARAMS)
     todos.update(params)
@@ -80,6 +81,8 @@ def _get(path, params=None, ttl=10 * MIN):
                 raise requests.HTTPError("HTTP %s" % r.status_code)
             r.raise_for_status()
             data = r.json()
+            if recortar:
+                data = recortar(data)
             os.makedirs(config.CARPETA_CACHE, exist_ok=True)
             with open(ruta, "w", encoding="utf-8") as f:
                 json.dump({"t": time.time(), "data": data}, f)
@@ -206,9 +209,38 @@ def h2h(game_id):
     return lista, rl, rv
 
 
+_CAMPOS_JUEGO = ("id", "competitionId", "competitionDisplayName", "startTime", "statusGroup", "statusText",
+                 "winDescription", "stages")
+_CAMPOS_EQUIPO = ("id", "name", "shortName", "score")
+_CAMPOS_JUGADOR = ("id", "status", "statusText", "injury", "suspension", "seasonStats")
+
+
+def _recortar_juego(data):
+    """Deja solo lo que el bot usa (marcadores, alineaciones, nombres). Evita que el caché pese GB."""
+    g = (data or {}).get("game")
+    if not g:
+        return data
+    out = {k: g[k] for k in _CAMPOS_JUEGO if k in g}
+    for lado in ("homeCompetitor", "awayCompetitor"):
+        c = g.get(lado) or {}
+        cc = {k: c[k] for k in _CAMPOS_EQUIPO if k in c}
+        lu = c.get("lineups")
+        if lu:
+            cc["lineups"] = {"status": lu.get("status"),
+                             "members": [{k: m[k] for k in _CAMPOS_JUGADOR if k in m}
+                                         for m in lu.get("members") or []]}
+        out[lado] = cc
+    out["members"] = [{"id": m.get("id"), "name": m.get("name"), "shortName": m.get("shortName")}
+                      for m in g.get("members") or []]
+    return {"game": out}
+
+
 def detalle(game_id, terminado=False):
-    """Detalle del partido. Si ya terminó, se guarda en caché por mucho tiempo."""
-    data = _get("/game/", {"gameId": game_id}, ttl=30 * DIA if terminado else 10 * MIN)
+    """Detalle del partido. Si ya terminó, se guarda (recortado) en caché por mucho tiempo."""
+    if terminado:
+        data = _get("/game/", {"gameId": game_id}, ttl=30 * DIA, recortar=_recortar_juego)
+    else:
+        data = _get("/game/", {"gameId": game_id}, ttl=10 * MIN)
     if not data or "game" not in data:
         return None
     return data["game"]
@@ -278,10 +310,29 @@ def tabla(comp_id):
                 "pts": _num(r.get("points"), 0),
                 "pj": r.get("gamePlayed"),
                 "zona": r.get("destinationNum"),
+                "gf": _num(r.get("for")),
+                "gc": _num(r.get("against")),
                 "grupo": st.get("groupNum") or st.get("displayName"),
             })
         break  # solo la fase/tabla actual
     return filas
+
+
+def alineacion(game):
+    """Titulares de cada equipo según el detalle del partido.
+    Devuelve {competitor_id: {'titulares': [ids], 'confirmada': bool}} y {id: nombre}."""
+    if not game:
+        return {}, {}
+    nombres = {m.get("id"): (m.get("shortName") or m.get("name") or "?") for m in game.get("members") or []}
+    out = {}
+    for lado in ("homeCompetitor", "awayCompetitor"):
+        c = game.get(lado) or {}
+        lu = c.get("lineups") or {}
+        tit = [m.get("id") for m in lu.get("members") or [] if m.get("status") == 1 and m.get("id")]
+        if c.get("id") is not None and len(tit) >= 9:
+            out[c["id"]] = {"titulares": tit,
+                            "confirmada": (lu.get("status") or "").lower().startswith("confirm")}
+    return out, nombres
 
 
 def _numero_en(texto, palabra):
