@@ -303,7 +303,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-24 20:08,4732661,2026-10-25T14:45:00-05:00,Udinese vs AC Milan,Serie A,principal,O1.5,Más de 1.5 goles,0.7513,1.29,1.33,no,acierto,0,2
 2026-10-24 20:08,4750514,2026-10-25T15:00:00-05:00,Barcelona vs Real Madrid,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.7642,1.25,1.31,no,acierto,1,2
 2026-10-24 20:08,4760795,2026-10-25T15:30:00-05:00,Sport Boys vs FC Cajamarca,Liga 1,principal,AH_V+1.5,FC Cajamarca hándicap +1.5 (no pierde por 2 o más),0.6550,1.62,1.53,si,fallo,4,2
-2026-10-24 20:08,4760794,2026-10-25T18:00:00-05:00,Garcilaso vs Los Chankas,Liga 1,principal,1,Garcilaso gana,0.6156,1.55,1.62,no,pendiente,,
+2026-10-24 20:08,4760794,2026-10-25T18:00:00-05:00,Garcilaso vs Los Chankas,Liga 1,principal,1,Garcilaso gana,0.6156,1.55,1.62,no,acierto,4,1
 2026-10-25 20:04,4735227,2026-10-26T14:30:00-05:00,PSG vs Lyon,Ligue 1,principal,BTTS_SI,Ambos marcan: Sí,0.6262,1.57,1.60,no,pendiente,,
 2026-10-25 20:04,4735227,2026-10-26T14:30:00-05:00,PSG vs Lyon,Ligue 1,alternativa,O2.5,Más de 2.5 goles,0.7003,1.36,1.43,no,pendiente,,
 2026-10-25 20:04,4750813,2026-10-26T15:00:00-05:00,Sevilla vs Osasuna,LaLiga,principal,O1.5,Más de 1.5 goles,0.7044,1.40,1.42,no,pendiente,,
