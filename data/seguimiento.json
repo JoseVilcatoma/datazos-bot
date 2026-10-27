@@ -209,7 +209,7 @@
     },
     "inicio": "2026-10-27T12:30:00-05:00",
     "msg_id": 410,
-    "reportado": false
+    "reportado": true
   },
   "4732654": {
     "alineacion_avisada": true,
@@ -666,6 +666,7 @@
     "reportado": true
   },
   "4760789": {
+    "alineacion_avisada": true,
     "habituales": {
       "7640": {
         "equipo": "Huancayo",
