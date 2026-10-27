@@ -308,4 +308,10 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-25 20:04,4735227,2026-10-26T14:30:00-05:00,PSG vs Lyon,Ligue 1,alternativa,O2.5,Más de 2.5 goles,0.7003,1.36,1.43,no,fallo,2,0
 2026-10-25 20:04,4750813,2026-10-26T15:00:00-05:00,Sevilla vs Osasuna,LaLiga,principal,O1.5,Más de 1.5 goles,0.7044,1.40,1.42,no,acierto,2,0
 2026-10-25 20:04,4632630,2026-10-26T17:30:00-05:00,Coritiba vs Grêmio,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7618,1.29,1.31,no,fallo,0,1
-2026-10-25 20:04,4632636,2026-10-26T18:00:00-05:00,Flamengo vs Atlético Mineiro,Brasileirão,principal,1,Flamengo gana,0.6608,1.30,1.51,no,pendiente,,
+2026-10-25 20:04,4632636,2026-10-26T18:00:00-05:00,Flamengo vs Atlético Mineiro,Brasileirão,principal,1,Flamengo gana,0.6608,1.30,1.51,no,acierto,3,2
+2026-10-26 20:15,4732653,2026-10-27T12:30:00-05:00,Sassuolo vs Lazio,Serie A,principal,O2.5,Más de 2.5 goles,0.5592,1.67,1.79,no,pendiente,,
+2026-10-26 20:15,4732653,2026-10-27T12:30:00-05:00,Sassuolo vs Lazio,Serie A,alternativa,X2,Lazio o empate (doble oportunidad),0.6982,1.33,1.43,no,pendiente,,
+2026-10-26 20:15,4732652,2026-10-27T14:45:00-05:00,Torino vs Como,Serie A,principal,O2.5,Más de 2.5 goles,0.5679,1.67,1.76,no,pendiente,,
+2026-10-26 20:15,4732654,2026-10-27T14:45:00-05:00,AS Roma vs Cagliari,Serie A,principal,O2.5,Más de 2.5 goles,0.5727,1.62,1.75,no,pendiente,,
+2026-10-26 20:15,4732654,2026-10-27T14:45:00-05:00,AS Roma vs Cagliari,Serie A,alternativa,1,AS Roma gana,0.6797,1.33,1.47,no,pendiente,,
+2026-10-26 20:15,4760789,2026-10-27T15:00:00-05:00,Juan Pablo II vs Huancayo,Liga 1,principal,O2.5,Más de 2.5 goles,0.5625,1.67,1.78,no,pendiente,,
