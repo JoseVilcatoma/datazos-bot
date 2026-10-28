@@ -130,6 +130,7 @@
     "reportado": false
   },
   "4632622": {
+    "alineacion_avisada": true,
     "habituales": {
       "1273": {
         "equipo": "Bragantino",
@@ -265,6 +266,7 @@
     "reportado": true
   },
   "4632627": {
+    "alineacion_avisada": true,
     "habituales": {
       "1216": {
         "equipo": "Fluminense",
@@ -799,7 +801,7 @@
     },
     "inicio": "2026-10-28T14:45:00-05:00",
     "msg_id": 429,
-    "reportado": false
+    "reportado": true
   },
   "4732657": {
     "alineacion_avisada": true,
@@ -931,7 +933,7 @@
     },
     "inicio": "2026-10-28T14:45:00-05:00",
     "msg_id": 430,
-    "reportado": false
+    "reportado": true
   },
   "4732661": {
     "inicio": "2026-10-25T14:45:00-05:00",
