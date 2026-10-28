@@ -1584,7 +1584,7 @@
     },
     "inicio": "2026-10-28T15:30:00-05:00",
     "msg_id": 431,
-    "reportado": false
+    "reportado": true
   },
   "4760792": {
     "alineacion_avisada": true,
