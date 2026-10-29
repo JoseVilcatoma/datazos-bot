@@ -195,7 +195,7 @@
     },
     "inicio": "2026-10-28T17:30:00-05:00",
     "msg_id": 432,
-    "reportado": false
+    "reportado": true
   },
   "4632624": {
     "alineacion_avisada": true,
@@ -261,7 +261,7 @@
     },
     "inicio": "2026-10-28T17:30:00-05:00",
     "msg_id": 433,
-    "reportado": false
+    "reportado": true
   },
   "4632626": {
     "inicio": "2026-10-24T17:30:00-05:00",
@@ -331,7 +331,7 @@
     },
     "inicio": "2026-10-28T17:30:00-05:00",
     "msg_id": 434,
-    "reportado": false
+    "reportado": true
   },
   "4632628": {
     "inicio": "2026-10-24T14:30:00-05:00",

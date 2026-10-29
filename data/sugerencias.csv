@@ -326,10 +326,10 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-27 20:12,4732656,2026-10-28T14:45:00-05:00,Monza vs Nápoles,Serie A,principal,BTTS_SI,Ambos marcan: Sí,0.6004,1.67,1.67,si,acierto,1,4
 2026-10-27 20:12,4732658,2026-10-28T14:45:00-05:00,Genoa vs Juventus,Serie A,principal,O1.5,Más de 1.5 goles,0.7186,1.36,1.39,no,acierto,2,0
 2026-10-27 20:12,4760790,2026-10-28T15:30:00-05:00,Alianza Atletico vs Garcilaso,Liga 1,principal,O1.5,Más de 1.5 goles,0.7916,1.25,1.26,no,acierto,3,2
-2026-10-27 20:12,4632622,2026-10-28T17:30:00-05:00,Bragantino vs Chapecoense,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5479,1.80,1.82,no,pendiente,,
-2026-10-27 20:12,4632622,2026-10-28T17:30:00-05:00,Bragantino vs Chapecoense,Brasileirão,alternativa,O2.5,Más de 2.5 goles,0.6237,1.48,1.60,no,pendiente,,
-2026-10-27 20:12,4632624,2026-10-28T17:30:00-05:00,Santos vs Palmeiras,Brasileirão,principal,X2,Palmeiras o empate (doble oportunidad),0.7235,1.33,1.38,no,pendiente,,
-2026-10-27 20:13,4632627,2026-10-28T17:30:00-05:00,Fluminense vs Internacional,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7304,1.30,1.37,no,pendiente,,
+2026-10-27 20:12,4632622,2026-10-28T17:30:00-05:00,Bragantino vs Chapecoense,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5479,1.80,1.82,no,fallo,3,0
+2026-10-27 20:12,4632622,2026-10-28T17:30:00-05:00,Bragantino vs Chapecoense,Brasileirão,alternativa,O2.5,Más de 2.5 goles,0.6237,1.48,1.60,no,acierto,3,0
+2026-10-27 20:12,4632624,2026-10-28T17:30:00-05:00,Santos vs Palmeiras,Brasileirão,principal,X2,Palmeiras o empate (doble oportunidad),0.7235,1.33,1.38,no,acierto,0,0
+2026-10-27 20:13,4632627,2026-10-28T17:30:00-05:00,Fluminense vs Internacional,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7304,1.30,1.37,no,acierto,2,1
 2026-10-27 20:13,4760788,2026-10-28T19:00:00-05:00,Cienciano vs Grau,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5290,1.83,1.89,no,pendiente,,
 2026-10-27 20:13,4760788,2026-10-28T19:00:00-05:00,Cienciano vs Grau,Liga 1,alternativa,O2.5,Más de 2.5 goles,0.6084,1.48,1.64,no,pendiente,,
 2026-10-27 20:13,4632617,2026-10-28T19:30:00-05:00,Remo vs Botafogo,Brasileirão,principal,X2,Botafogo o empate (doble oportunidad),0.6476,1.40,1.54,no,pendiente,,
