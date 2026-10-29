@@ -334,7 +334,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-27 20:13,4760788,2026-10-28T19:00:00-05:00,Cienciano vs Grau,Liga 1,alternativa,O2.5,Más de 2.5 goles,0.6084,1.48,1.64,no,acierto,3,0
 2026-10-27 20:13,4632617,2026-10-28T19:30:00-05:00,Remo vs Botafogo,Brasileirão,principal,X2,Botafogo o empate (doble oportunidad),0.6476,1.40,1.54,no,fallo,2,1
 2026-10-27 20:13,4632618,2026-10-28T19:30:00-05:00,Bahia vs São Paulo,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7646,1.25,1.31,no,acierto,3,2
-2026-10-28 20:13,4732659,2026-10-29T12:30:00-05:00,Frosinone vs Lecce,Serie A,principal,BTTS_SI,Ambos marcan: Sí,0.6566,1.44,1.52,no,pendiente,,
+2026-10-28 20:13,4732659,2026-10-29T12:30:00-05:00,Frosinone vs Lecce,Serie A,principal,BTTS_SI,Ambos marcan: Sí,0.6566,1.44,1.52,no,acierto,5,1
 2026-10-28 20:13,4760793,2026-10-29T13:00:00-05:00,Los Chankas vs Cusco FC,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5929,1.62,1.69,no,pendiente,,
 2026-10-28 20:13,4760793,2026-10-29T13:00:00-05:00,Los Chankas vs Cusco FC,Liga 1,alternativa,X2,Cusco FC o empate (doble oportunidad),0.7002,1.36,1.43,no,pendiente,,
 2026-10-28 20:14,4732660,2026-10-29T14:45:00-05:00,Fiorentina vs Atalanta,Serie A,principal,O2.5,Más de 2.5 goles,0.5939,1.62,1.68,no,pendiente,,
