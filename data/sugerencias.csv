@@ -339,7 +339,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-28 20:13,4760793,2026-10-29T13:00:00-05:00,Los Chankas vs Cusco FC,Liga 1,alternativa,X2,Cusco FC o empate (doble oportunidad),0.7002,1.36,1.43,no,acierto,0,1
 2026-10-28 20:14,4732660,2026-10-29T14:45:00-05:00,Fiorentina vs Atalanta,Serie A,principal,O2.5,Más de 2.5 goles,0.5939,1.62,1.68,no,acierto,2,2
 2026-10-28 20:14,4732660,2026-10-29T14:45:00-05:00,Fiorentina vs Atalanta,Serie A,alternativa,1X,Fiorentina o empate (doble oportunidad),0.6758,1.36,1.48,no,acierto,2,2
-2026-10-28 20:14,4760791,2026-10-29T15:30:00-05:00,Sporting Cristal vs Alianza Lima,Liga 1,principal,O1.5,Más de 1.5 goles,0.7680,1.29,1.30,no,pendiente,,
+2026-10-28 20:14,4760791,2026-10-29T15:30:00-05:00,Sporting Cristal vs Alianza Lima,Liga 1,principal,O1.5,Más de 1.5 goles,0.7680,1.29,1.30,no,acierto,3,2
 2026-10-28 20:14,4632621,2026-10-29T17:30:00-05:00,Atlético Mineiro vs Cruzeiro,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7906,1.25,1.26,no,pendiente,,
 2026-10-28 20:14,4632625,2026-10-29T18:00:00-05:00,Vasco Da Gama vs Flamengo,Brasileirão,principal,U3.5,Menos de 3.5 goles,0.6920,1.44,1.45,no,pendiente,,
 2026-10-28 20:14,4632620,2026-10-29T19:30:00-05:00,Grêmio vs Paranaense,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7543,1.29,1.33,no,pendiente,,
