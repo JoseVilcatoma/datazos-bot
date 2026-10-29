@@ -197,6 +197,7 @@
     "reportado": false
   },
   "4632621": {
+    "alineacion_avisada": true,
     "habituales": {
       "1209": {
         "equipo": "Atlético Mineiro",
@@ -1262,7 +1263,7 @@
     },
     "inicio": "2026-10-29T14:45:00-05:00",
     "msg_id": 469,
-    "reportado": false
+    "reportado": true
   },
   "4732661": {
     "inicio": "2026-10-25T14:45:00-05:00",
