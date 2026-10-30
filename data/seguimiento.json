@@ -1479,6 +1479,7 @@
     "reportado": false
   },
   "4735225": {
+    "alineacion_avisada": true,
     "habituales": {
       "478": {
         "equipo": "Lille",
@@ -1766,6 +1767,7 @@
     "reportado": true
   },
   "4750802": {
+    "alineacion_avisada": true,
     "habituales": {
       "133": {
         "equipo": "Villarreal",
