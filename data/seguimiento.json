@@ -330,6 +330,7 @@
     "reportado": true
   },
   "4632623": {
+    "alineacion_avisada": true,
     "habituales": {
       "1267": {
         "equipo": "Corinthians",
@@ -1542,7 +1543,7 @@
     },
     "inicio": "2026-10-30T15:05:00-05:00",
     "msg_id": 497,
-    "reportado": false
+    "reportado": true
   },
   "4735226": {
     "alineacion_avisada": true,
