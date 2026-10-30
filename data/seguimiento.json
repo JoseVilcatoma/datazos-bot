@@ -261,7 +261,7 @@
     },
     "inicio": "2026-10-29T17:30:00-05:00",
     "msg_id": 471,
-    "reportado": false
+    "reportado": true
   },
   "4632622": {
     "alineacion_avisada": true,
