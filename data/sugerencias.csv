@@ -348,7 +348,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-29 20:11,4735226,2026-10-30T13:00:00-05:00,Le Havre vs PSG,Ligue 1,principal,BTTS_SI,Ambos marcan: Sí,0.5723,1.70,1.75,no,acierto,1,5
 2026-10-29 20:11,4735226,2026-10-30T13:00:00-05:00,Le Havre vs PSG,Ligue 1,alternativa,O2.5,Más de 2.5 goles,0.6864,1.36,1.46,no,acierto,1,5
 2026-10-29 20:11,4755354,2026-10-30T14:30:00-05:00,Elversberg vs Mainz,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6519,1.50,1.53,no,acierto,4,1
-2026-10-29 20:11,4750802,2026-10-30T15:00:00-05:00,Villarreal vs Espanyol,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.5820,1.67,1.72,no,pendiente,,
+2026-10-29 20:11,4750802,2026-10-30T15:00:00-05:00,Villarreal vs Espanyol,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.5820,1.67,1.72,no,fallo,0,1
 2026-10-29 20:12,4735225,2026-10-30T15:05:00-05:00,Lille vs Lens,Ligue 1,principal,O1.5,Más de 1.5 goles,0.7901,1.25,1.27,no,pendiente,,
 2026-10-29 20:12,4632623,2026-10-30T18:00:00-05:00,Corinthians vs Mirassol,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5177,1.91,1.93,no,pendiente,,
 2026-10-29 20:12,4632623,2026-10-30T18:00:00-05:00,Corinthians vs Mirassol,Brasileirão,alternativa,O1.5,Más de 1.5 goles,0.7423,1.30,1.35,no,pendiente,,
