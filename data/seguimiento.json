@@ -195,7 +195,7 @@
     },
     "inicio": "2026-10-29T19:30:00-05:00",
     "msg_id": 473,
-    "reportado": false
+    "reportado": true
   },
   "4632621": {
     "alineacion_avisada": true,
@@ -2109,7 +2109,7 @@
     },
     "inicio": "2026-10-29T19:30:00-05:00",
     "msg_id": 474,
-    "reportado": false
+    "reportado": true
   },
   "4760786": {
     "alineacion_avisada": true,
