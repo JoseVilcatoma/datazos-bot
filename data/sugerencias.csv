@@ -373,8 +373,8 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-30 20:10,4750809,2026-10-31T12:30:00-05:00,Betis vs Málaga CF,LaLiga,alternativa,1,Betis gana,0.6652,1.30,1.50,no,acierto,2,1
 2026-10-30 20:10,4755364,2026-10-31T12:30:00-05:00,Bayern vs Dortmund,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6619,1.44,1.51,no,acierto,2,2
 2026-10-30 20:10,4755364,2026-10-31T12:30:00-05:00,Bayern vs Dortmund,Bundesliga,alternativa,O2.5,Más de 2.5 goles,0.7475,1.25,1.34,no,acierto,2,2
-2026-10-30 20:10,4632619,2026-10-31T14:00:00-05:00,Coritiba vs Vitória,Brasileirão,principal,X2,Vitória o empate (doble oportunidad),0.6049,1.67,1.65,si,pendiente,,
-2026-10-30 20:10,4632619,2026-10-31T14:00:00-05:00,Coritiba vs Vitória,Brasileirão,alternativa,O1.5,Más de 1.5 goles,0.7609,1.29,1.31,no,pendiente,,
+2026-10-30 20:10,4632619,2026-10-31T14:00:00-05:00,Coritiba vs Vitória,Brasileirão,principal,X2,Vitória o empate (doble oportunidad),0.6049,1.67,1.65,si,fallo,2,0
+2026-10-30 20:10,4632619,2026-10-31T14:00:00-05:00,Coritiba vs Vitória,Brasileirão,alternativa,O1.5,Más de 1.5 goles,0.7609,1.29,1.31,no,acierto,2,0
 2026-10-30 20:10,4732643,2026-10-31T14:45:00-05:00,AC Milan vs Inter,Serie A,principal,O2.5,Más de 2.5 goles,0.5891,1.67,1.70,no,pendiente,,
 2026-10-30 20:10,4735218,2026-10-31T14:45:00-05:00,Troyes vs Le Mans,Ligue 1,principal,O1.5,Más de 1.5 goles,0.7932,1.25,1.26,no,pendiente,,
 2026-10-30 20:10,4742019,2026-10-31T15:00:00-05:00,Aston Villa vs Fulham,Premier,principal,BTTS_SI,Ambos marcan: Sí,0.5881,1.62,1.70,no,pendiente,,
