@@ -2010,6 +2010,7 @@
     "reportado": true
   },
   "4742013": {
+    "alineacion_avisada": true,
     "habituales": {
       "110": {
         "equipo": "Man City",
@@ -2075,6 +2076,7 @@
     "reportado": false
   },
   "4742015": {
+    "alineacion_avisada": true,
     "habituales": {
       "11": {
         "equipo": "Hull City",
@@ -2140,6 +2142,7 @@
     "reportado": false
   },
   "4742016": {
+    "alineacion_avisada": true,
     "habituales": {
       "117": {
         "equipo": "Sunderland",
@@ -2271,6 +2274,7 @@
     "reportado": false
   },
   "4742018": {
+    "alineacion_avisada": true,
     "habituales": {
       "29": {
         "equipo": "Forest",
@@ -2401,6 +2405,7 @@
     "reportado": false
   },
   "4742020": {
+    "alineacion_avisada": true,
     "habituales": {
       "36": {
         "equipo": "Leeds",
