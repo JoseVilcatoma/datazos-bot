@@ -803,7 +803,7 @@
     },
     "inicio": "2026-10-31T12:00:00-05:00",
     "msg_id": 530,
-    "reportado": false
+    "reportado": true
   },
   "4732643": {
     "alineacion_avisada": true,
@@ -2344,6 +2344,7 @@
     "reportado": true
   },
   "4742019": {
+    "alineacion_avisada": true,
     "habituales": {
       "109": {
         "equipo": "Aston Villa",
@@ -2823,6 +2824,7 @@
     "reportado": true
   },
   "4750807": {
+    "alineacion_avisada": true,
     "habituales": {
       "132": {
         "equipo": "Barcelona",
