@@ -932,7 +932,7 @@
     },
     "inicio": "2026-10-31T09:00:00-05:00",
     "msg_id": 518,
-    "reportado": false
+    "reportado": true
   },
   "4732651": {
     "alineacion_avisada": true,
