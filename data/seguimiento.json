@@ -2074,7 +2074,7 @@
     },
     "inicio": "2026-10-31T10:00:00-05:00",
     "msg_id": 524,
-    "reportado": false
+    "reportado": true
   },
   "4742015": {
     "alineacion_avisada": true,
@@ -2140,7 +2140,7 @@
     },
     "inicio": "2026-10-31T10:00:00-05:00",
     "msg_id": 525,
-    "reportado": false
+    "reportado": true
   },
   "4742016": {
     "alineacion_avisada": true,
@@ -2206,7 +2206,7 @@
     },
     "inicio": "2026-10-31T10:00:00-05:00",
     "msg_id": 526,
-    "reportado": false
+    "reportado": true
   },
   "4742017": {
     "alineacion_avisada": true,
@@ -2338,7 +2338,7 @@
     },
     "inicio": "2026-10-31T10:00:00-05:00",
     "msg_id": 527,
-    "reportado": false
+    "reportado": true
   },
   "4742019": {
     "habituales": {
@@ -2469,7 +2469,7 @@
     },
     "inicio": "2026-10-31T10:00:00-05:00",
     "msg_id": 528,
-    "reportado": false
+    "reportado": true
   },
   "4742021": {
     "inicio": "2026-10-25T11:30:00-05:00",
