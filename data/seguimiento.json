@@ -2504,6 +2504,7 @@
     "reportado": true
   },
   "4742029": {
+    "alineacion_avisada": true,
     "habituales": {
       "10": {
         "equipo": "Palace",
@@ -2884,6 +2885,7 @@
     "reportado": false
   },
   "4750809": {
+    "alineacion_avisada": true,
     "habituales": {
       "146": {
         "equipo": "Betis",
@@ -3158,7 +3160,7 @@
     },
     "inicio": "2026-10-31T09:30:00-05:00",
     "msg_id": 519,
-    "reportado": false
+    "reportado": true
   },
   "4755356": {
     "alineacion_avisada": true,
@@ -3224,7 +3226,7 @@
     },
     "inicio": "2026-10-31T09:30:00-05:00",
     "msg_id": 520,
-    "reportado": false
+    "reportado": true
   },
   "4755357": {
     "alineacion_avisada": true,
@@ -3290,7 +3292,7 @@
     },
     "inicio": "2026-10-31T09:30:00-05:00",
     "msg_id": 521,
-    "reportado": false
+    "reportado": true
   },
   "4755359": {
     "alineacion_avisada": true,
@@ -3356,7 +3358,7 @@
     },
     "inicio": "2026-10-31T09:30:00-05:00",
     "msg_id": 522,
-    "reportado": false
+    "reportado": true
   },
   "4755361": {
     "alineacion_avisada": true,
@@ -3422,7 +3424,7 @@
     },
     "inicio": "2026-10-31T09:30:00-05:00",
     "msg_id": 523,
-    "reportado": false
+    "reportado": true
   },
   "4755362": {
     "inicio": "2026-10-24T08:30:00-05:00",
