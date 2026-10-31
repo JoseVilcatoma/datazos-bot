@@ -354,7 +354,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-29 20:12,4632623,2026-10-30T18:00:00-05:00,Corinthians vs Mirassol,Brasileirão,alternativa,O1.5,Más de 1.5 goles,0.7423,1.30,1.35,no,acierto,2,0
 2026-10-30 20:07,4742017,2026-10-31T07:30:00-05:00,Chelsea vs Man Utd,Premier,principal,O2.5,Más de 2.5 goles,0.5830,1.62,1.72,no,fallo,2,0
 2026-10-30 20:07,4742017,2026-10-31T07:30:00-05:00,Chelsea vs Man Utd,Premier,alternativa,1X,Chelsea o empate (doble oportunidad),0.7120,1.29,1.40,no,acierto,2,0
-2026-10-30 20:07,4750805,2026-10-31T08:00:00-05:00,Levante UD vs Atlético,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.6100,1.62,1.64,no,pendiente,,
+2026-10-30 20:07,4750805,2026-10-31T08:00:00-05:00,Levante UD vs Atlético,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.6100,1.62,1.64,no,fallo,0,2
 2026-10-30 20:08,4732649,2026-10-31T09:00:00-05:00,Bologna vs Monza,Serie A,principal,BTTS_SI,Ambos marcan: Sí,0.5599,1.75,1.79,no,pendiente,,
 2026-10-30 20:08,4755355,2026-10-31T09:30:00-05:00,Schalke 04 vs RB Leipzig,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6454,1.44,1.55,no,pendiente,,
 2026-10-30 20:08,4755356,2026-10-31T09:30:00-05:00,Werder Bremen vs Hoffenheim,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6895,1.40,1.45,no,pendiente,,
