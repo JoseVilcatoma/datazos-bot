@@ -388,7 +388,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-31 20:05,4735219,2026-11-01T09:00:00-05:00,Estrasburgo vs Auxerre,Ligue 1,principal,O2.5,Más de 2.5 goles,0.5937,1.57,1.68,no,acierto,5,1
 2026-10-31 20:05,4755358,2026-11-01T09:30:00-05:00,Union Berlin vs Köln,Bundesliga,principal,O2.5,Más de 2.5 goles,0.5547,1.73,1.80,no,fallo,1,1
 2026-10-31 20:06,4750804,2026-11-01T10:15:00-05:00,Racing de Santander vs Real Madrid,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.6534,1.50,1.53,no,fallo,0,3
-2026-10-31 20:06,4760776,2026-11-01T11:00:00-05:00,CD Moquegua vs Los Chankas,Liga 1,principal,U3.5,Menos de 3.5 goles,0.6946,1.44,1.44,si,pendiente,,
+2026-10-31 20:06,4760776,2026-11-01T11:00:00-05:00,CD Moquegua vs Los Chankas,Liga 1,principal,U3.5,Menos de 3.5 goles,0.6946,1.44,1.44,si,acierto,0,0
 2026-10-31 20:06,4735220,2026-11-01T11:15:00-05:00,Paris FC vs Monaco,Ligue 1,principal,O1.5,Más de 1.5 goles,0.7812,1.25,1.28,no,pendiente,,
 2026-10-31 20:06,4735223,2026-11-01T11:15:00-05:00,Lyon vs Angers,Ligue 1,principal,BTTS_SI,Ambos marcan: Sí,0.5512,1.75,1.81,no,pendiente,,
 2026-10-31 20:06,4735223,2026-11-01T11:15:00-05:00,Lyon vs Angers,Ligue 1,alternativa,1,Lyon gana,0.6401,1.40,1.56,no,pendiente,,
