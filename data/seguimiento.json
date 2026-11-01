@@ -3680,6 +3680,7 @@
     "reportado": true
   },
   "4750808": {
+    "alineacion_avisada": true,
     "habituales": {
       "139": {
         "equipo": "Valencia",
@@ -4283,7 +4284,7 @@
     },
     "inicio": "2026-11-01T09:30:00-05:00",
     "msg_id": 599,
-    "reportado": false
+    "reportado": true
   },
   "4755359": {
     "alineacion_avisada": true,
