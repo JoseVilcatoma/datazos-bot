@@ -2138,6 +2138,7 @@
     "reportado": false
   },
   "4735220": {
+    "alineacion_avisada": true,
     "habituales": {
       "471": {
         "equipo": "Monaco",
@@ -2334,6 +2335,7 @@
     "reportado": false
   },
   "4735223": {
+    "alineacion_avisada": true,
     "habituales": {
       "465": {
         "equipo": "Lyon",
@@ -4349,6 +4351,7 @@
     "reportado": true
   },
   "4755360": {
+    "alineacion_avisada": true,
     "habituales": {
       "334": {
         "equipo": "Hamburgo SV",
