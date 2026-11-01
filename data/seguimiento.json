@@ -1197,7 +1197,7 @@
     },
     "inicio": "2026-11-01T06:30:00-05:00",
     "msg_id": 594,
-    "reportado": false
+    "reportado": true
   },
   "4732649": {
     "alineacion_avisada": true,
@@ -4215,6 +4215,7 @@
     "reportado": true
   },
   "4755358": {
+    "alineacion_avisada": true,
     "habituales": {
       "350": {
         "equipo": "Köln",
