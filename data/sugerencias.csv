@@ -395,8 +395,8 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-10-31 20:07,4742014,2026-11-01T11:30:00-05:00,Liverpool vs Arsenal,Premier,principal,O1.5,Más de 1.5 goles,0.7673,1.29,1.30,no,fallo,0,1
 2026-10-31 20:07,4755360,2026-11-01T11:30:00-05:00,Eintracht vs Hamburgo SV,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6314,1.50,1.58,no,acierto,3,1
 2026-10-31 20:07,4732644,2026-11-01T12:00:00-05:00,Lecce vs Genoa,Serie A,principal,O1.5,Más de 1.5 goles,0.6759,1.44,1.48,no,acierto,1,2
-2026-10-31 20:07,4750808,2026-11-01T12:30:00-05:00,Elche CF vs Valencia,LaLiga,principal,U2.5,Menos de 2.5 goles,0.5185,1.91,1.93,no,pendiente,,
-2026-10-31 20:07,4750808,2026-11-01T12:30:00-05:00,Elche CF vs Valencia,LaLiga,alternativa,U3.5,Menos de 3.5 goles,0.7361,1.33,1.36,no,pendiente,,
+2026-10-31 20:07,4750808,2026-11-01T12:30:00-05:00,Elche CF vs Valencia,LaLiga,principal,U2.5,Menos de 2.5 goles,0.5185,1.91,1.93,no,acierto,0,1
+2026-10-31 20:07,4750808,2026-11-01T12:30:00-05:00,Elche CF vs Valencia,LaLiga,alternativa,U3.5,Menos de 3.5 goles,0.7361,1.33,1.36,no,acierto,0,1
 2026-10-31 20:07,4760777,2026-11-01T13:15:00-05:00,Cusco FC vs Sport Boys,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5494,1.80,1.82,no,pendiente,,
 2026-10-31 20:07,4732646,2026-11-01T14:45:00-05:00,Juventus vs Nápoles,Serie A,principal,O1.5,Más de 1.5 goles,0.7532,1.30,1.33,no,pendiente,,
 2026-10-31 20:07,4735222,2026-11-01T14:45:00-05:00,Marsella vs Toulouse,Ligue 1,principal,O2.5,Más de 2.5 goles,0.6377,1.57,1.57,si,pendiente,,
