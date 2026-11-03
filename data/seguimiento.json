@@ -6344,6 +6344,7 @@
     "reportado": true
   },
   "4828440": {
+    "alineacion_avisada": true,
     "habituales": {
       "224": {
         "equipo": "Inter",
@@ -6409,6 +6410,7 @@
     "reportado": false
   },
   "4828441": {
+    "alineacion_avisada": true,
     "habituales": {
       "105": {
         "equipo": "Man Utd",
@@ -6604,6 +6606,7 @@
     "reportado": false
   },
   "4828444": {
+    "alineacion_avisada": true,
     "habituales": {
       "134": {
         "equipo": "Atlético",
@@ -6669,6 +6672,7 @@
     "reportado": false
   },
   "4828445": {
+    "alineacion_avisada": true,
     "habituales": {
       "109": {
         "equipo": "Aston Villa",
@@ -6734,6 +6738,7 @@
     "reportado": false
   },
   "4828446": {
+    "alineacion_avisada": true,
     "habituales": {
       "133": {
         "equipo": "Villarreal",
