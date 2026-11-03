@@ -6870,7 +6870,7 @@
     },
     "inicio": "2026-11-03T12:45:00-05:00",
     "msg_id": 686,
-    "reportado": false
+    "reportado": true
   },
   "4828448": {
     "alineacion_avisada": true,
@@ -6936,7 +6936,7 @@
     },
     "inicio": "2026-11-03T12:45:00-05:00",
     "msg_id": 687,
-    "reportado": false
+    "reportado": true
   },
   "4828449": {
     "inicio": "2026-10-21T14:00:00-05:00",
