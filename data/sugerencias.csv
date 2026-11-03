@@ -417,15 +417,15 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-02 20:06,4828447,2026-11-03T12:45:00-05:00,Shakhtar vs Sporting,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.5948,1.62,1.68,no,fallo,0,1
 2026-11-02 20:06,4828447,2026-11-03T12:45:00-05:00,Shakhtar vs Sporting,Champions,alternativa,X2,Sporting o empate (doble oportunidad),0.7137,1.29,1.40,no,acierto,0,1
 2026-11-02 20:06,4828448,2026-11-03T12:45:00-05:00,Galatasaray vs Stuttgart,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.7075,1.36,1.41,no,fallo,2,0
-2026-11-02 20:06,4828440,2026-11-03T15:00:00-05:00,Feyenoord vs Inter,Champions,principal,O2.5,Más de 2.5 goles,0.6887,1.40,1.45,no,pendiente,,
-2026-11-02 20:06,4828441,2026-11-03T15:00:00-05:00,Man Utd vs AS Roma,Champions,principal,X2,AS Roma o empate (doble oportunidad),0.5988,1.67,1.67,si,pendiente,,
-2026-11-02 20:06,4828441,2026-11-03T15:00:00-05:00,Man Utd vs AS Roma,Champions,alternativa,BTTS_SI,Ambos marcan: Sí,0.6714,1.44,1.49,no,pendiente,,
-2026-11-02 20:07,4828442,2026-11-03T15:00:00-05:00,Bodo Glimt vs Lille,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6448,1.50,1.55,no,pendiente,,
-2026-11-02 20:07,4828443,2026-11-03T15:00:00-05:00,LASK vs Slovan Bratislava,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6550,1.53,1.53,si,pendiente,,
-2026-11-02 20:07,4828444,2026-11-03T15:00:00-05:00,Atlético vs Bayern,Champions,principal,X2,Bayern o empate (doble oportunidad),0.6688,1.44,1.50,no,pendiente,,
-2026-11-02 20:07,4828445,2026-11-03T15:00:00-05:00,Barcelona vs Aston Villa,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6878,1.50,1.45,si,pendiente,,
-2026-11-02 20:07,4828446,2026-11-03T15:00:00-05:00,Villarreal vs PSG,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6756,1.40,1.48,no,pendiente,,
-2026-11-02 20:08,4760783,2026-11-03T15:00:00-05:00,Comerciantes vs ADT,Liga 1,principal,O1.5,Más de 1.5 goles,0.7390,1.29,1.35,no,pendiente,,
+2026-11-02 20:06,4828440,2026-11-03T15:00:00-05:00,Feyenoord vs Inter,Champions,principal,O2.5,Más de 2.5 goles,0.6887,1.40,1.45,no,acierto,0,3
+2026-11-02 20:06,4828441,2026-11-03T15:00:00-05:00,Man Utd vs AS Roma,Champions,principal,X2,AS Roma o empate (doble oportunidad),0.5988,1.67,1.67,si,fallo,3,2
+2026-11-02 20:06,4828441,2026-11-03T15:00:00-05:00,Man Utd vs AS Roma,Champions,alternativa,BTTS_SI,Ambos marcan: Sí,0.6714,1.44,1.49,no,acierto,3,2
+2026-11-02 20:07,4828442,2026-11-03T15:00:00-05:00,Bodo Glimt vs Lille,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6448,1.50,1.55,no,fallo,0,0
+2026-11-02 20:07,4828443,2026-11-03T15:00:00-05:00,LASK vs Slovan Bratislava,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6550,1.53,1.53,si,fallo,4,0
+2026-11-02 20:07,4828444,2026-11-03T15:00:00-05:00,Atlético vs Bayern,Champions,principal,X2,Bayern o empate (doble oportunidad),0.6688,1.44,1.50,no,acierto,0,2
+2026-11-02 20:07,4828445,2026-11-03T15:00:00-05:00,Barcelona vs Aston Villa,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6878,1.50,1.45,si,fallo,3,0
+2026-11-02 20:07,4828446,2026-11-03T15:00:00-05:00,Villarreal vs PSG,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6756,1.40,1.48,no,fallo,0,6
+2026-11-02 20:08,4760783,2026-11-03T15:00:00-05:00,Comerciantes vs ADT,Liga 1,principal,O1.5,Más de 1.5 goles,0.7390,1.29,1.35,no,acierto,2,2
 2026-11-02 20:08,4632608,2026-11-03T17:30:00-05:00,Chapecoense vs Mirassol,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7607,1.25,1.31,no,pendiente,,
 2026-11-02 20:08,4632610,2026-11-03T19:30:00-05:00,Internacional vs Coritiba,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5342,1.91,1.87,si,pendiente,,
 2026-11-02 20:08,4632610,2026-11-03T19:30:00-05:00,Internacional vs Coritiba,Brasileirão,alternativa,O1.5,Más de 1.5 goles,0.7784,1.29,1.28,si,pendiente,,

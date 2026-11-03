@@ -5677,7 +5677,7 @@
     },
     "inicio": "2026-11-03T15:00:00-05:00",
     "msg_id": 695,
-    "reportado": false
+    "reportado": true
   },
   "4760784": {
     "alineacion_avisada": true,
@@ -6409,7 +6409,7 @@
     },
     "inicio": "2026-11-03T15:00:00-05:00",
     "msg_id": 688,
-    "reportado": false
+    "reportado": true
   },
   "4828441": {
     "alineacion_avisada": true,
@@ -6475,7 +6475,7 @@
     },
     "inicio": "2026-11-03T15:00:00-05:00",
     "msg_id": 689,
-    "reportado": false
+    "reportado": true
   },
   "4828442": {
     "alineacion_avisada": true,
@@ -6541,7 +6541,7 @@
     },
     "inicio": "2026-11-03T15:00:00-05:00",
     "msg_id": 690,
-    "reportado": false
+    "reportado": true
   },
   "4828443": {
     "alineacion_avisada": true,
@@ -6607,7 +6607,7 @@
     },
     "inicio": "2026-11-03T15:00:00-05:00",
     "msg_id": 691,
-    "reportado": false
+    "reportado": true
   },
   "4828444": {
     "alineacion_avisada": true,
@@ -6673,7 +6673,7 @@
     },
     "inicio": "2026-11-03T15:00:00-05:00",
     "msg_id": 692,
-    "reportado": false
+    "reportado": true
   },
   "4828445": {
     "alineacion_avisada": true,
@@ -6739,7 +6739,7 @@
     },
     "inicio": "2026-11-03T15:00:00-05:00",
     "msg_id": 693,
-    "reportado": false
+    "reportado": true
   },
   "4828446": {
     "alineacion_avisada": true,
@@ -6805,7 +6805,7 @@
     },
     "inicio": "2026-11-03T15:00:00-05:00",
     "msg_id": 694,
-    "reportado": false
+    "reportado": true
   },
   "4828447": {
     "alineacion_avisada": true,
