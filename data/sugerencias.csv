@@ -426,6 +426,6 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-02 20:07,4828445,2026-11-03T15:00:00-05:00,Barcelona vs Aston Villa,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6878,1.50,1.45,si,fallo,3,0
 2026-11-02 20:07,4828446,2026-11-03T15:00:00-05:00,Villarreal vs PSG,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6756,1.40,1.48,no,fallo,0,6
 2026-11-02 20:08,4760783,2026-11-03T15:00:00-05:00,Comerciantes vs ADT,Liga 1,principal,O1.5,Más de 1.5 goles,0.7390,1.29,1.35,no,acierto,2,2
-2026-11-02 20:08,4632608,2026-11-03T17:30:00-05:00,Chapecoense vs Mirassol,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7607,1.25,1.31,no,pendiente,,
+2026-11-02 20:08,4632608,2026-11-03T17:30:00-05:00,Chapecoense vs Mirassol,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7607,1.25,1.31,no,acierto,1,2
 2026-11-02 20:08,4632610,2026-11-03T19:30:00-05:00,Internacional vs Coritiba,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5342,1.91,1.87,si,pendiente,,
 2026-11-02 20:08,4632610,2026-11-03T19:30:00-05:00,Internacional vs Coritiba,Brasileirão,alternativa,O1.5,Más de 1.5 goles,0.7784,1.29,1.28,si,pendiente,,
