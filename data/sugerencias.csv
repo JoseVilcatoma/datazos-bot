@@ -433,16 +433,16 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-03 20:03,4828437,2026-11-04T12:45:00-05:00,Fenerbahce vs Liverpool,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6345,1.53,1.58,no,acierto,3,2
 2026-11-03 20:04,4828439,2026-11-04T12:45:00-05:00,AEK Atenas vs Real Madrid,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6045,1.70,1.65,si,acierto,2,3
 2026-11-03 20:04,4828439,2026-11-04T12:45:00-05:00,AEK Atenas vs Real Madrid,Champions,alternativa,O2.5,Más de 2.5 goles,0.7238,1.29,1.38,no,acierto,2,3
-2026-11-03 20:04,4828431,2026-11-04T15:00:00-05:00,Porto vs Nápoles,Champions,principal,U3.5,Menos de 3.5 goles,0.6692,1.44,1.49,no,pendiente,,
-2026-11-03 20:04,4828432,2026-11-04T15:00:00-05:00,Viking vs Sabah,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6582,1.53,1.52,si,pendiente,,
-2026-11-03 20:04,4828432,2026-11-04T15:00:00-05:00,Viking vs Sabah,Champions,alternativa,O2.5,Más de 2.5 goles,0.7300,1.33,1.37,no,pendiente,,
-2026-11-03 20:05,4828433,2026-11-04T15:00:00-05:00,PSV vs Brujas,Champions,principal,X2,Brujas o empate (doble oportunidad),0.5576,1.80,1.79,si,pendiente,,
-2026-11-03 20:05,4828433,2026-11-04T15:00:00-05:00,PSV vs Brujas,Champions,alternativa,O2.5,Más de 2.5 goles,0.7398,1.33,1.35,no,pendiente,,
-2026-11-03 20:05,4828434,2026-11-04T15:00:00-05:00,Slavia Praga vs Arsenal,Champions,principal,O2.5,Más de 2.5 goles,0.6172,1.53,1.62,no,pendiente,,
-2026-11-03 20:05,4828435,2026-11-04T15:00:00-05:00,Dortmund vs Betis,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6481,1.50,1.54,no,pendiente,,
-2026-11-03 20:06,4828436,2026-11-04T15:00:00-05:00,Lens vs Como,Champions,principal,X2,Como o empate (doble oportunidad),0.7184,1.33,1.39,no,pendiente,,
-2026-11-03 20:06,4828438,2026-11-04T15:00:00-05:00,RB Leipzig vs Man City,Champions,principal,AH_L+1.5,RB Leipzig hándicap +1.5 (no pierde por 2 o más),0.6259,1.62,1.60,si,pendiente,,
-2026-11-03 20:06,4828438,2026-11-04T15:00:00-05:00,RB Leipzig vs Man City,Champions,alternativa,O2.5,Más de 2.5 goles,0.7228,1.33,1.38,no,pendiente,,
+2026-11-03 20:04,4828431,2026-11-04T15:00:00-05:00,Porto vs Nápoles,Champions,principal,U3.5,Menos de 3.5 goles,0.6692,1.44,1.49,no,fallo,4,1
+2026-11-03 20:04,4828432,2026-11-04T15:00:00-05:00,Viking vs Sabah,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6582,1.53,1.52,si,acierto,4,1
+2026-11-03 20:04,4828432,2026-11-04T15:00:00-05:00,Viking vs Sabah,Champions,alternativa,O2.5,Más de 2.5 goles,0.7300,1.33,1.37,no,acierto,4,1
+2026-11-03 20:05,4828433,2026-11-04T15:00:00-05:00,PSV vs Brujas,Champions,principal,X2,Brujas o empate (doble oportunidad),0.5576,1.80,1.79,si,acierto,1,2
+2026-11-03 20:05,4828433,2026-11-04T15:00:00-05:00,PSV vs Brujas,Champions,alternativa,O2.5,Más de 2.5 goles,0.7398,1.33,1.35,no,acierto,1,2
+2026-11-03 20:05,4828434,2026-11-04T15:00:00-05:00,Slavia Praga vs Arsenal,Champions,principal,O2.5,Más de 2.5 goles,0.6172,1.53,1.62,no,acierto,1,2
+2026-11-03 20:05,4828435,2026-11-04T15:00:00-05:00,Dortmund vs Betis,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6481,1.50,1.54,no,acierto,2,1
+2026-11-03 20:06,4828436,2026-11-04T15:00:00-05:00,Lens vs Como,Champions,principal,X2,Como o empate (doble oportunidad),0.7184,1.33,1.39,no,acierto,1,9
+2026-11-03 20:06,4828438,2026-11-04T15:00:00-05:00,RB Leipzig vs Man City,Champions,principal,AH_L+1.5,RB Leipzig hándicap +1.5 (no pierde por 2 o más),0.6259,1.62,1.60,si,acierto,2,3
+2026-11-03 20:06,4828438,2026-11-04T15:00:00-05:00,RB Leipzig vs Man City,Champions,alternativa,O2.5,Más de 2.5 goles,0.7228,1.33,1.38,no,acierto,2,3
 2026-11-03 20:06,4632609,2026-11-04T17:30:00-05:00,Paranaense vs Vasco Da Gama,Brasileirão,principal,1X,Paranaense o empate (doble oportunidad),0.7259,1.29,1.38,no,pendiente,,
 2026-11-03 20:06,4632614,2026-11-04T19:30:00-05:00,São Paulo vs Corinthians,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7121,1.40,1.40,no,pendiente,,
 2026-11-03 20:07,4632615,2026-11-04T19:30:00-05:00,Botafogo vs Atlético Mineiro,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5454,1.67,1.83,no,pendiente,,
