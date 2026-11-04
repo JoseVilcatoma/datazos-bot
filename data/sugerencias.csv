@@ -427,8 +427,8 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-02 20:07,4828446,2026-11-03T15:00:00-05:00,Villarreal vs PSG,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6756,1.40,1.48,no,fallo,0,6
 2026-11-02 20:08,4760783,2026-11-03T15:00:00-05:00,Comerciantes vs ADT,Liga 1,principal,O1.5,Más de 1.5 goles,0.7390,1.29,1.35,no,acierto,2,2
 2026-11-02 20:08,4632608,2026-11-03T17:30:00-05:00,Chapecoense vs Mirassol,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7607,1.25,1.31,no,acierto,1,2
-2026-11-02 20:08,4632610,2026-11-03T19:30:00-05:00,Internacional vs Coritiba,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5342,1.91,1.87,si,pendiente,,
-2026-11-02 20:08,4632610,2026-11-03T19:30:00-05:00,Internacional vs Coritiba,Brasileirão,alternativa,O1.5,Más de 1.5 goles,0.7784,1.29,1.28,si,pendiente,,
+2026-11-02 20:08,4632610,2026-11-03T19:30:00-05:00,Internacional vs Coritiba,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5342,1.91,1.87,si,fallo,1,0
+2026-11-02 20:08,4632610,2026-11-03T19:30:00-05:00,Internacional vs Coritiba,Brasileirão,alternativa,O1.5,Más de 1.5 goles,0.7784,1.29,1.28,si,fallo,1,0
 2026-11-03 20:03,4828710,2026-11-04T10:30:00-05:00,Rennes vs Olympiacos,Europa League,principal,X2,Olympiacos o empate (doble oportunidad),0.5820,1.67,1.72,no,pendiente,,
 2026-11-03 20:03,4828437,2026-11-04T12:45:00-05:00,Fenerbahce vs Liverpool,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6345,1.53,1.58,no,pendiente,,
 2026-11-03 20:04,4828439,2026-11-04T12:45:00-05:00,AEK Atenas vs Real Madrid,Champions,principal,BTTS_SI,Ambos marcan: Sí,0.6045,1.70,1.65,si,pendiente,,
