@@ -129,7 +129,7 @@
     },
     "inicio": "2026-11-04T17:30:00-05:00",
     "msg_id": 736,
-    "reportado": false
+    "reportado": true
   },
   "4632610": {
     "alineacion_avisada": true,
@@ -6144,6 +6144,7 @@
     "reportado": true
   },
   "4760787": {
+    "alineacion_avisada": true,
     "habituales": {
       "7169": {
         "equipo": "Universitario",

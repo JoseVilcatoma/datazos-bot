@@ -443,7 +443,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-03 20:06,4828436,2026-11-04T15:00:00-05:00,Lens vs Como,Champions,principal,X2,Como o empate (doble oportunidad),0.7184,1.33,1.39,no,acierto,1,9
 2026-11-03 20:06,4828438,2026-11-04T15:00:00-05:00,RB Leipzig vs Man City,Champions,principal,AH_L+1.5,RB Leipzig hándicap +1.5 (no pierde por 2 o más),0.6259,1.62,1.60,si,acierto,2,3
 2026-11-03 20:06,4828438,2026-11-04T15:00:00-05:00,RB Leipzig vs Man City,Champions,alternativa,O2.5,Más de 2.5 goles,0.7228,1.33,1.38,no,acierto,2,3
-2026-11-03 20:06,4632609,2026-11-04T17:30:00-05:00,Paranaense vs Vasco Da Gama,Brasileirão,principal,1X,Paranaense o empate (doble oportunidad),0.7259,1.29,1.38,no,pendiente,,
+2026-11-03 20:06,4632609,2026-11-04T17:30:00-05:00,Paranaense vs Vasco Da Gama,Brasileirão,principal,1X,Paranaense o empate (doble oportunidad),0.7259,1.29,1.38,no,fallo,1,3
 2026-11-03 20:06,4632614,2026-11-04T19:30:00-05:00,São Paulo vs Corinthians,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7121,1.40,1.40,no,pendiente,,
 2026-11-03 20:07,4632615,2026-11-04T19:30:00-05:00,Botafogo vs Atlético Mineiro,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5454,1.67,1.83,no,pendiente,,
 2026-11-03 20:07,4760787,2026-11-04T20:30:00-05:00,Universitario vs Sport Boys,Liga 1,principal,O2.5,Más de 2.5 goles,0.5714,1.60,1.75,no,pendiente,,
