@@ -9954,6 +9954,7 @@
     "reportado": false
   },
   "4828897": {
+    "alineacion_avisada": true,
     "habituales": {
       "354": {
         "equipo": "Friburgo",
@@ -10122,6 +10123,7 @@
     "reportado": false
   },
   "4828900": {
+    "alineacion_avisada": true,
     "habituales": {
       "1174": {
         "equipo": "Gent",
@@ -10422,6 +10424,7 @@
     "reportado": false
   },
   "4828905": {
+    "alineacion_avisada": true,
     "habituales": {
       "1831": {
         "equipo": "Aarhus",
