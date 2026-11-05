@@ -466,23 +466,23 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-04 20:04,4828903,2026-11-05T12:45:00-05:00,FC Midtjylland vs Ajax,Conference,principal,O2.5,Más de 2.5 goles,0.6474,1.48,1.54,no,acierto,1,6
 2026-11-04 20:05,4828904,2026-11-05T12:45:00-05:00,Atalanta vs Kairat Almaty,Conference,principal,O2.5,Más de 2.5 goles,0.6626,1.40,1.51,no,fallo,1,1
 2026-11-04 20:05,4828905,2026-11-05T12:45:00-05:00,Aarhus vs Braga,Conference,principal,O1.5,Más de 1.5 goles,0.7496,1.29,1.33,no,fallo,0,0
-2026-11-04 20:06,4828695,2026-11-05T15:00:00-05:00,Sunderland vs Zagreb,Europa League,principal,U3.5,Menos de 3.5 goles,0.6566,1.50,1.52,no,pendiente,,
-2026-11-04 20:06,4828696,2026-11-05T15:00:00-05:00,Celtic vs Besiktas,Europa League,principal,O2.5,Más de 2.5 goles,0.6340,1.53,1.58,no,pendiente,,
-2026-11-04 20:07,4828697,2026-11-05T15:00:00-05:00,Sturm Graz vs Celje,Europa League,principal,U3.5,Menos de 3.5 goles,0.6589,1.57,1.52,si,pendiente,,
-2026-11-04 20:07,4828698,2026-11-05T15:00:00-05:00,Benfica vs Lech Poznan,Europa League,principal,O2.5,Más de 2.5 goles,0.7444,1.29,1.34,no,pendiente,,
-2026-11-04 20:07,4828699,2026-11-05T15:00:00-05:00,Leverkusen vs Marsella,Europa League,principal,BTTS_SI,Ambos marcan: Sí,0.6273,1.67,1.59,si,pendiente,,
-2026-11-04 20:08,4828700,2026-11-05T15:00:00-05:00,Celta vs St. Gilloise,Europa League,principal,X2,St. Gilloise o empate (doble oportunidad),0.6167,1.62,1.62,no,pendiente,,
-2026-11-04 20:08,4828700,2026-11-05T15:00:00-05:00,Celta vs St. Gilloise,Europa League,alternativa,O1.5,Más de 1.5 goles,0.7720,1.25,1.30,no,pendiente,,
-2026-11-04 20:08,4828701,2026-11-05T15:00:00-05:00,Hapoel Beer Sheva vs OFI,Europa League,principal,X2,OFI o empate (doble oportunidad),0.5632,1.73,1.78,no,pendiente,,
-2026-11-04 20:08,4828888,2026-11-05T15:00:00-05:00,FC U Craiova 1948 vs KF Egnatia,Conference,principal,BTTS_SI,Ambos marcan: Sí,0.5266,1.83,1.90,no,pendiente,,
-2026-11-04 20:08,4828888,2026-11-05T15:00:00-05:00,FC U Craiova 1948 vs KF Egnatia,Conference,alternativa,1,FC U Craiova 1948 gana,0.6195,1.45,1.61,no,pendiente,,
-2026-11-04 20:09,4828889,2026-11-05T15:00:00-05:00,Riga vs Jablonec,Conference,principal,O1.5,Más de 1.5 goles,0.7665,1.29,1.30,no,pendiente,,
-2026-11-04 20:09,4828890,2026-11-05T15:00:00-05:00,Panathinaikos vs CSKA Sofia,Conference,principal,BTTS_SI,Ambos marcan: Sí,0.5544,1.80,1.80,no,pendiente,,
-2026-11-04 20:09,4828892,2026-11-05T15:00:00-05:00,Getafe vs Brighton,Conference,principal,O1.5,Más de 1.5 goles,0.7612,1.29,1.31,no,pendiente,,
-2026-11-04 20:09,4828893,2026-11-05T15:00:00-05:00,Twente vs Pafos FC,Conference,principal,BTTS_SI,Ambos marcan: Sí,0.5284,1.80,1.89,no,pendiente,,
-2026-11-04 20:09,4828893,2026-11-05T15:00:00-05:00,Twente vs Pafos FC,Conference,alternativa,1,Twente gana,0.7101,1.29,1.41,no,pendiente,,
-2026-11-04 20:10,4828894,2026-11-05T15:00:00-05:00,Lugano vs Kauno Zalgiris,Conference,principal,O2.5,Más de 2.5 goles,0.7046,1.33,1.42,no,pendiente,,
-2026-11-04 20:10,4828895,2026-11-05T15:00:00-05:00,FC Copenhague vs FC Iberia 1999,Conference,principal,O2.5,Más de 2.5 goles,0.6270,1.40,1.59,no,pendiente,,
-2026-11-04 20:10,4828896,2026-11-05T15:00:00-05:00,Monaco vs FC Nordsjaelland,Conference,principal,BTTS_SI,Ambos marcan: Sí,0.6100,1.57,1.64,no,pendiente,,
+2026-11-04 20:06,4828695,2026-11-05T15:00:00-05:00,Sunderland vs Zagreb,Europa League,principal,U3.5,Menos de 3.5 goles,0.6566,1.50,1.52,no,acierto,0,2
+2026-11-04 20:06,4828696,2026-11-05T15:00:00-05:00,Celtic vs Besiktas,Europa League,principal,O2.5,Más de 2.5 goles,0.6340,1.53,1.58,no,acierto,3,2
+2026-11-04 20:07,4828697,2026-11-05T15:00:00-05:00,Sturm Graz vs Celje,Europa League,principal,U3.5,Menos de 3.5 goles,0.6589,1.57,1.52,si,fallo,2,3
+2026-11-04 20:07,4828698,2026-11-05T15:00:00-05:00,Benfica vs Lech Poznan,Europa League,principal,O2.5,Más de 2.5 goles,0.7444,1.29,1.34,no,acierto,3,1
+2026-11-04 20:07,4828699,2026-11-05T15:00:00-05:00,Leverkusen vs Marsella,Europa League,principal,BTTS_SI,Ambos marcan: Sí,0.6273,1.67,1.59,si,fallo,0,1
+2026-11-04 20:08,4828700,2026-11-05T15:00:00-05:00,Celta vs St. Gilloise,Europa League,principal,X2,St. Gilloise o empate (doble oportunidad),0.6167,1.62,1.62,no,acierto,1,2
+2026-11-04 20:08,4828700,2026-11-05T15:00:00-05:00,Celta vs St. Gilloise,Europa League,alternativa,O1.5,Más de 1.5 goles,0.7720,1.25,1.30,no,acierto,1,2
+2026-11-04 20:08,4828701,2026-11-05T15:00:00-05:00,Hapoel Beer Sheva vs OFI,Europa League,principal,X2,OFI o empate (doble oportunidad),0.5632,1.73,1.78,no,acierto,0,2
+2026-11-04 20:08,4828888,2026-11-05T15:00:00-05:00,FC U Craiova 1948 vs KF Egnatia,Conference,principal,BTTS_SI,Ambos marcan: Sí,0.5266,1.83,1.90,no,fallo,2,0
+2026-11-04 20:08,4828888,2026-11-05T15:00:00-05:00,FC U Craiova 1948 vs KF Egnatia,Conference,alternativa,1,FC U Craiova 1948 gana,0.6195,1.45,1.61,no,acierto,2,0
+2026-11-04 20:09,4828889,2026-11-05T15:00:00-05:00,Riga vs Jablonec,Conference,principal,O1.5,Más de 1.5 goles,0.7665,1.29,1.30,no,acierto,1,1
+2026-11-04 20:09,4828890,2026-11-05T15:00:00-05:00,Panathinaikos vs CSKA Sofia,Conference,principal,BTTS_SI,Ambos marcan: Sí,0.5544,1.80,1.80,no,acierto,2,1
+2026-11-04 20:09,4828892,2026-11-05T15:00:00-05:00,Getafe vs Brighton,Conference,principal,O1.5,Más de 1.5 goles,0.7612,1.29,1.31,no,fallo,0,1
+2026-11-04 20:09,4828893,2026-11-05T15:00:00-05:00,Twente vs Pafos FC,Conference,principal,BTTS_SI,Ambos marcan: Sí,0.5284,1.80,1.89,no,acierto,3,1
+2026-11-04 20:09,4828893,2026-11-05T15:00:00-05:00,Twente vs Pafos FC,Conference,alternativa,1,Twente gana,0.7101,1.29,1.41,no,acierto,3,1
+2026-11-04 20:10,4828894,2026-11-05T15:00:00-05:00,Lugano vs Kauno Zalgiris,Conference,principal,O2.5,Más de 2.5 goles,0.7046,1.33,1.42,no,acierto,3,0
+2026-11-04 20:10,4828895,2026-11-05T15:00:00-05:00,FC Copenhague vs FC Iberia 1999,Conference,principal,O2.5,Más de 2.5 goles,0.6270,1.40,1.59,no,acierto,2,1
+2026-11-04 20:10,4828896,2026-11-05T15:00:00-05:00,Monaco vs FC Nordsjaelland,Conference,principal,BTTS_SI,Ambos marcan: Sí,0.6100,1.57,1.64,no,fallo,2,0
 2026-11-04 20:10,4632613,2026-11-05T17:30:00-05:00,Palmeiras vs Remo,Brasileirão,principal,U3.5,Menos de 3.5 goles,0.6564,1.57,1.52,si,pendiente,,
 2026-11-04 20:10,4632611,2026-11-05T19:30:00-05:00,Cruzeiro vs Bahia,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.6092,1.57,1.64,no,pendiente,,
