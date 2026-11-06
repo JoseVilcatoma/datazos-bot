@@ -3660,7 +3660,7 @@
     },
     "inicio": "2026-11-06T15:00:00-05:00",
     "msg_id": 895,
-    "reportado": false
+    "reportado": true
   },
   "4742012": {
     "alineacion_avisada": true,
@@ -4470,7 +4470,7 @@
     },
     "inicio": "2026-11-06T15:00:00-05:00",
     "msg_id": 896,
-    "reportado": false
+    "reportado": true
   },
   "4750802": {
     "alineacion_avisada": true,
@@ -6008,7 +6008,7 @@
     },
     "inicio": "2026-11-06T15:00:00-05:00",
     "msg_id": 897,
-    "reportado": false
+    "reportado": true
   },
   "4760776": {
     "alineacion_avisada": true,
