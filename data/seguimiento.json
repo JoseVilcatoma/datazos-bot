@@ -393,7 +393,7 @@
     },
     "inicio": "2026-11-05T17:30:00-05:00",
     "msg_id": 808,
-    "reportado": false
+    "reportado": true
   },
   "4632614": {
     "alineacion_avisada": true,

@@ -484,5 +484,5 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-04 20:10,4828894,2026-11-05T15:00:00-05:00,Lugano vs Kauno Zalgiris,Conference,principal,O2.5,Más de 2.5 goles,0.7046,1.33,1.42,no,acierto,3,0
 2026-11-04 20:10,4828895,2026-11-05T15:00:00-05:00,FC Copenhague vs FC Iberia 1999,Conference,principal,O2.5,Más de 2.5 goles,0.6270,1.40,1.59,no,acierto,2,1
 2026-11-04 20:10,4828896,2026-11-05T15:00:00-05:00,Monaco vs FC Nordsjaelland,Conference,principal,BTTS_SI,Ambos marcan: Sí,0.6100,1.57,1.64,no,fallo,2,0
-2026-11-04 20:10,4632613,2026-11-05T17:30:00-05:00,Palmeiras vs Remo,Brasileirão,principal,U3.5,Menos de 3.5 goles,0.6564,1.57,1.52,si,pendiente,,
+2026-11-04 20:10,4632613,2026-11-05T17:30:00-05:00,Palmeiras vs Remo,Brasileirão,principal,U3.5,Menos de 3.5 goles,0.6564,1.57,1.52,si,fallo,6,1
 2026-11-04 20:10,4632611,2026-11-05T19:30:00-05:00,Cruzeiro vs Bahia,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.6092,1.57,1.64,no,pendiente,,
