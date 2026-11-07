@@ -5322,7 +5322,7 @@
     },
     "inicio": "2026-11-07T08:00:00-05:00",
     "msg_id": 918,
-    "reportado": false
+    "reportado": true
   },
   "4750798": {
     "alineacion_avisada": true,
