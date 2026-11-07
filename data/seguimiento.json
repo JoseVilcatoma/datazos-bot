@@ -3325,7 +3325,7 @@
     },
     "inicio": "2026-11-07T13:00:00-05:00",
     "msg_id": 932,
-    "reportado": false
+    "reportado": true
   },
   "4735218": {
     "alineacion_avisada": true,
@@ -7263,7 +7263,7 @@
     },
     "inicio": "2026-11-07T13:00:00-05:00",
     "msg_id": 933,
-    "reportado": false
+    "reportado": true
   },
   "4760771": {
     "habituales": {
@@ -7331,6 +7331,7 @@
     "reportado": false
   },
   "4760773": {
+    "alineacion_avisada": true,
     "habituales": {
       "77513": {
         "equipo": "FC Cajamarca",
