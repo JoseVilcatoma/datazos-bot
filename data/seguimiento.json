@@ -1660,7 +1660,7 @@
     },
     "inicio": "2026-11-07T12:00:00-05:00",
     "msg_id": 928,
-    "reportado": false
+    "reportado": true
   },
   "4732640": {
     "alineacion_avisada": true,
@@ -5066,6 +5066,7 @@
     "reportado": true
   },
   "4750793": {
+    "alineacion_avisada": true,
     "habituales": {
       "131": {
         "equipo": "Real Madrid",
