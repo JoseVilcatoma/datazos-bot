@@ -3260,6 +3260,7 @@
     "reportado": false
   },
   "4735216": {
+    "alineacion_avisada": true,
     "habituales": {
       "476": {
         "equipo": "Auxerre",
@@ -5391,7 +5392,7 @@
     },
     "inicio": "2026-11-07T10:15:00-05:00",
     "msg_id": 927,
-    "reportado": false
+    "reportado": true
   },
   "4750802": {
     "alineacion_avisada": true,
@@ -7196,6 +7197,7 @@
     "reportado": true
   },
   "4760769": {
+    "alineacion_avisada": true,
     "habituales": {
       "57393": {
         "equipo": "ADT",
