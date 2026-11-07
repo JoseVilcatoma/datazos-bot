@@ -493,7 +493,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-05 20:15,4750794,2026-11-06T15:00:00-05:00,Sevilla vs Alavés,LaLiga,principal,O1.5,Más de 1.5 goles,0.7291,1.36,1.37,no,fallo,0,0
 2026-11-05 20:15,4760775,2026-11-06T15:00:00-05:00,Grau vs Cusco FC,Liga 1,principal,O1.5,Más de 1.5 goles,0.7540,1.25,1.33,no,acierto,3,0
 2026-11-05 20:16,4632607,2026-11-06T18:00:00-05:00,Vitória vs Fluminense,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7216,1.33,1.39,no,acierto,0,3
-2026-11-06 20:01,4742005,2026-11-07T07:30:00-05:00,Leeds vs Tottenham,Premier,principal,O1.5,Más de 1.5 goles,0.7569,1.29,1.32,no,pendiente,,
+2026-11-06 20:01,4742005,2026-11-07T07:30:00-05:00,Leeds vs Tottenham,Premier,principal,O1.5,Más de 1.5 goles,0.7569,1.29,1.32,no,fallo,1,0
 2026-11-06 20:01,4750797,2026-11-07T08:00:00-05:00,Málaga CF vs Racing de Santander,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.6080,1.57,1.64,no,pendiente,,
 2026-11-06 20:01,4732632,2026-11-07T09:00:00-05:00,Torino vs Lecce,Serie A,principal,O1.5,Más de 1.5 goles,0.7503,1.29,1.33,no,pendiente,,
 2026-11-06 20:01,4732640,2026-11-07T09:00:00-05:00,Cagliari vs Frosinone,Serie A,principal,O2.5,Más de 2.5 goles,0.6349,1.50,1.58,no,pendiente,,
