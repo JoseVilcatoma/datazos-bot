@@ -3991,6 +3991,7 @@
     "reportado": true
   },
   "4742003": {
+    "alineacion_avisada": true,
     "habituales": {
       "110": {
         "equipo": "Man City",
@@ -6196,7 +6197,7 @@
     },
     "inicio": "2026-11-07T09:30:00-05:00",
     "msg_id": 921,
-    "reportado": false
+    "reportado": true
   },
   "4755347": {
     "alineacion_avisada": true,
@@ -6328,9 +6329,10 @@
     },
     "inicio": "2026-11-07T09:30:00-05:00",
     "msg_id": 922,
-    "reportado": false
+    "reportado": true
   },
   "4755351": {
+    "alineacion_avisada": true,
     "habituales": {
       "332": {
         "equipo": "Werder Bremen",
@@ -6459,7 +6461,7 @@
     },
     "inicio": "2026-11-07T09:30:00-05:00",
     "msg_id": 923,
-    "reportado": false
+    "reportado": true
   },
   "4755353": {
     "alineacion_avisada": true,
@@ -6525,7 +6527,7 @@
     },
     "inicio": "2026-11-07T09:30:00-05:00",
     "msg_id": 924,
-    "reportado": false
+    "reportado": true
   },
   "4755354": {
     "alineacion_avisada": true,
