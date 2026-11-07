@@ -515,6 +515,6 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-06 20:04,4750793,2026-11-07T15:00:00-05:00,Valencia vs Real Madrid,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.5392,1.91,1.85,si,fallo,0,3
 2026-11-06 20:04,4750793,2026-11-07T15:00:00-05:00,Valencia vs Real Madrid,LaLiga,alternativa,O2.5,Más de 2.5 goles,0.6368,1.44,1.57,no,acierto,0,3
 2026-11-06 20:05,4735212,2026-11-07T15:05:00-05:00,PSG vs Troyes,Ligue 1,principal,O2.5,Más de 2.5 goles,0.7351,1.29,1.36,no,fallo,1,0
-2026-11-06 20:05,4760773,2026-11-07T15:30:00-05:00,FC Cajamarca vs Alianza Atletico,Liga 1,principal,X2,Alianza Atletico o empate (doble oportunidad),0.6580,1.62,1.52,si,pendiente,,
+2026-11-06 20:05,4760773,2026-11-07T15:30:00-05:00,FC Cajamarca vs Alianza Atletico,Liga 1,principal,X2,Alianza Atletico o empate (doble oportunidad),0.6580,1.62,1.52,si,fallo,2,0
 2026-11-06 20:05,4760774,2026-11-07T18:00:00-05:00,Melgar vs Juan Pablo II,Liga 1,principal,O2.5,Más de 2.5 goles,0.6139,1.48,1.63,no,pendiente,,
 2026-11-06 20:05,4760771,2026-11-07T20:30:00-05:00,Cienciano vs Huancayo,Liga 1,principal,X2,Huancayo o empate (doble oportunidad),0.5871,1.57,1.70,no,pendiente,,
