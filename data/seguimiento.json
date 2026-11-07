@@ -4121,6 +4121,7 @@
     "reportado": false
   },
   "4742007": {
+    "alineacion_avisada": true,
     "habituales": {
       "116": {
         "equipo": "Newcastle Utd",
@@ -4252,6 +4253,7 @@
     "reportado": true
   },
   "4742011": {
+    "alineacion_avisada": true,
     "habituales": {
       "104": {
         "equipo": "Arsenal",
