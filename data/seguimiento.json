@@ -1466,6 +1466,7 @@
     "reportado": true
   },
   "4732632": {
+    "alineacion_avisada": true,
     "habituales": {
       "235": {
         "equipo": "Torino",
@@ -1661,6 +1662,7 @@
     "reportado": false
   },
   "4732640": {
+    "alineacion_avisada": true,
     "habituales": {
       "243": {
         "equipo": "Cagliari",
