@@ -1597,6 +1597,7 @@
     "reportado": false
   },
   "4732634": {
+    "alineacion_avisada": true,
     "habituales": {
       "241": {
         "equipo": "Parma",
@@ -5194,6 +5195,7 @@
     "reportado": true
   },
   "4750796": {
+    "alineacion_avisada": true,
     "habituales": {
       "143": {
         "equipo": "Osasuna",
