@@ -4913,7 +4913,7 @@
     },
     "inicio": "2026-11-08T11:30:00-05:00",
     "msg_id": 1007,
-    "reportado": false
+    "reportado": true
   },
   "4742005": {
     "alineacion_avisada": true,
@@ -7848,7 +7848,7 @@
     },
     "inicio": "2026-11-08T11:30:00-05:00",
     "msg_id": 1008,
-    "reportado": false
+    "reportado": true
   },
   "4755350": {
     "alineacion_avisada": true,
