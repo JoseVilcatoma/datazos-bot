@@ -544,7 +544,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-07 20:16,4750792,2026-11-08T12:30:00-05:00,Villarreal vs Getafe,LaLiga,principal,O1.5,Más de 1.5 goles,0.7719,1.25,1.30,no,acierto,2,0
 2026-11-07 20:17,4750800,2026-11-08T12:30:00-05:00,Celta vs Levante UD,LaLiga,principal,O1.5,Más de 1.5 goles,0.7612,1.29,1.31,no,fallo,0,0
 2026-11-07 20:17,4760770,2026-11-08T13:00:00-05:00,Los Chankas vs Alianza Lima,Liga 1,principal,2,Alianza Lima gana,0.5516,1.70,1.81,no,fallo,1,1
-2026-11-07 20:17,4755350,2026-11-08T13:30:00-05:00,Hoffenheim vs Schalke 04,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6098,1.57,1.64,no,pendiente,,
+2026-11-07 20:17,4755350,2026-11-08T13:30:00-05:00,Hoffenheim vs Schalke 04,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6098,1.57,1.64,no,acierto,2,1
 2026-11-07 20:17,4732639,2026-11-08T14:45:00-05:00,Fiorentina vs Juventus,Serie A,principal,O1.5,Más de 1.5 goles,0.7729,1.25,1.29,no,pendiente,,
 2026-11-07 20:17,4735209,2026-11-08T14:45:00-05:00,Lens vs Marsella,Ligue 1,principal,O2.5,Más de 2.5 goles,0.6372,1.50,1.57,no,pendiente,,
 2026-11-07 20:18,4750801,2026-11-08T15:00:00-05:00,Atlético vs Barcelona,LaLiga,principal,2,Barcelona gana,0.5096,1.90,1.96,no,pendiente,,

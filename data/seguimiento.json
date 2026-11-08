@@ -7917,7 +7917,7 @@
     },
     "inicio": "2026-11-08T13:30:00-05:00",
     "msg_id": 1013,
-    "reportado": false
+    "reportado": true
   },
   "4755351": {
     "alineacion_avisada": true,
