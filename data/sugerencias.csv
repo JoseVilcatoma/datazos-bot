@@ -519,8 +519,8 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-06 20:05,4760774,2026-11-07T18:00:00-05:00,Melgar vs Juan Pablo II,Liga 1,principal,O2.5,Más de 2.5 goles,0.6139,1.48,1.63,no,acierto,2,1
 2026-11-06 20:05,4760771,2026-11-07T20:30:00-05:00,Cienciano vs Huancayo,Liga 1,principal,X2,Huancayo o empate (doble oportunidad),0.5871,1.57,1.70,no,acierto,1,2
 2026-11-07 20:13,4732635,2026-11-08T06:30:00-05:00,Nápoles vs Lazio,Serie A,principal,O2.5,Más de 2.5 goles,0.5933,1.67,1.69,no,fallo,1,1
-2026-11-07 20:13,4750799,2026-11-08T08:00:00-05:00,Elche CF vs Betis,LaLiga,principal,O2.5,Más de 2.5 goles,0.5773,1.67,1.73,no,pendiente,,
-2026-11-07 20:13,4750799,2026-11-08T08:00:00-05:00,Elche CF vs Betis,LaLiga,alternativa,X2,Betis o empate (doble oportunidad),0.7158,1.29,1.40,no,pendiente,,
+2026-11-07 20:13,4750799,2026-11-08T08:00:00-05:00,Elche CF vs Betis,LaLiga,principal,O2.5,Más de 2.5 goles,0.5773,1.67,1.73,no,fallo,0,2
+2026-11-07 20:13,4750799,2026-11-08T08:00:00-05:00,Elche CF vs Betis,LaLiga,alternativa,X2,Betis o empate (doble oportunidad),0.7158,1.29,1.40,no,acierto,0,2
 2026-11-07 20:13,4742002,2026-11-08T09:00:00-05:00,Sunderland vs Chelsea,Premier,principal,U3.5,Menos de 3.5 goles,0.6941,1.40,1.44,no,pendiente,,
 2026-11-07 20:14,4742006,2026-11-08T09:00:00-05:00,Ipswich vs Bournemouth,Premier,principal,O2.5,Más de 2.5 goles,0.5711,1.73,1.75,no,pendiente,,
 2026-11-07 20:14,4742006,2026-11-08T09:00:00-05:00,Ipswich vs Bournemouth,Premier,alternativa,X2,Bournemouth o empate (doble oportunidad),0.7566,1.25,1.32,no,pendiente,,
