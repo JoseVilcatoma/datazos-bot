@@ -3786,6 +3786,7 @@
     "reportado": false
   },
   "4735214": {
+    "alineacion_avisada": true,
     "habituales": {
       "472": {
         "equipo": "Lorient",
@@ -3982,6 +3983,7 @@
     "reportado": true
   },
   "4735217": {
+    "alineacion_avisada": true,
     "habituales": {
       "470": {
         "equipo": "Niza",
