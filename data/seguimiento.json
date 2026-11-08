@@ -9043,7 +9043,7 @@
     },
     "inicio": "2026-11-08T13:00:00-05:00",
     "msg_id": 1012,
-    "reportado": false
+    "reportado": true
   },
   "4760771": {
     "alineacion_avisada": true,
