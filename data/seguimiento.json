@@ -1860,6 +1860,7 @@
     "reportado": false
   },
   "4732638": {
+    "alineacion_avisada": true,
     "habituales": {
       "227": {
         "equipo": "AC Milan",
@@ -3587,6 +3588,7 @@
     "reportado": true
   },
   "4735211": {
+    "alineacion_avisada": true,
     "habituales": {
       "477": {
         "equipo": "Rennes",
