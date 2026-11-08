@@ -3852,6 +3852,7 @@
     "reportado": false
   },
   "4735215": {
+    "alineacion_avisada": true,
     "habituales": {
       "465": {
         "equipo": "Lyon",
@@ -4847,6 +4848,7 @@
     "reportado": true
   },
   "4742004": {
+    "alineacion_avisada": true,
     "habituales": {
       "105": {
         "equipo": "Man Utd",
