@@ -1793,7 +1793,7 @@
     },
     "inicio": "2026-11-08T09:00:00-05:00",
     "msg_id": 998,
-    "reportado": false
+    "reportado": true
   },
   "4732637": {
     "habituales": {
@@ -1924,7 +1924,7 @@
     },
     "inicio": "2026-11-08T09:00:00-05:00",
     "msg_id": 999,
-    "reportado": false
+    "reportado": true
   },
   "4732639": {
     "habituales": {
@@ -3652,7 +3652,7 @@
     },
     "inicio": "2026-11-08T09:00:00-05:00",
     "msg_id": 1000,
-    "reportado": false
+    "reportado": true
   },
   "4735212": {
     "alineacion_avisada": true,
@@ -4780,7 +4780,7 @@
     },
     "inicio": "2026-11-08T09:00:00-05:00",
     "msg_id": 994,
-    "reportado": false
+    "reportado": true
   },
   "4742003": {
     "alineacion_avisada": true,
@@ -5044,7 +5044,7 @@
     },
     "inicio": "2026-11-08T09:00:00-05:00",
     "msg_id": 995,
-    "reportado": false
+    "reportado": true
   },
   "4742007": {
     "alineacion_avisada": true,
@@ -5242,7 +5242,7 @@
     },
     "inicio": "2026-11-08T09:00:00-05:00",
     "msg_id": 996,
-    "reportado": false
+    "reportado": true
   },
   "4742010": {
     "alineacion_avisada": true,
@@ -5308,7 +5308,7 @@
     },
     "inicio": "2026-11-08T09:00:00-05:00",
     "msg_id": 997,
-    "reportado": false
+    "reportado": true
   },
   "4742011": {
     "alineacion_avisada": true,
