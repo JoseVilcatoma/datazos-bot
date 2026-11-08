@@ -540,7 +540,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-07 20:16,4735217,2026-11-08T11:15:00-05:00,Angers vs Niza,Ligue 1,principal,X2,Niza o empate (doble oportunidad),0.7381,1.29,1.35,no,acierto,0,2
 2026-11-07 20:16,4742004,2026-11-08T11:30:00-05:00,Man Utd vs Aston Villa,Premier,principal,X2,Aston Villa o empate (doble oportunidad),0.5831,1.67,1.71,no,acierto,4,4
 2026-11-07 20:16,4755349,2026-11-08T11:30:00-05:00,Friburgo vs Union Berlin,Bundesliga,principal,AH_V+1.5,Union Berlin hándicap +1.5 (no pierde por 2 o más),0.6144,1.62,1.63,no,fallo,2,0
-2026-11-07 20:16,4732637,2026-11-08T12:00:00-05:00,Inter vs Como,Serie A,principal,BTTS_SI,Ambos marcan: Sí,0.6705,1.44,1.49,no,pendiente,,
+2026-11-07 20:16,4732637,2026-11-08T12:00:00-05:00,Inter vs Como,Serie A,principal,BTTS_SI,Ambos marcan: Sí,0.6705,1.44,1.49,no,fallo,2,0
 2026-11-07 20:16,4750792,2026-11-08T12:30:00-05:00,Villarreal vs Getafe,LaLiga,principal,O1.5,Más de 1.5 goles,0.7719,1.25,1.30,no,pendiente,,
 2026-11-07 20:17,4750800,2026-11-08T12:30:00-05:00,Celta vs Levante UD,LaLiga,principal,O1.5,Más de 1.5 goles,0.7612,1.29,1.31,no,pendiente,,
 2026-11-07 20:17,4760770,2026-11-08T13:00:00-05:00,Los Chankas vs Alianza Lima,Liga 1,principal,2,Alianza Lima gana,0.5516,1.70,1.81,no,pendiente,,

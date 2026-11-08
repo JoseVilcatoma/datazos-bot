@@ -1859,7 +1859,7 @@
     },
     "inicio": "2026-11-08T12:00:00-05:00",
     "msg_id": 1009,
-    "reportado": false
+    "reportado": true
   },
   "4732638": {
     "alineacion_avisada": true,
@@ -1928,6 +1928,7 @@
     "reportado": true
   },
   "4732639": {
+    "alineacion_avisada": true,
     "habituales": {
       "226": {
         "equipo": "Juventus",
@@ -3459,6 +3460,7 @@
     "reportado": true
   },
   "4735209": {
+    "alineacion_avisada": true,
     "habituales": {
       "469": {
         "equipo": "Marsella",
@@ -6716,6 +6718,7 @@
     "reportado": false
   },
   "4750801": {
+    "alineacion_avisada": true,
     "habituales": {
       "132": {
         "equipo": "Barcelona",
