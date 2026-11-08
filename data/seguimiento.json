@@ -6187,7 +6187,7 @@
     },
     "inicio": "2026-11-08T12:30:00-05:00",
     "msg_id": 1010,
-    "reportado": false
+    "reportado": true
   },
   "4750793": {
     "alineacion_avisada": true,
@@ -6715,7 +6715,7 @@
     },
     "inicio": "2026-11-08T12:30:00-05:00",
     "msg_id": 1011,
-    "reportado": false
+    "reportado": true
   },
   "4750801": {
     "alineacion_avisada": true,
