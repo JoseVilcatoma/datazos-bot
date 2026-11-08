@@ -534,10 +534,10 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-07 20:15,4755346,2026-11-08T09:30:00-05:00,Köln vs Leverkusen,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6546,1.44,1.53,no,acierto,1,2
 2026-11-07 20:15,4755346,2026-11-08T09:30:00-05:00,Köln vs Leverkusen,Bundesliga,alternativa,X2,Leverkusen o empate (doble oportunidad),0.7343,1.25,1.36,no,acierto,1,2
 2026-11-07 20:15,4750795,2026-11-08T10:15:00-05:00,Real Sociedad vs Rayo,LaLiga,principal,BTTS_SI,Ambos marcan: Sí,0.6261,1.57,1.60,no,fallo,1,0
-2026-11-07 20:15,4735213,2026-11-08T11:15:00-05:00,Le Mans vs Monaco,Ligue 1,principal,BTTS_SI,Ambos marcan: Sí,0.5940,1.67,1.68,no,pendiente,,
-2026-11-07 20:15,4735214,2026-11-08T11:15:00-05:00,Le Havre vs Lorient,Ligue 1,principal,O1.5,Más de 1.5 goles,0.7579,1.30,1.32,no,pendiente,,
-2026-11-07 20:16,4735215,2026-11-08T11:15:00-05:00,Brest vs Lyon,Ligue 1,principal,O1.5,Más de 1.5 goles,0.7759,1.29,1.29,si,pendiente,,
-2026-11-07 20:16,4735217,2026-11-08T11:15:00-05:00,Angers vs Niza,Ligue 1,principal,X2,Niza o empate (doble oportunidad),0.7381,1.29,1.35,no,pendiente,,
+2026-11-07 20:15,4735213,2026-11-08T11:15:00-05:00,Le Mans vs Monaco,Ligue 1,principal,BTTS_SI,Ambos marcan: Sí,0.5940,1.67,1.68,no,acierto,1,1
+2026-11-07 20:15,4735214,2026-11-08T11:15:00-05:00,Le Havre vs Lorient,Ligue 1,principal,O1.5,Más de 1.5 goles,0.7579,1.30,1.32,no,acierto,0,2
+2026-11-07 20:16,4735215,2026-11-08T11:15:00-05:00,Brest vs Lyon,Ligue 1,principal,O1.5,Más de 1.5 goles,0.7759,1.29,1.29,si,acierto,2,0
+2026-11-07 20:16,4735217,2026-11-08T11:15:00-05:00,Angers vs Niza,Ligue 1,principal,X2,Niza o empate (doble oportunidad),0.7381,1.29,1.35,no,acierto,0,2
 2026-11-07 20:16,4742004,2026-11-08T11:30:00-05:00,Man Utd vs Aston Villa,Premier,principal,X2,Aston Villa o empate (doble oportunidad),0.5831,1.67,1.71,no,pendiente,,
 2026-11-07 20:16,4755349,2026-11-08T11:30:00-05:00,Friburgo vs Union Berlin,Bundesliga,principal,AH_V+1.5,Union Berlin hándicap +1.5 (no pierde por 2 o más),0.6144,1.62,1.63,no,pendiente,,
 2026-11-07 20:16,4732637,2026-11-08T12:00:00-05:00,Inter vs Como,Serie A,principal,BTTS_SI,Ambos marcan: Sí,0.6705,1.44,1.49,no,pendiente,,
