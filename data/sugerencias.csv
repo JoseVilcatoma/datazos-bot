@@ -551,4 +551,4 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-07 20:18,4750801,2026-11-08T15:00:00-05:00,Atlético vs Barcelona,LaLiga,alternativa,X2,Barcelona o empate (doble oportunidad),0.7339,1.29,1.36,no,acierto,1,2
 2026-11-07 20:18,4760772,2026-11-08T15:30:00-05:00,Sport Boys vs UTC Cajamarca,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5529,1.83,1.81,si,fallo,0,0
 2026-11-07 20:18,4760767,2026-11-08T18:00:00-05:00,Garcilaso vs Comerciantes,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5837,1.73,1.71,si,fallo,0,0
-2026-11-07 20:18,4760768,2026-11-08T20:30:00-05:00,Universitario vs CD Moquegua,Liga 1,principal,O2.5,Más de 2.5 goles,0.6047,1.50,1.65,no,pendiente,,
+2026-11-07 20:18,4760768,2026-11-08T20:30:00-05:00,Universitario vs CD Moquegua,Liga 1,principal,O2.5,Más de 2.5 goles,0.6047,1.50,1.65,no,acierto,2,2
