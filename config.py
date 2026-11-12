@@ -21,10 +21,11 @@ LIGAS = {
     583: "Liga 1",
     113: "Brasileirão",
     73: "Primeira Liga",
+    7016: "Nations League",
 }
 
 # Ligas que el bot revisa. Borra o agrega ids de la lista de arriba.
-LIGAS_ACTIVAS = [572, 573, 7685, 7, 11, 17, 25, 35, 113, 102, 389, 583]
+LIGAS_ACTIVAS = [572, 573, 7685, 7, 11, 17, 25, 35, 113, 102, 389, 583, 7016]
 
 # Máximo de partidos por envío (para no llenar el chat). Se priorizan por liga
 # en el orden de LIGAS_ACTIVAS y luego por hora.
