@@ -1463,7 +1463,7 @@
     },
     "inicio": "2026-11-12T14:45:00-05:00",
     "msg_id": 1091,
-    "reportado": false
+    "reportado": true
   },
   "4672304": {
     "alineacion_avisada": true,
@@ -1529,7 +1529,7 @@
     },
     "inicio": "2026-11-12T14:45:00-05:00",
     "msg_id": 1092,
-    "reportado": false
+    "reportado": true
   },
   "4672305": {
     "alineacion_avisada": true,
@@ -1595,7 +1595,7 @@
     },
     "inicio": "2026-11-12T14:45:00-05:00",
     "msg_id": 1093,
-    "reportado": false
+    "reportado": true
   },
   "4672306": {
     "alineacion_avisada": true,
@@ -1661,7 +1661,7 @@
     },
     "inicio": "2026-11-12T14:45:00-05:00",
     "msg_id": 1094,
-    "reportado": false
+    "reportado": true
   },
   "4672307": {
     "alineacion_avisada": true,
@@ -1727,7 +1727,7 @@
     },
     "inicio": "2026-11-12T14:45:00-05:00",
     "msg_id": 1095,
-    "reportado": false
+    "reportado": true
   },
   "4672308": {
     "alineacion_avisada": true,
@@ -1925,7 +1925,7 @@
     },
     "inicio": "2026-11-12T14:45:00-05:00",
     "msg_id": 1096,
-    "reportado": false
+    "reportado": true
   },
   "4732631": {
     "alineacion_avisada": true,

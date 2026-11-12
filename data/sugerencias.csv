@@ -555,7 +555,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-11 20:33,4672308,2026-11-12T12:00:00-05:00,Turquía vs Bélgica,Nations League,principal,X2,Bélgica o empate (doble oportunidad),0.7477,1.25,1.34,no,acierto,1,2
 2026-11-11 20:33,4672309,2026-11-12T12:00:00-05:00,Armenia vs Chipre,Nations League,principal,X2,Chipre o empate (doble oportunidad),0.6441,1.57,1.55,si,acierto,1,1
 2026-11-11 20:33,4672309,2026-11-12T12:00:00-05:00,Armenia vs Chipre,Nations League,alternativa,O1.5,Más de 1.5 goles,0.7529,1.33,1.33,si,acierto,1,1
-2026-11-11 20:33,4672303,2026-11-12T14:45:00-05:00,Inglaterra vs Croacia,Nations League,principal,BTTS_SI,Ambos marcan: Sí,0.5205,1.83,1.92,no,pendiente,,
-2026-11-11 20:33,4672303,2026-11-12T14:45:00-05:00,Inglaterra vs Croacia,Nations League,alternativa,O2.5,Más de 2.5 goles,0.6485,1.44,1.54,no,pendiente,,
-2026-11-11 20:34,4672304,2026-11-12T14:45:00-05:00,Republica Checa vs España,Nations League,principal,O2.5,Más de 2.5 goles,0.6509,1.40,1.54,no,pendiente,,
-2026-11-11 20:34,4672305,2026-11-12T14:45:00-05:00,Italia vs Francia,Nations League,principal,O2.5,Más de 2.5 goles,0.5493,1.67,1.82,no,pendiente,,
+2026-11-11 20:33,4672303,2026-11-12T14:45:00-05:00,Inglaterra vs Croacia,Nations League,principal,BTTS_SI,Ambos marcan: Sí,0.5205,1.83,1.92,no,acierto,2,1
+2026-11-11 20:33,4672303,2026-11-12T14:45:00-05:00,Inglaterra vs Croacia,Nations League,alternativa,O2.5,Más de 2.5 goles,0.6485,1.44,1.54,no,acierto,2,1
+2026-11-11 20:34,4672304,2026-11-12T14:45:00-05:00,Republica Checa vs España,Nations League,principal,O2.5,Más de 2.5 goles,0.6509,1.40,1.54,no,fallo,0,2
+2026-11-11 20:34,4672305,2026-11-12T14:45:00-05:00,Italia vs Francia,Nations League,principal,O2.5,Más de 2.5 goles,0.5493,1.67,1.82,no,acierto,3,1
