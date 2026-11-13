@@ -1400,6 +1400,7 @@
     "reportado": true
   },
   "4672295": {
+    "alineacion_avisada": true,
     "habituales": {
       "5032": {
         "equipo": "Suiza",
@@ -1462,9 +1463,10 @@
     },
     "inicio": "2026-11-13T14:45:00-05:00",
     "msg_id": 1117,
-    "reportado": false
+    "reportado": true
   },
   "4672296": {
+    "alineacion_avisada": true,
     "habituales": {
       "5068": {
         "equipo": "Macedonia del Norte",
@@ -1527,9 +1529,10 @@
     },
     "inicio": "2026-11-13T14:45:00-05:00",
     "msg_id": 1118,
-    "reportado": false
+    "reportado": true
   },
   "4672297": {
+    "alineacion_avisada": true,
     "habituales": {
       "5042": {
         "equipo": "Azerbaiyán",
@@ -1592,9 +1595,10 @@
     },
     "inicio": "2026-11-13T14:45:00-05:00",
     "msg_id": 1119,
-    "reportado": false
+    "reportado": true
   },
   "4672298": {
+    "alineacion_avisada": true,
     "habituales": {
       "2372": {
         "equipo": "Alemania",
@@ -1657,9 +1661,10 @@
     },
     "inicio": "2026-11-13T14:45:00-05:00",
     "msg_id": 1120,
-    "reportado": false
+    "reportado": true
   },
   "4672299": {
+    "alineacion_avisada": true,
     "habituales": {
       "2377": {
         "equipo": "Países Bajos",
@@ -1722,9 +1727,10 @@
     },
     "inicio": "2026-11-13T14:45:00-05:00",
     "msg_id": 1121,
-    "reportado": false
+    "reportado": true
   },
   "4672300": {
+    "alineacion_avisada": true,
     "habituales": {
       "5062": {
         "equipo": "Bulgaria",
@@ -1787,7 +1793,7 @@
     },
     "inicio": "2026-11-13T14:45:00-05:00",
     "msg_id": 1122,
-    "reportado": false
+    "reportado": true
   },
   "4672301": {
     "alineacion_avisada": true,
@@ -1853,9 +1859,10 @@
     },
     "inicio": "2026-11-13T12:00:00-05:00",
     "msg_id": 1116,
-    "reportado": false
+    "reportado": true
   },
   "4672302": {
+    "alineacion_avisada": true,
     "habituales": {
       "5039": {
         "equipo": "Eslovaquia",
@@ -1918,7 +1925,7 @@
     },
     "inicio": "2026-11-13T14:45:00-05:00",
     "msg_id": 1123,
-    "reportado": false
+    "reportado": true
   },
   "4672303": {
     "alineacion_avisada": true,
@@ -2449,6 +2456,7 @@
     "reportado": true
   },
   "4697788": {
+    "alineacion_avisada": true,
     "habituales": {
       "12775": {
         "equipo": "Gibraltar",
@@ -2511,9 +2519,10 @@
     },
     "inicio": "2026-11-13T14:45:00-05:00",
     "msg_id": 1124,
-    "reportado": false
+    "reportado": true
   },
   "4697790": {
+    "alineacion_avisada": true,
     "habituales": {
       "5033": {
         "equipo": "Luxemburgo",
@@ -2576,7 +2585,7 @@
     },
     "inicio": "2026-11-13T14:45:00-05:00",
     "msg_id": 1125,
-    "reportado": false
+    "reportado": true
   },
   "4732631": {
     "alineacion_avisada": true,
@@ -13040,34 +13049,6 @@
     "inicio": "2026-10-21T11:45:00-05:00",
     "reportado": true
   },
-  "4828467": {
-    "inicio": "2026-10-14T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828468": {
-    "inicio": "2026-10-14T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828469": {
-    "inicio": "2026-10-14T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828470": {
-    "inicio": "2026-10-14T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828471": {
-    "inicio": "2026-10-14T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828472": {
-    "inicio": "2026-10-14T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828473": {
-    "inicio": "2026-10-14T14:00:00-05:00",
-    "reportado": true
-  },
   "4828692": {
     "alineacion_avisada": true,
     "habituales": {
@@ -15634,10 +15615,6 @@
   },
   "4858848": {
     "inicio": "2026-10-22T19:30:00-05:00",
-    "reportado": true
-  },
-  "4858860": {
-    "inicio": "2026-10-14T17:00:00-05:00",
     "reportado": true
   },
   "4858861": {
