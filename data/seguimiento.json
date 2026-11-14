@@ -1923,7 +1923,7 @@
     },
     "inicio": "2026-11-14T12:00:00-05:00",
     "msg_id": 1140,
-    "reportado": false
+    "reportado": true
   },
   "4672293": {
     "alineacion_avisada": true,
@@ -1989,7 +1989,7 @@
     },
     "inicio": "2026-11-14T12:00:00-05:00",
     "msg_id": 1141,
-    "reportado": false
+    "reportado": true
   },
   "4672294": {
     "alineacion_avisada": true,
@@ -14967,46 +14967,6 @@
     "inicio": "2026-10-22T11:45:00-05:00",
     "reportado": true
   },
-  "4828729": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828730": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828731": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828732": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828733": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828734": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828735": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828736": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828738": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828739": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
   "4828888": {
     "alineacion_avisada": true,
     "habituales": {
@@ -16149,38 +16109,6 @@
   },
   "4828923": {
     "inicio": "2026-10-22T09:30:00-05:00",
-    "reportado": true
-  },
-  "4828924": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828925": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828926": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828927": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828928": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828929": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828930": {
-    "inicio": "2026-10-15T14:00:00-05:00",
-    "reportado": true
-  },
-  "4828931": {
-    "inicio": "2026-10-15T14:00:00-05:00",
     "reportado": true
   },
   "4856898": {
