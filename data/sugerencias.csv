@@ -575,6 +575,6 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-13 20:05,4672289,2026-11-14T14:45:00-05:00,Austria vs Irlanda,Nations League,principal,BTTS_SI,Ambos marcan: Sí,0.5458,1.83,1.83,no,fallo,1,0
 2026-11-13 20:05,4672290,2026-11-14T14:45:00-05:00,Irlanda del Norte vs Ucrania,Nations League,principal,1X,Irlanda del Norte o empate (doble oportunidad),0.7053,1.36,1.42,no,acierto,1,0
 2026-11-13 20:05,4672291,2026-11-14T14:45:00-05:00,Portugal vs Dinamarca,Nations League,principal,BTTS_SI,Ambos marcan: Sí,0.6029,1.62,1.66,no,acierto,1,4
-2026-11-13 20:05,4632602,2026-11-14T16:30:00-05:00,Mirassol vs Atlético Mineiro,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7673,1.29,1.30,no,pendiente,,
+2026-11-13 20:05,4632602,2026-11-14T16:30:00-05:00,Mirassol vs Atlético Mineiro,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7673,1.29,1.30,no,fallo,0,0
 2026-11-13 20:06,4632737,2026-11-14T18:30:00-05:00,Chapecoense vs Vasco Da Gama,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5339,1.80,1.87,no,pendiente,,
 2026-11-13 20:06,4632737,2026-11-14T18:30:00-05:00,Chapecoense vs Vasco Da Gama,Brasileirão,alternativa,2,Vasco Da Gama gana,0.6187,1.42,1.62,no,pendiente,,
