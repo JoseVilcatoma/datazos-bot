@@ -567,3 +567,14 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-12 20:04,4672302,2026-11-13T14:45:00-05:00,Eslovaquia vs Islas Feroe,Nations League,principal,U3.5,Menos de 3.5 goles,0.7011,1.36,1.43,no,fallo,2,2
 2026-11-12 20:05,4697788,2026-11-13T14:45:00-05:00,Andorra vs Gibraltar,Nations League,principal,O1.5,Más de 1.5 goles,0.6275,1.67,1.59,si,acierto,2,0
 2026-11-12 20:05,4697790,2026-11-13T14:45:00-05:00,Luxemburgo vs Estonia,Nations League,principal,1X,Luxemburgo o empate (doble oportunidad),0.7004,1.36,1.43,no,fallo,0,1
+2026-11-13 20:04,4672294,2026-11-14T09:00:00-05:00,Kosovo vs Israel,Nations League,principal,O1.5,Más de 1.5 goles,0.7544,1.29,1.33,no,pendiente,,
+2026-11-13 20:04,4672292,2026-11-14T12:00:00-05:00,Georgia vs Hungría,Nations League,principal,X2,Hungría o empate (doble oportunidad),0.7174,1.36,1.39,no,pendiente,,
+2026-11-13 20:04,4672293,2026-11-14T12:00:00-05:00,Noruega vs Gales,Nations League,principal,BTTS_SI,Ambos marcan: Sí,0.5745,1.83,1.74,si,pendiente,,
+2026-11-13 20:04,4672293,2026-11-14T12:00:00-05:00,Noruega vs Gales,Nations League,alternativa,O2.5,Más de 2.5 goles,0.6572,1.40,1.52,no,pendiente,,
+2026-11-13 20:04,4672287,2026-11-14T14:45:00-05:00,Suecia vs Bosnia Herzegovina,Nations League,principal,BTTS_SI,Ambos marcan: Sí,0.5633,1.67,1.78,no,pendiente,,
+2026-11-13 20:05,4672289,2026-11-14T14:45:00-05:00,Austria vs Irlanda,Nations League,principal,BTTS_SI,Ambos marcan: Sí,0.5458,1.83,1.83,no,pendiente,,
+2026-11-13 20:05,4672290,2026-11-14T14:45:00-05:00,Irlanda del Norte vs Ucrania,Nations League,principal,1X,Irlanda del Norte o empate (doble oportunidad),0.7053,1.36,1.42,no,pendiente,,
+2026-11-13 20:05,4672291,2026-11-14T14:45:00-05:00,Portugal vs Dinamarca,Nations League,principal,BTTS_SI,Ambos marcan: Sí,0.6029,1.62,1.66,no,pendiente,,
+2026-11-13 20:05,4632602,2026-11-14T16:30:00-05:00,Mirassol vs Atlético Mineiro,Brasileirão,principal,O1.5,Más de 1.5 goles,0.7673,1.29,1.30,no,pendiente,,
+2026-11-13 20:06,4632737,2026-11-14T18:30:00-05:00,Chapecoense vs Vasco Da Gama,Brasileirão,principal,BTTS_SI,Ambos marcan: Sí,0.5339,1.80,1.87,no,pendiente,,
+2026-11-13 20:06,4632737,2026-11-14T18:30:00-05:00,Chapecoense vs Vasco Da Gama,Brasileirão,alternativa,2,Vasco Da Gama gana,0.6187,1.42,1.62,no,pendiente,,
