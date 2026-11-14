@@ -1855,6 +1855,7 @@
     "reportado": false
   },
   "4672292": {
+    "alineacion_avisada": true,
     "habituales": {
       "5026": {
         "equipo": "Hungría",
@@ -1920,6 +1921,7 @@
     "reportado": false
   },
   "4672293": {
+    "alineacion_avisada": true,
     "habituales": {
       "2376": {
         "equipo": "Noruega",
@@ -2048,7 +2050,7 @@
     },
     "inicio": "2026-11-14T09:00:00-05:00",
     "msg_id": 1139,
-    "reportado": false
+    "reportado": true
   },
   "4672295": {
     "alineacion_avisada": true,
