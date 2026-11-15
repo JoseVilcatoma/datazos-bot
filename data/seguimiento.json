@@ -1595,7 +1595,7 @@
     },
     "inicio": "2026-11-15T14:45:00-05:00",
     "msg_id": 1176,
-    "reportado": false
+    "reportado": true
   },
   "4672281": {
     "alineacion_avisada": true,
@@ -1661,7 +1661,7 @@
     },
     "inicio": "2026-11-15T14:45:00-05:00",
     "msg_id": 1177,
-    "reportado": false
+    "reportado": true
   },
   "4672282": {
     "alineacion_avisada": true,
@@ -1727,7 +1727,7 @@
     },
     "inicio": "2026-11-15T14:45:00-05:00",
     "msg_id": 1178,
-    "reportado": false
+    "reportado": true
   },
   "4672283": {
     "alineacion_avisada": true,
@@ -1793,7 +1793,7 @@
     },
     "inicio": "2026-11-15T14:45:00-05:00",
     "msg_id": 1179,
-    "reportado": false
+    "reportado": true
   },
   "4672284": {
     "alineacion_avisada": true,
