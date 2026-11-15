@@ -1532,6 +1532,7 @@
     "reportado": true
   },
   "4672280": {
+    "alineacion_avisada": true,
     "habituales": {
       "5050": {
         "equipo": "España",
@@ -1597,6 +1598,7 @@
     "reportado": false
   },
   "4672281": {
+    "alineacion_avisada": true,
     "habituales": {
       "5040": {
         "equipo": "Republica Checa",
@@ -1662,6 +1664,7 @@
     "reportado": false
   },
   "4672282": {
+    "alineacion_avisada": true,
     "habituales": {
       "5047": {
         "equipo": "Turquía",
@@ -1727,6 +1730,7 @@
     "reportado": false
   },
   "4672283": {
+    "alineacion_avisada": true,
     "habituales": {
       "2373": {
         "equipo": "Bélgica",
@@ -5819,10 +5823,6 @@
     "inicio": "2026-10-18T13:45:00-05:00",
     "reportado": true
   },
-  "4732678": {
-    "inicio": "2026-10-16T13:45:00-05:00",
-    "reportado": true
-  },
   "4732679": {
     "inicio": "2026-10-18T08:00:00-05:00",
     "reportado": true
@@ -7077,10 +7077,6 @@
   },
   "4735241": {
     "inicio": "2026-10-17T13:45:00-05:00",
-    "reportado": true
-  },
-  "4735242": {
-    "inicio": "2026-10-16T13:45:00-05:00",
     "reportado": true
   },
   "4735243": {
