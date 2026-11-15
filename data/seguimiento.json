@@ -1792,6 +1792,7 @@
     "reportado": false
   },
   "4672284": {
+    "alineacion_avisada": true,
     "habituales": {
       "5036": {
         "equipo": "San Marino",
@@ -1857,6 +1858,7 @@
     "reportado": false
   },
   "4672285": {
+    "alineacion_avisada": true,
     "habituales": {
       "5029": {
         "equipo": "Albania",
@@ -1985,7 +1987,7 @@
     },
     "inicio": "2026-11-15T09:00:00-05:00",
     "msg_id": 1171,
-    "reportado": false
+    "reportado": true
   },
   "4672287": {
     "alineacion_avisada": true,
@@ -3569,7 +3571,7 @@
     },
     "inicio": "2026-11-15T09:00:00-05:00",
     "msg_id": 1172,
-    "reportado": false
+    "reportado": true
   },
   "4697787": {
     "alineacion_avisada": true,
