@@ -1922,6 +1922,7 @@
     "reportado": false
   },
   "4672286": {
+    "alineacion_avisada": true,
     "habituales": {
       "5063": {
         "equipo": "Montenegro",
@@ -3505,6 +3506,7 @@
     "reportado": true
   },
   "4697785": {
+    "alineacion_avisada": true,
     "habituales": {
       "2300": {
         "equipo": "Letonia",
