@@ -1854,6 +1854,7 @@
     "reportado": false
   },
   "4672277": {
+    "alineacion_avisada": true,
     "habituales": {
       "5051": {
         "equipo": "Estonia",
@@ -4360,6 +4361,7 @@
     "reportado": false
   },
   "4697792": {
+    "alineacion_avisada": true,
     "habituales": {
       "5033": {
         "equipo": "Luxemburgo",
@@ -6470,10 +6472,6 @@
   },
   "4732679": {
     "inicio": "2026-10-18T08:00:00-05:00",
-    "reportado": true
-  },
-  "4732680": {
-    "inicio": "2026-10-17T11:00:00-05:00",
     "reportado": true
   },
   "4735209": {
