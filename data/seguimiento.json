@@ -1918,6 +1918,7 @@
     "reportado": false
   },
   "4672278": {
+    "alineacion_avisada": true,
     "habituales": {
       "5039": {
         "equipo": "Eslovaquia",
@@ -1983,6 +1984,7 @@
     "reportado": false
   },
   "4672279": {
+    "alineacion_avisada": true,
     "habituales": {
       "5031": {
         "equipo": "Moldavia",
@@ -9101,24 +9103,12 @@
     "inicio": "2026-10-18T08:00:00-05:00",
     "reportado": true
   },
-  "4742035": {
-    "inicio": "2026-10-17T09:00:00-05:00",
-    "reportado": true
-  },
   "4742037": {
     "inicio": "2026-10-18T08:00:00-05:00",
     "reportado": true
   },
-  "4742038": {
-    "inicio": "2026-10-17T09:00:00-05:00",
-    "reportado": true
-  },
   "4742039": {
     "inicio": "2026-10-18T08:00:00-05:00",
-    "reportado": true
-  },
-  "4742043": {
-    "inicio": "2026-10-17T09:00:00-05:00",
     "reportado": true
   },
   "4742050": {
