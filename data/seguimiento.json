@@ -1528,6 +1528,7 @@
     "reportado": true
   },
   "4672272": {
+    "alineacion_avisada": true,
     "habituales": {
       "5041": {
         "equipo": "Eslovenia",
@@ -1593,6 +1594,7 @@
     "reportado": false
   },
   "4672273": {
+    "alineacion_avisada": true,
     "habituales": {
       "5032": {
         "equipo": "Suiza",
@@ -1658,6 +1660,7 @@
     "reportado": false
   },
   "4672274": {
+    "alineacion_avisada": true,
     "habituales": {
       "2374": {
         "equipo": "Serbia",
@@ -1723,6 +1726,7 @@
     "reportado": false
   },
   "4672275": {
+    "alineacion_avisada": true,
     "habituales": {
       "2372": {
         "equipo": "Alemania",
@@ -4296,6 +4300,7 @@
     "reportado": true
   },
   "4697791": {
+    "alineacion_avisada": true,
     "habituales": {
       "12775": {
         "equipo": "Gibraltar",
@@ -6450,10 +6455,6 @@
     "inicio": "2026-10-18T05:30:00-05:00",
     "reportado": true
   },
-  "4732673": {
-    "inicio": "2026-10-17T13:45:00-05:00",
-    "reportado": true
-  },
   "4732674": {
     "inicio": "2026-10-19T13:45:00-05:00",
     "reportado": true
@@ -7698,10 +7699,6 @@
     "inicio": "2026-10-25T11:15:00-05:00",
     "reportado": true
   },
-  "4735236": {
-    "inicio": "2026-10-17T13:45:00-05:00",
-    "reportado": true
-  },
   "4735238": {
     "inicio": "2026-10-18T10:15:00-05:00",
     "reportado": true
@@ -7712,10 +7709,6 @@
   },
   "4735240": {
     "inicio": "2026-10-18T10:15:00-05:00",
-    "reportado": true
-  },
-  "4735241": {
-    "inicio": "2026-10-17T13:45:00-05:00",
     "reportado": true
   },
   "4735243": {
