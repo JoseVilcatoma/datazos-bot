@@ -11779,7 +11779,7 @@
     },
     "inicio": "2026-11-16T13:00:00-05:00",
     "msg_id": 1211,
-    "reportado": false
+    "reportado": true
   },
   "4760760": {
     "alineacion_avisada": true,
@@ -13869,10 +13869,6 @@
   },
   "4760804": {
     "inicio": "2026-10-18T13:15:00-05:00",
-    "reportado": true
-  },
-  "4760805": {
-    "inicio": "2026-10-17T15:00:00-05:00",
     "reportado": true
   },
   "4760806": {
