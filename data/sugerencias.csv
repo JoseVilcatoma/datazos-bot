@@ -598,3 +598,11 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-15 20:15,4672275,2026-11-16T14:45:00-05:00,Alemania vs Países Bajos,Nations League,principal,O2.5,Más de 2.5 goles,0.6828,1.40,1.46,no,acierto,5,0
 2026-11-15 20:15,4697791,2026-11-16T14:45:00-05:00,Gibraltar vs Malta,Nations League,principal,O1.5,Más de 1.5 goles,0.7072,1.44,1.41,si,acierto,1,1
 2026-11-15 20:15,4760765,2026-11-16T15:15:00-05:00,Cusco FC vs ADT,Liga 1,principal,BTTS_SI,Ambos marcan: Sí,0.5434,1.80,1.84,no,acierto,2,2
+2026-11-16 20:02,4672264,2026-11-17T14:45:00-05:00,Irlanda vs Kosovo,Nations League,principal,U2.5,Menos de 2.5 goles,0.5598,1.57,1.79,no,pendiente,,
+2026-11-16 20:02,4672265,2026-11-17T14:45:00-05:00,Polonia vs Suecia,Nations League,principal,O2.5,Más de 2.5 goles,0.5839,1.65,1.71,no,pendiente,,
+2026-11-16 20:02,4672266,2026-11-17T14:45:00-05:00,Gales vs Portugal,Nations League,principal,2,Portugal gana,0.6169,1.44,1.62,no,pendiente,,
+2026-11-16 20:02,4672267,2026-11-17T14:45:00-05:00,Dinamarca vs Noruega,Nations League,principal,O2.5,Más de 2.5 goles,0.6277,1.48,1.59,no,pendiente,,
+2026-11-16 20:02,4672269,2026-11-17T14:45:00-05:00,Israel vs Austria,Nations League,principal,BTTS_SI,Ambos marcan: Sí,0.5906,1.62,1.69,no,pendiente,,
+2026-11-16 20:02,4672269,2026-11-17T14:45:00-05:00,Israel vs Austria,Nations League,alternativa,X2,Austria o empate (doble oportunidad),0.7522,1.25,1.33,no,pendiente,,
+2026-11-16 20:02,4672270,2026-11-17T14:45:00-05:00,Ucrania vs Georgia,Nations League,principal,1X,Ucrania o empate (doble oportunidad),0.7303,1.29,1.37,no,pendiente,,
+2026-11-16 20:02,4672271,2026-11-17T14:45:00-05:00,Hungría vs Irlanda del Norte,Nations League,principal,X2,Irlanda del Norte o empate (doble oportunidad),0.5585,1.80,1.79,si,pendiente,,
