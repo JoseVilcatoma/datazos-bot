@@ -260,7 +260,7 @@
     },
     "inicio": "2026-11-18T19:30:00-05:00",
     "msg_id": 1280,
-    "reportado": false
+    "reportado": true
   },
   "4632601": {
     "alineacion_avisada": true,
@@ -458,7 +458,7 @@
     },
     "inicio": "2026-11-18T19:30:00-05:00",
     "msg_id": 1281,
-    "reportado": false
+    "reportado": true
   },
   "4632604": {
     "habituales": {
