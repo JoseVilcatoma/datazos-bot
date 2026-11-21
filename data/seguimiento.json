@@ -9610,6 +9610,7 @@
     "reportado": true
   },
   "4741991": {
+    "alineacion_avisada": true,
     "habituales": {
       "114": {
         "equipo": "Tottenham",
@@ -9806,6 +9807,7 @@
     "reportado": false
   },
   "4741997": {
+    "alineacion_avisada": true,
     "habituales": {
       "10": {
         "equipo": "Palace",
@@ -9871,6 +9873,7 @@
     "reportado": false
   },
   "4741998": {
+    "alineacion_avisada": true,
     "habituales": {
       "106": {
         "equipo": "Chelsea",
@@ -9936,6 +9939,7 @@
     "reportado": false
   },
   "4742000": {
+    "alineacion_avisada": true,
     "habituales": {
       "109": {
         "equipo": "Aston Villa",
@@ -10001,6 +10005,7 @@
     "reportado": false
   },
   "4742001": {
+    "alineacion_avisada": true,
     "habituales": {
       "29": {
         "equipo": "Forest",
@@ -11560,6 +11565,7 @@
     "reportado": false
   },
   "4750784": {
+    "alineacion_avisada": true,
     "habituales": {
       "139": {
         "equipo": "Valencia",
