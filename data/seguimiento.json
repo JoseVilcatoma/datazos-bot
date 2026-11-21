@@ -5843,6 +5843,7 @@
     "reportado": false
   },
   "4732626": {
+    "alineacion_avisada": true,
     "habituales": {
       "236": {
         "equipo": "Lazio",
@@ -13112,6 +13113,7 @@
     "reportado": true
   },
   "4755336": {
+    "alineacion_avisada": true,
     "habituales": {
       "354": {
         "equipo": "Friburgo",
@@ -13242,6 +13244,7 @@
     "reportado": false
   },
   "4755339": {
+    "alineacion_avisada": true,
     "habituales": {
       "341": {
         "equipo": "Dortmund",
@@ -13307,6 +13310,7 @@
     "reportado": false
   },
   "4755340": {
+    "alineacion_avisada": true,
     "habituales": {
       "392": {
         "equipo": "Union Berlin",
@@ -13437,6 +13441,7 @@
     "reportado": false
   },
   "4755343": {
+    "alineacion_avisada": true,
     "habituales": {
       "333": {
         "equipo": "Leverkusen",
