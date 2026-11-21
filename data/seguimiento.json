@@ -11438,6 +11438,7 @@
     "reportado": true
   },
   "4750782": {
+    "alineacion_avisada": true,
     "habituales": {
       "135": {
         "equipo": "Sevilla",
@@ -13185,9 +13186,10 @@
     },
     "inicio": "2026-11-21T09:30:00-05:00",
     "msg_id": 1325,
-    "reportado": false
+    "reportado": true
   },
   "4755337": {
+    "alineacion_avisada": true,
     "habituales": {
       "335": {
         "equipo": "Schalke 04",
@@ -13316,7 +13318,7 @@
     },
     "inicio": "2026-11-21T09:30:00-05:00",
     "msg_id": 1326,
-    "reportado": false
+    "reportado": true
   },
   "4755340": {
     "alineacion_avisada": true,
@@ -13382,7 +13384,7 @@
     },
     "inicio": "2026-11-21T09:30:00-05:00",
     "msg_id": 1327,
-    "reportado": false
+    "reportado": true
   },
   "4755342": {
     "alineacion_avisada": true,
@@ -13448,7 +13450,7 @@
     },
     "inicio": "2026-11-21T09:30:00-05:00",
     "msg_id": 1328,
-    "reportado": false
+    "reportado": true
   },
   "4755343": {
     "alineacion_avisada": true,
@@ -13514,7 +13516,7 @@
     },
     "inicio": "2026-11-21T09:30:00-05:00",
     "msg_id": 1329,
-    "reportado": false
+    "reportado": true
   },
   "4755344": {
     "alineacion_avisada": true,

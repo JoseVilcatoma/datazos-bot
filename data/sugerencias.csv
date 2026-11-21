@@ -630,13 +630,13 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-20 20:12,4732626,2026-11-21T09:00:00-05:00,Lazio vs Lecce,Serie A,alternativa,1,Lazio gana,0.6252,1.40,1.60,no,acierto,3,0
 2026-11-20 20:13,4732628,2026-11-21T09:00:00-05:00,Como vs Cagliari,Serie A,principal,BTTS_SI,Ambos marcan: Sí,0.5274,1.91,1.90,si,fallo,2,0
 2026-11-20 20:13,4732628,2026-11-21T09:00:00-05:00,Como vs Cagliari,Serie A,alternativa,O2.5,Más de 2.5 goles,0.5975,1.53,1.67,no,fallo,2,0
-2026-11-20 20:13,4755336,2026-11-21T09:30:00-05:00,Elversberg vs Friburgo,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6016,1.57,1.66,no,pendiente,,
-2026-11-20 20:13,4755336,2026-11-21T09:30:00-05:00,Elversberg vs Friburgo,Bundesliga,alternativa,X2,Friburgo o empate (doble oportunidad),0.7195,1.29,1.39,no,pendiente,,
-2026-11-20 20:13,4755339,2026-11-21T09:30:00-05:00,Gladbach vs Dortmund,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6271,1.57,1.59,no,pendiente,,
-2026-11-20 20:13,4755340,2026-11-21T09:30:00-05:00,Union Berlin vs RB Leipzig,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6140,1.57,1.63,no,pendiente,,
-2026-11-20 20:14,4755342,2026-11-21T09:30:00-05:00,Eintracht vs Hoffenheim,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.7196,1.33,1.39,no,pendiente,,
-2026-11-20 20:14,4755343,2026-11-21T09:30:00-05:00,Leverkusen vs SC Paderborn,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6183,1.70,1.62,si,pendiente,,
-2026-11-20 20:14,4755343,2026-11-21T09:30:00-05:00,Leverkusen vs SC Paderborn,Bundesliga,alternativa,O2.5,Más de 2.5 goles,0.7025,1.33,1.42,no,pendiente,,
+2026-11-20 20:13,4755336,2026-11-21T09:30:00-05:00,Elversberg vs Friburgo,Bundesliga,principal,O2.5,Más de 2.5 goles,0.6016,1.57,1.66,no,fallo,0,1
+2026-11-20 20:13,4755336,2026-11-21T09:30:00-05:00,Elversberg vs Friburgo,Bundesliga,alternativa,X2,Friburgo o empate (doble oportunidad),0.7195,1.29,1.39,no,acierto,0,1
+2026-11-20 20:13,4755339,2026-11-21T09:30:00-05:00,Gladbach vs Dortmund,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6271,1.57,1.59,no,fallo,0,1
+2026-11-20 20:13,4755340,2026-11-21T09:30:00-05:00,Union Berlin vs RB Leipzig,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6140,1.57,1.63,no,acierto,1,5
+2026-11-20 20:14,4755342,2026-11-21T09:30:00-05:00,Eintracht vs Hoffenheim,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.7196,1.33,1.39,no,fallo,1,0
+2026-11-20 20:14,4755343,2026-11-21T09:30:00-05:00,Leverkusen vs SC Paderborn,Bundesliga,principal,BTTS_SI,Ambos marcan: Sí,0.6183,1.70,1.62,si,fallo,4,0
+2026-11-20 20:14,4755343,2026-11-21T09:30:00-05:00,Leverkusen vs SC Paderborn,Bundesliga,alternativa,O2.5,Más de 2.5 goles,0.7025,1.33,1.42,no,acierto,4,0
 2026-11-20 20:14,4741991,2026-11-21T10:00:00-05:00,Tottenham vs Ipswich,Premier,principal,BTTS_SI,Ambos marcan: Sí,0.5798,1.67,1.72,no,pendiente,,
 2026-11-20 20:14,4741997,2026-11-21T10:00:00-05:00,Coventry vs Palace,Premier,principal,O2.5,Más de 2.5 goles,0.5627,1.73,1.78,no,pendiente,,
 2026-11-20 20:14,4741997,2026-11-21T10:00:00-05:00,Coventry vs Palace,Premier,alternativa,1X,Coventry o empate (doble oportunidad),0.6680,1.40,1.50,no,pendiente,,
