@@ -623,7 +623,7 @@ registrado,game_id,fecha_partido,partido,liga,tipo,mercado,descripcion,prob,cuot
 2026-11-19 20:11,4735200,2026-11-20T14:45:00-05:00,Troyes vs Le Havre,Ligue 1,principal,O2.5,Más de 2.5 goles,0.5289,1.91,1.89,si,acierto,3,1
 2026-11-19 20:11,4735200,2026-11-20T14:45:00-05:00,Troyes vs Le Havre,Ligue 1,alternativa,O1.5,Más de 1.5 goles,0.7796,1.29,1.28,si,acierto,3,1
 2026-11-19 20:12,4750790,2026-11-20T15:00:00-05:00,Athletic vs Espanyol,LaLiga,principal,O1.5,Más de 1.5 goles,0.7707,1.25,1.30,no,fallo,0,1
-2026-11-20 20:12,4741994,2026-11-21T07:30:00-05:00,Man City vs Fulham,Premier,principal,BTTS_SI,Ambos marcan: Sí,0.5983,1.62,1.67,no,pendiente,,
+2026-11-20 20:12,4741994,2026-11-21T07:30:00-05:00,Man City vs Fulham,Premier,principal,BTTS_SI,Ambos marcan: Sí,0.5983,1.62,1.67,no,acierto,1,1
 2026-11-20 20:12,4750791,2026-11-21T08:00:00-05:00,Alavés vs Deportivo,LaLiga,principal,X2,Deportivo o empate (doble oportunidad),0.6230,1.57,1.61,no,pendiente,,
 2026-11-20 20:12,4750791,2026-11-21T08:00:00-05:00,Alavés vs Deportivo,LaLiga,alternativa,U3.5,Menos de 3.5 goles,0.7713,1.25,1.30,no,pendiente,,
 2026-11-20 20:12,4732626,2026-11-21T09:00:00-05:00,Lazio vs Lecce,Serie A,principal,BTTS_SI,Ambos marcan: Sí,0.5403,1.80,1.85,no,pendiente,,
