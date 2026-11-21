@@ -5713,6 +5713,7 @@
     "reportado": true
   },
   "4732622": {
+    "alineacion_avisada": true,
     "habituales": {
       "225": {
         "equipo": "AS Roma",
@@ -9677,6 +9678,7 @@
     "reportado": false
   },
   "4741993": {
+    "alineacion_avisada": true,
     "habituales": {
       "104": {
         "equipo": "Arsenal",
